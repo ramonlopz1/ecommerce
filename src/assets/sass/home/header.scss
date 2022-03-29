@@ -1,8 +1,10 @@
+@import 'variaveis';
+
 header {
     display: flex;
     flex-direction: column;
 
-    background-color: blue;
+    background-color: $myBlue;
 
     #header_navigation__top {
         display: flex;

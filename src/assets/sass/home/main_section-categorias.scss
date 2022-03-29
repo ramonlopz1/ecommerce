@@ -2,7 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 170px;
+
+    background-color: $myDarkBlue;
 
     #main_categorias__article {
         display: flex;
@@ -20,7 +23,7 @@
             height: 40px;
             width: 40px;
 
-            background: blue;
+            background: $myBlue;
             border-radius: 100px;
             border: none;
             cursor: pointer;
@@ -61,7 +64,7 @@
                     width: 80px;
                     
                     border-radius: 100px;
-                    border: 2px solid blue;
+                    border: 2px solid $myBlue;
                     text-align: center;
 
                 }

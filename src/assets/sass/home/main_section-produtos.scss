@@ -1,0 +1,98 @@
+#main_produtos {
+    .produtos__categorias {
+        
+        height: 450px;
+
+        .categorias__topinfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 60px;
+            padding: 0px 40px;
+
+            h2 {
+                color: $myLightGray;
+                margin: 0px;
+            }
+        }
+
+        .categorias__containers {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+
+
+            .container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                
+                height: 370px;
+                width: 230px;
+
+                background-color: white;
+                box-shadow: $containerShadow;
+
+                .container__produto__img {
+                    height: 170px;
+                }
+                
+                .container__produto__info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+
+                    height: 170px;
+                    width: 85%;
+
+                    .produto__nome {
+                        color: $myLightGray;
+                    }
+
+                    .produto__rating {
+                        i {
+                            color: white;
+                            font-size: 13px;
+                            -webkit-text-stroke: 1px rgb(255, 206, 9);
+                        }
+                    }
+
+                    .produto__preco {
+                        font-size: 23px;
+                        font-weight: bolder;
+                    }
+
+                    .produto__parcelas {
+                        color: $myLightGray;
+                        font-size: 15px;
+                    }
+
+                    .produto__botao {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        height: 30px;
+                        width: 100px;
+
+                        margin-top: 15px;
+
+                        background-color: $myBlue;
+                        border-radius: 8px;
+                        color: white;
+                        font-size: 15px;
+
+                        &:hover {
+                            background-color: $myLightBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
