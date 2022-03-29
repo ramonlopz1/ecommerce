@@ -21,7 +21,9 @@ module.exports = {
    * setting an entry property in the webpack configuration. For example:
    */
   entry: [
-      './src/main.js'
+      './src/main.js',
+      './src/assets/js/home/banners.js',
+      './src/assets/js/home/carrouselAnimation.js'
     ],
 
   /**
@@ -68,10 +70,10 @@ module.exports = {
             {
               context: path.resolve(__dirname),
               from: "./src/index.html"
-            }, /**{
+            }, {
                 from: './src/assets/img',
                 to: path.resolve(__dirname, 'public/assets/img')
-              } */ {
+              }, {
               from: './src/assets/js/smtp.js',
               to: path.resolve(__dirname, 'public/assets/js')
             }

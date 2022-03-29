@@ -1,0 +1,99 @@
+#main_section__categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+
+    #main_categorias__article {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 30px;
+
+        .categorias__article__btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            height: 40px;
+            width: 40px;
+
+            background: blue;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+
+
+            i {
+                color: white;
+                font-size: 25px;
+
+                &:hover {
+                    
+                }
+            }
+        }
+
+        #categorias__article__circles {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            max-width: 980px;
+
+            .article__circles__circle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                
+                transition: .6s;
+                gap: 40px;
+                
+                .circle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+    
+                    height: 80px;
+                    width: 80px;
+                    
+                    border-radius: 100px;
+                    border: 2px solid blue;
+                    text-align: center;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    #section-skills article aside {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #section-skills article aside {
+        max-width: 635px;
+
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #section-skills article aside {
+        max-width: 315px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #section-skills article aside {
+        max-width: 215px;
+
+    }
+}

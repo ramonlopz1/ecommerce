@@ -68,6 +68,8 @@ header {
         display: flex;
         justify-content: space-evenly;
 
+        border-top: 1px solid rgba(255, 255, 255, 0.303);
+
         ul {
             display: flex;
             flex-direction: row;
@@ -90,7 +92,7 @@ header {
         }
 
         #navigation__bottom__redesocial {
-            gap: 30px;
+            gap: 20px;
             font-size: 25px;
         }
     }
