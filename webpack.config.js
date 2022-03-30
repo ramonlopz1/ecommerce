@@ -23,7 +23,8 @@ module.exports = {
   entry: [
       './src/main.js',
       './src/assets/js/home/banners.js',
-      './src/assets/js/home/carrouselAnimation.js'
+      './src/assets/js/home/carrouselAnimation.js',
+      './src/assets/js/home/ratingStars.js'
     ],
 
   /**

@@ -472,13 +472,15 @@
                 </ul>
             </div>
             <form action="">
-                <div id="form_input_nome">
-                    <input type="text">
+                <div id="form_input__nome">
+                    <label for="input_nome">Nome</label>
+                    <input type="text" name="nome" id="input_nome" required>
                 </div>            
-                <div id="form_textarea">
-                    <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+                <div id="form_textarea__mensagem">
+                    <label for="textarea_mensagem">Mensagem</label>
+                    <textarea name="" id="textarea_mensagem"  maxlength="300" required></textarea>
                 </div>
-                <button>Enviar mensagem</button>
+                <button id="form_button">Enviar mensagem</button>
             </form>
         </div>
         <div id="footer_bottom">
