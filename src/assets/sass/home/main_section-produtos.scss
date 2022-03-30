@@ -10,7 +10,7 @@
             align-items: center;
 
             height: 60px;
-            padding: 0px 40px;
+            margin: 0px 40px;
 
             h2 {
                 color: $myLightGray;
@@ -21,9 +21,10 @@
         .categorias__containers {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-wrap: nowrap;
 
+            margin: 0px 40px;
 
             .container {
                 display: flex;

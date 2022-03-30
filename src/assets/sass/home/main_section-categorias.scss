@@ -41,6 +41,8 @@
 
         #categorias__article__circles {
             display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: row;
             overflow: hidden;
             max-width: 980px;
@@ -57,7 +59,7 @@
                 .circle {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
                     flex-direction: column;
     
                     height: 80px;
@@ -65,6 +67,8 @@
                     
                     border-radius: 100px;
                     border: 2px solid $myBlue;
+                    color: white;
+                    font-size: 1.9rem;
                     text-align: center;
 
                 }
