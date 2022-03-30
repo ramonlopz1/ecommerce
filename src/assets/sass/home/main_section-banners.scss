@@ -22,11 +22,27 @@
             font-size: 23px;
         }
 
-        div {
-            margin-bottom: -40px;
+    div {
+        margin-bottom: -40px;
 
-            input[type=radio] {
+        input[type=radio] {
+            /*remove estilos padrões do radio*/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            
+            width: 20px;
+            height: 20px;
 
-            }
+            margin-right: 5px;
+
+            border-radius: 50%;
+            border: 2px solid rgb(248, 248, 248);
+            transition: 0.2s all linear;
+                
+                &:checked {
+                border: 6px solid rgb(255, 255, 255);
+                }
         }
+    }
 }

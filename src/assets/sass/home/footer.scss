@@ -1,0 +1,28 @@
+@import 'variaveis';
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+
+    background-color: blue;
+
+    #footer_middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        height: 400px;
+        width: 100%;
+
+    }
+
+    #footer_bottom {
+        height: 100px;
+        width: 100%;
+        background-color: $myDarkBlue;
+    }
+}

@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 250px;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
     'header' 
     'main' 
