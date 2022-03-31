@@ -98,3 +98,41 @@
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    
+    #main_section__categorias  {
+        #main_categorias__article {
+            #categorias__article__circles {
+                max-width: 740px;
+            }
+        }
+    }
+    
+    #main_produtos {
+        .categorias__containers {
+            .container:nth-of-type(n+5) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    #main_produtos {
+        .produtos__categorias {
+            height: 900px;
+            .categorias__containers {
+                flex-wrap: wrap; 
+                justify-content: space-evenly;
+
+                height: 90%;
+                margin: 0px 200px;
+                .container {
+
+                }
+            }
+        }
+    }
+}

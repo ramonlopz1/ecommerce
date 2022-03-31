@@ -7,7 +7,7 @@ footer {
     flex-direction: column;
     height: 500px;
 
-    background-color: blue;
+    background-color: $myVeryLightBlue;
 
     #footer_middle {
         display: flex;
@@ -35,7 +35,7 @@ footer {
                 list-style: none;
 
                 a {
-                    color: white;
+                    color: black;
                 }
             }
         }
@@ -93,4 +93,8 @@ footer {
         width: 100%;
         background-color: $myDarkBlue;
     }
+}
+
+@media screen and (max-width: 1500px) {
+    
 }
