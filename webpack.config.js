@@ -24,7 +24,10 @@ module.exports = {
       './src/main.js',
       './src/assets/js/home/banners.js',
       './src/assets/js/home/carrouselAnimation.js',
-      './src/assets/js/home/ratingStars.js'
+      './src/assets/js/home/ratingStars.js',
+
+      './src/assets/js/home/SPA.js',
+      '/src/assets/js/login/login.js'
     ],
 
   /**
@@ -67,18 +70,20 @@ module.exports = {
       }), 
       
       new CopyPlugin({ // Copy a new HTML file
-          patterns: [
-            {
+          patterns: [{
               context: path.resolve(__dirname),
               from: "./src/index.html"
             }, {
-                from: './src/assets/img',
-                to: path.resolve(__dirname, 'public/assets/img')
-              }, {
+              context: path.resolve(__dirname),
+              from: "./src/assets/html",
+              to: path.resolve(__dirname, 'public/assets/html')
+            }, {
+              from: './src/assets/img',
+              to: path.resolve(__dirname, 'public/assets/img')
+            }, {
               from: './src/assets/js/smtp.js',
               to: path.resolve(__dirname, 'public/assets/js')
-            }
-          ]
+            }]
       })
     ],
 

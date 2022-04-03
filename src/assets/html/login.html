@@ -1,0 +1,33 @@
+<main id="login_main">
+    <section id="main_section__login">
+        <form action="" id="login__form">
+            <fieldset>
+                <legend>Login</legend>
+                <div id="form__input__user">
+                    <label for="input__user">
+                        <i class="fa-solid fa-user"></i>
+                    </label>
+                    <input type="text" name="user" id="input__user" data-form-user>
+                </div>
+                <div id="form__input__pass">
+                    <label for="login__form__pass">
+                        <i class="fa-solid fa-key"></i>
+                    </label>
+                    <input type="password" name="user" id="login__form__pass" data-form-password>
+                </div>
+                <span>Esqueceu a senha?</span>
+                <input type="submit" value="Log in" id="login__form__submit">
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<script>
+    const btn = document.querySelector("#login__form__submit")
+
+    btn.onclick = e => {
+        e.preventDefault()
+        console.log("oi")
+    }
+
+</script>

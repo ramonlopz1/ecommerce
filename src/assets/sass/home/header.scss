@@ -1,4 +1,4 @@
-@import 'variaveis';
+@import '../variaveis';
 
 header {
     display: flex;
@@ -50,7 +50,7 @@ header {
             list-style: none;
 
             li {
-                .navigation__top__login {
+                .top__lista__link {
                     display: flex;
                     justify-content: center;
                     align-items: center;
