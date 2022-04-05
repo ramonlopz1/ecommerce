@@ -1,3 +1,76 @@
-.include_header {
-    background-color: red;
+@import '../variaveis';
+
+#include_header {
+    display: flex;
+    flex-direction: column;
+
+    background-color: $myBlue;
+
+    #header_navigation {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80px;
+
+        #navigation__input {
+            display: flex;
+            flex-wrap: nowrap;
+
+            width: 40%;
+
+            input {
+
+                padding: none;
+                
+                height: 38px;
+                width: 90%;
+
+                border: none;
+                border-radius: 8px 0px 0px 8px;
+                outline: none;
+                text-indent: 15px;
+            }
+
+            button {
+                height: 40px;
+                        
+                border: none;
+                border-radius: 0px 8px 8px 0px;
+            }
+    
+        }
+    }
+
+    #header_navigation {
+        display: flex;
+        justify-content: space-evenly;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.303);
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0px;
+
+            list-style: none;
+
+            a {
+                color: white;
+            }
+        }
+
+        #navigation__menu {
+            width: 50%;
+            gap: 30px;
+        }
+
+        #navigation__redesocial {
+            gap: 20px;
+            font-size: 25px;
+        }
+    }
 }

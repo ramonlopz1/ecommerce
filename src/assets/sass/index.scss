@@ -1,3 +1,4 @@
+/*Home*/
 @import 'normalize.scss';
 @import 'home/home_header.scss';
 @import 'home/home_main.scss';
@@ -6,8 +7,11 @@
 @import 'home/main_section-produtos.scss';
 @import 'home/home_footer.scss';
 
+/*Login*/
 @import 'login/login_main.scss';
 
+
+/*Include: Header and Footer*/
 @import 'includedsHTMLStyle/include_header.scss';
 @import 'includedsHTMLStyle/include_footer.scss';
 

@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ptbr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +11,39 @@
     <header class="include_header"></header>
     <main id="login_main">
         <section id="main_section__login">
-            <form action="" id="login__form">
-                <fieldset>
-                    <legend>Login</legend>
-                    <div id="form__input__user">
-                        <label for="input__user">
-                            <i class="fa-solid fa-user"></i>
-                        </label>
-                        <input type="text" name="user" id="input__user" data-form-user>
-                    </div>
-                    <div id="form__input__pass">
-                        <label for="login__form__pass">
-                            <i class="fa-solid fa-key"></i>
-                        </label>
-                        <input type="password" name="user" id="login__form__pass" data-form-password autocomplete="off">
-                    </div>
-                    <span>Esqueceu a senha?</span>
-                    <input type="submit" value="Log in" id="login__form__submit">
-                </fieldset>
+            <aside id="login__aside__infos">
+                <h1 id="login__aside__title">Bem vindo de volta!</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem culpa accusamus assumenda veritatis quos eius qui quam quia iure. Neque tempora perferendis rem quaerat saepe inventore dignissimos iusto dolorum.</p>
+            </aside>
+            <form action="" id="form__login">
+                <h1 id="form__login__title">Login</h1>
+                <div id="form__input__user">
+                    <label for="input__user">
+                        <i class="fa-solid fa-user"></i>
+                    </label>
+                    <input type="text" name="user" id="input__user" data-form-user placeholder="Insira seu usuário">
+                </div>
+                <div id="form__input__pass">
+                    <label for="login__form__pass">
+                        <i class="fa-solid fa-key"></i>
+                    </label>
+                    <input type="password" name="user" id="login__form__pass" data-form-password autocomplete="off" placeholder="Insira sua senha">
+                </div>
+                <a href="" id="login__form__recoverypassword">Esqueceu a senha?</a>
+                <div id="form__login__btns">
+                    <input type="submit" value="Acessar" id="login__form__submit">
+                    <input type="submit" value="Cadastrar" id="login__form__register">
+                </div>
             </form>
         </main>
     </section>
+
     <footer class="include_footer"></footer>
     <script src="../js/include.js"></script>
+    <script src="../js/login.js"></script>
+
+    <!--FONT AWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

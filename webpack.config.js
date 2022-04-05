@@ -30,6 +30,10 @@ module.exports = {
       
       include: [
         './src/assets/js/include.js'
+      ],
+
+      login: [
+        './src/assets/js/login/login.js'
       ]
     },
 
@@ -74,6 +78,9 @@ module.exports = {
       
       new CopyPlugin({ // Copy a new HTML file
           patterns: [{
+            from: './src/index.html',
+            to: path.resolve(__dirname, 'public')
+            }, {
               context: path.resolve(__dirname),
               from: "./src/assets/html",
               to: path.resolve(__dirname, 'public/assets/html')

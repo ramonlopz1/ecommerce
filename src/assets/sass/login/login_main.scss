@@ -8,49 +8,117 @@
 
     height: 900px;
     #main_section__login {
-        #login__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #login__aside__infos {
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
 
-            height: 450px;
+            height: 650px;
+            width: 450px;
 
-            fieldset {
+            background-color: rgb(24, 59, 197);
+            border-radius: 7px 0px 0px 7px;
+
+            #login__aside__title, p {
+                color: white;
+                width: 80%;
+            }
+        }
+
+        #form__login {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            height: 650px;
+            width: 450px;
+
+            border-radius: 0px 7px 7px 0px;
+            background: linear-gradient(120deg, rgb(152, 192, 221),rgb(24, 59, 197));
+
+            #form__login__title {
+                color: white;
+            }
+
+            #form__input__email, #form__input__user, #form__input__pass {
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                justify-content: space-evenly;
 
-                height: 70%;
-                width: 400px;
-
-                #form__input__user, #form__input__pass {
+                label {
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    label {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                    height: 40px;
+                    width: 50px;
 
-                        height: 40px;
-                        width: 50px;
+                    background-color: $myBlue;
+                    color: white;
+                }
 
+              
+                input:not([type=submit]) {
+                    height: 40px;
+                    width: 230px;
+                    margin: 15px 0px;
+
+                    text-indent: 7px;
+                    
+                    background-color: $myVeryLightGray;
+                    border: none;
+                    outline: none;
+
+                }
+            }
+
+            #login__form__recoverypassword {
+                color: white;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            #form__login__btns {
+                #login__form__submit {
+                    height: 40px;
+                    width: 100px;
+                    margin: 20px 0px;
+    
+                    background-color: $myDarkBlue;
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    outline: none;
+    
+                    &:hover {
                         background-color: $myBlue;
-                        color: white;
-                    }
-
-                    input:not([type=submit]) {
-                        height: 40px;
-                        width: 230px;
-
-                        border: none;
-                        outline: none;
                     }
                 }
 
+                #login__form__register {
+                    height: 40px;
+                    width: 100px;
+                    margin: 20px 0px;
+    
+                    background-color: white;
+                    border: none;
+                    border-radius: 6px;
+                    color: $myDarkBlue;
+                    outline: none;
+    
+                    &:hover {
+                        background-color: $myBlue;
+                        color: white;
+                    }
+                }
             }
         }
     }

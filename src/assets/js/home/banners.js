@@ -11,7 +11,7 @@
     h1.innerHTML = h1Array[contador]
     span.innerHTML = spanArray[contador]
     radio[contador].checked = true
-    $('#main_banners').css('background-image', `url(../img/main_banners/${contador}.jpg)`)
+    $('#main_banners').css('background-image', `url(../assets/img/main_banners/${contador}.jpg)`)
 
     $('#main_banners').prepend(span)
     $('#main_banners').prepend(h1)
@@ -20,7 +20,7 @@
     // Change radios with click and index position    
     radio.forEach((each, indice) => {
         each.onclick = () => {
-            $('#main_banners').css('background-image', `url(../img/main_banners/${indice}.jpg)`)
+            $('#main_banners').css('background-image', `url(../assets/img/main_banners/${indice}.jpg)`)
             h1.innerHTML = h1Array[indice]
             span.innerHTML = spanArray[indice]
         }
@@ -36,7 +36,7 @@
         span.innerHTML = spanArray[contador]
         radio[contador].checked = true
 
-        $('#main_banners').css('background-image', `url(../img/main_banners/${contador}.jpg)`)
+        $('#main_banners').css('background-image', `url(../assets/img/main_banners/${contador}.jpg)`)
     }, 4000)
 })()
 
