@@ -20,15 +20,18 @@ module.exports = {
    * By default its value is ./src/index.js, but you can specify a different (or multiple entry points) by 
    * setting an entry property in the webpack configuration. For example:
    */
-  entry: [
-      './src/main.js',
-      './src/assets/js/home/banners.js',
-      './src/assets/js/home/carrouselAnimation.js',
-      './src/assets/js/home/ratingStars.js',
-
-      './src/assets/js/home/SPA.js',
-      '/src/assets/js/login/login.js'
-    ],
+  entry: {
+      main: [
+        './src/main.js',
+        './src/assets/js/home/banners.js',
+        './src/assets/js/home/carrouselAnimation.js',
+        './src/assets/js/home/ratingStars.js',
+      ],
+      
+      login: [
+        './src/assets/js/include.js'
+      ]
+    },
 
   /**
    * The output property tells webpack where to emit the bundles it creates and how to name these files. 
@@ -36,7 +39,7 @@ module.exports = {
    */
   output: {
       path: path.resolve(__dirname, 'public'),
-      filename: 'assets/js/main.js',
+      filename: 'assets/js/[name].js',
     },
 
     devtool: 'eval-source-map',
