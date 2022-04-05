@@ -28,7 +28,7 @@ module.exports = {
         './src/assets/js/home/ratingStars.js',
       ],
       
-      login: [
+      include: [
         './src/assets/js/include.js'
       ]
     },
@@ -74,9 +74,6 @@ module.exports = {
       
       new CopyPlugin({ // Copy a new HTML file
           patterns: [{
-              context: path.resolve(__dirname),
-              from: "./src/index.html"
-            }, {
               context: path.resolve(__dirname),
               from: "./src/assets/html",
               to: path.resolve(__dirname, 'public/assets/html')

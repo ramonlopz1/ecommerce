@@ -1,5 +1,11 @@
-const headerLogin = document.querySelector("#header_login")
+const includeHeader = document.querySelector(".include_header")
+const includeFooter = document.querySelector(".include_footer")
 
-fetch("../html/header.html")
+const include = (htmlTag, htmlFile) => {
+    fetch(htmlFile)
     .then(elem => elem.text())
-    .then(elem => headerLogin.innerHTML = elem)
+    .then(elem => htmlTag.innerHTML = elem)
+}
+
+include(includeHeader, "../html/include_header.html")
+include(includeFooter, "../html/include_footer.html")

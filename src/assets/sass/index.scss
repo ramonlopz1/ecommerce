@@ -1,12 +1,15 @@
 @import 'normalize.scss';
+@import 'home/home_header.scss';
 @import 'home/home_main.scss';
-@import 'home/header.scss';
 @import 'home/main_section-banners.scss';
 @import 'home/main_section-categorias.scss';
 @import 'home/main_section-produtos.scss';
-@import 'home/footer.scss';
+@import 'home/home_footer.scss';
 
-@import 'login/login_main.scss'
+@import 'login/login_main.scss';
+
+@import 'includedsHTMLStyle/include_header.scss';
+@import 'includedsHTMLStyle/include_footer.scss';
 
 
 
