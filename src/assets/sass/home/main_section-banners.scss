@@ -38,11 +38,13 @@
 
             border-radius: 50%;
             border: 2px solid rgb(248, 248, 248);
+            cursor: pointer;
             transition: 0.2s all linear;
                 
                 &:checked {
                 border: 6px solid rgb(255, 255, 255);
                 }
+                
         }
     }
 }
