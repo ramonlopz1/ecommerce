@@ -7,10 +7,14 @@
     flex-direction: column;
 
     height: 900px;
+
     #main_section__login {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        box-shadow: 0px 1px 20px 0px #00000030;
+        border-radius: 6px;
 
         #login__aside__infos {
             display: flex;
@@ -40,10 +44,10 @@
             width: 450px;
 
             border-radius: 0px 7px 7px 0px;
-            background: linear-gradient(120deg, rgb(152, 192, 221),rgb(24, 59, 197));
+            
 
             #form__login__title {
-                color: white;
+                color: $myVeryLightBlue;
             }
 
             #form__input__email, #form__input__user, #form__input__pass {
@@ -79,11 +83,7 @@
             }
 
             #login__form__recoverypassword {
-                color: white;
-
-                &:hover {
-                    color: black;
-                }
+                color: black;
             }
 
             #form__login__btns {
@@ -108,14 +108,14 @@
                     width: 100px;
                     margin: 20px 0px;
     
-                    background-color: white;
+                    background-color: $myBlue;
                     border: none;
                     border-radius: 6px;
-                    color: $myDarkBlue;
+                    color: white;
                     outline: none;
     
                     &:hover {
-                        background-color: $myBlue;
+                        background-color: $myDarkBlue;
                         color: white;
                     }
                 }

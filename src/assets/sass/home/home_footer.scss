@@ -89,9 +89,15 @@
     }
 
     #footer_bottom {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
         height: 100px;
         width: 100%;
+
         background-color: $myDarkBlue;
+        color: white;
     }
 }
 

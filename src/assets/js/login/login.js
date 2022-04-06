@@ -3,12 +3,11 @@ const btnAcessar = document.querySelector("#login__form__submit")
 const btnCadastrar = document.querySelector("#login__form__register")
 
 const loginDiv = document.querySelector("#form__input__user")
-
-const Register = (event) => {
-    event.preventDefault()
+const passDiv = document.querySelector("#form__input__pass")
 
 
-    // Cria div
+const buildElements = () => {
+// Cria div
     const emailDiv = document.createElement("div")
     emailDiv.setAttribute("id", "form__input__email")
 
@@ -19,20 +18,30 @@ const Register = (event) => {
     const emailDivLabelIcon = document.createElement("i")
     emailDivLabelIcon.classList.add("fa-solid")
     emailDivLabelIcon.classList.add("fa-envelopes-bulk")
-    emailDivLabel.appendChild(emailDivLabelIcon)
+    
 
     // Cria input
     const emailDivInput = document.createElement("input")
     emailDivInput.setAttribute("id", "login__form__email")
     emailDivInput.setAttribute("placeholder", "Insira seu e-mail")
-
     //
 
     emailDiv.appendChild(emailDivLabel)
+    emailDivLabel.appendChild(emailDivLabelIcon)
     emailDiv.appendChild(emailDivInput)
 
     loginDiv.insertAdjacentElement("beforebegin", emailDiv)
+}
+
+let inputQtd = 0;
+
+const Register = (event) => {
+    event.preventDefault()
     
+    if (inputQtd === 0) {
+        buildElements()
+        inputQtd++;
+    }
 }
 
 btnCadastrar.addEventListener('click', (event) => {
