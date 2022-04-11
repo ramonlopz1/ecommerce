@@ -20,24 +20,30 @@
                 </div>
                 <div id="form__produtonome">
                     <div id="form__input__produtonome">
-                        <span for="produtonome">Nome do produto</span>
-                        <input type="text" name="produtonome" id="produtonome">
+                        <span for="produtonome">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </span>
+                        <input type="text" name="produtonome" id="produtonome" placeholder="Nome do produto" required>
                     </div>
                 </div>
                 <div id="form__produtopreco">
                     <div id="form__input__produtopreco">
-                        <span for="produtopreco">Preço do produto</span>
-                        <input type="text" name="produtopreco" id="produtopreco">
-                                        </div>
+                        <span for="produtopreco">
+                            <i class="fa-solid fa-cash-register"></i>
+                        </span>
+                        <input type="number" name="produtopreco" id="produtopreco" placeholder="Preço do produto" required>
                     </div>
+                </div>
                 <div id="form__produtodescricao">
                   <div id="form__input__produtodescricao">
-                    <span for="produtodescricao">Descrição do produto</span>
-                    <input type="text" name="produtodescricao" id="produtodescricao">
+                    <span for="produtodescricao">
+                        <i class="fa-solid fa-align-left"></i>
+                    </span>
+                    <textarea name="produtodescricao" id="produtodescricao" cols="30" rows="10" placeholder="Descrição do produto" maxlength="100" required></textarea>
                   </div>
                 </div>
                 <div id="form__btns">
-                    <input type="submit" id="btns__cadastrar" value="Adicionar produto">
+                    <input type="submit" id="btns__cadastrar" value="Add">
                     <input type="submit" id="btns__cancelar" value="Cancelar">
                 </div>
             </form>
@@ -48,7 +54,7 @@
     </footer>
     
     <script src="../js/include.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/addProdutos.js"></script>
 
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>

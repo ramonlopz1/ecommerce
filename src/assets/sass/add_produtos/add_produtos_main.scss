@@ -49,7 +49,7 @@
                     color: white;
                 }
 
-                input:not([type=submit]) {
+                input:not([type=submit]), textarea {
                     height: 40px;
                     width: 330px;
                     margin: 15px 0px;
@@ -60,6 +60,18 @@
                     border: none;
                     outline: none;
 
+                }
+               
+            }
+
+            #form__input__produtodescricao {
+                span {
+                    height: 200px;
+                }
+                
+                textarea {
+                    height: 196px;
+                    resize: none;
                 }
             }
 

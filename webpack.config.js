@@ -26,6 +26,7 @@ module.exports = {
         './src/assets/js/home/banners.js',
         './src/assets/js/home/carrouselAnimation.js',
         './src/assets/js/home/ratingStars.js',
+        './src/assets/js/home/createCard.js'
       ],
       
       include: [
@@ -34,6 +35,10 @@ module.exports = {
 
       login: [
         './src/assets/js/login/login.js'
+      ],
+
+      addProdutos: [
+        './src/assets/js/add_produtos/novoProduto.js'
       ]
     },
 
