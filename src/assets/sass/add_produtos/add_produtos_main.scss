@@ -30,8 +30,65 @@
                 color: $myVeryLightBlue;
             }
 
+            #form__input__produtoimg {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                height: 200px;
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    background-color: $myBlue;
+                    box-sizing: border-box;
+                    cursor: pointer;
+
+                    padding: 0px 30px;
+                    height: 140px;
+                    width: 380px;
+
+                    &:hover {
+                        background-color: $myVeryLightBlue;
+                    }
+                    
+                    i {
+                        color: white;
+                        font-size: 40px;
+                    }
+
+                    span:nth-of-type(1) {
+                        color: white;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+                    span:nth-of-type(2) {
+                        font-size: 13px;
+                        color: white;
+                        text-align: center;
+                        overflow: hidden;
+                        width: 220px;
+                    }
+
+                }
+
+                #produtoimginput {
+                    display: none;
+
+                    span {
+                        
+                        width: 80px;
+                    }
+                }
+            }
+
             #form__input__produtonome,
             #form__input__produtopreco,
+            #form__input__produtoparcelas,
             #form__input__produtodescricao {
                 display: flex;
                 justify-content: center;

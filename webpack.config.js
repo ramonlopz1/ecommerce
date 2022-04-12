@@ -38,7 +38,8 @@ module.exports = {
       ],
 
       addProdutos: [
-        './src/assets/js/add_produtos/novoProduto.js'
+        './src/assets/js/add_produtos/novoProduto.js',
+        './src/assets/js/add_produtos/fileDescription.js'
       ]
     },
 

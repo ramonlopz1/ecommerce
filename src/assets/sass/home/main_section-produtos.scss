@@ -95,6 +95,10 @@
                     }
                 }
             }
+
+            .container:nth-of-type(n+7) {
+                display: none;
+            }
         }
     }
 }

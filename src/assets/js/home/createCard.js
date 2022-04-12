@@ -2,45 +2,31 @@ const novoCard = () => {
     const produtos = JSON.parse(localStorage.getItem("produtos")) || []
 
     const categoriasContainers = document.querySelector(".categorias__containers")
-
+    
     produtos.forEach(produto => {
-        const divContainer = document.createElement("div")
-        divContainer.classList.add("container")
+        let preco = parseFloat(produto.preco)
+        preco = preco.toFixed(2).replace(".", ",")
 
-        const img = document.createElement("img")
-        img.classList.add("container__produto__img")
+        const container = document.createElement("div")
+        container.classList.add("container")
+        const cardProduto = `
+                        <img src="assets/img/main_produtos/produtos_section1/1.png" alt="produto" class="container__produto__img">
+                         <div class="container__produto__info">
+                            <span class="produto__nome">${produto.nome}</span>
+                            <div class="produto__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                             </div>
+                             <span class="produto__preco">R$ ${preco}</span>
+                             <span class="produto__parcelas">5x de R$ 37,94</span>
+                             <a href="" class="produto__botao">Ver produto</a>
+                         </div>`
 
-        const containerProdutoInfo = document.createElement("div")
-        containerProdutoInfo.classList.add("container__produto__info")
-
-        const produtoNome = document.createElement("span")
-        produtoNome.classList.add("produto__nome")
-        produtoNome.innerHTML = produto.nome
-
-        const estrelas = document.querySelector(".produto__rating")
-        const rating = estrelas.cloneNode(true)
-
-        const produtoPreco = document.createElement("span")
-        produtoPreco.classList.add("produto__preco")
-        produtoPreco.innerHTML = produto.preco
-
-        const produtoParcelas = document.createElement("span")
-        produtoParcelas.classList.add("produto__parcelas")
-        
-        const btnProduto = document.createElement("a")
-        btnProduto.classList.add("produto__botao")
-
-
-        containerProdutoInfo.appendChild(produtoNome)
-        containerProdutoInfo.appendChild(rating)
-        containerProdutoInfo.appendChild(produtoPreco)
-        containerProdutoInfo.appendChild(produtoParcelas)
-        containerProdutoInfo.appendChild(btnProduto)
-
-        divContainer.appendChild(img)
-        divContainer.appendChild(containerProdutoInfo)
-
-        categoriasContainers.appendChild(divContainer)
+        container.innerHTML = cardProduto
+        categoriasContainers.appendChild(container)
     })
 }
 
