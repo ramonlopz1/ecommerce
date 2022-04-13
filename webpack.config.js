@@ -100,9 +100,6 @@ module.exports = {
             }, {
               from: './src/services',
               to: path.resolve(__dirname, 'public/services')
-            }, {
-              from: './src/db.json',
-              to: path.resolve(__dirname, 'public')
             }]
       })
     ],

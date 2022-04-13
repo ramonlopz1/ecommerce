@@ -1,8 +1,8 @@
 import { httpMethods } from "../services/service-httpmethods.js"
 const listarEcriarProdutos = () => {
     httpMethods.listaProdutos()
-        .then(data => {
-            data.produtos.forEach(produto => {
+        .then(produtos => {
+            produtos.forEach(produto => {
                 let preco = parseFloat(produto.preco)
                 preco = preco.toFixed(2).replace(".", ",")
         
