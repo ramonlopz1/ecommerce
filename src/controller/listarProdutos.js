@@ -1,15 +1,24 @@
 import { httpMethods } from "../services/service-httpmethods.js"
+
 const listarEcriarProdutos = () => {
     httpMethods.listaProdutos()
         .then(produtos => {
             produtos.forEach(produto => {
+                
+                // Formata o preço e o url da imagem
                 let preco = parseFloat(produto.preco)
                 preco = preco.toFixed(2).replace(".", ",")
-        
+
+                let img = (produto.img).toString()
+                img = img.replaceAll("\\", "/")
+                    .replace("C:/", "")
+                    .replace("fakepath", "assets/img/main_produtos/produtos_section1")
+           
+                // Cria div com informações do produto via Template String
                 const container = document.createElement("div")
                 container.classList.add("container")
                 const cardProduto = `
-                                <img src="assets/img/main_produtos/produtos_section1/1.png" alt="produto" class="container__produto__img">
+                                <img src="${img}" alt="produto" class="container__produto__img">
                                  <div class="container__produto__info">
                                     <span class="produto__nome">${produto.nome}</span>
                                     <div class="produto__rating">

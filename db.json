@@ -1,18 +1,11 @@
 {
   "produtos": [
     {
-      "nome": "Caneca",
-      "preco": "3,99",
-      "parcelas": "4",
-      "descricao": "Caneca de cha",
+      "img": "C:\\fakepath\\1.png",
+      "nome": "Caneca Star Wars",
+      "preco": "139.99",
+      "descricao": "Caneca Star Wars Branca",
       "id": 1
-    },
-    {
-      "img": "C:\\fakepath\\3.png",
-      "nome": "submarino",
-      "preco": "99999",
-      "descricao": "sub",
-      "id": 2
     }
   ]
 }
