@@ -1,10 +1,12 @@
+import { httpMethods } from "../services/service-httpmethods.js"
+
 const novoProduto = () => {
     const produtoImg = document.querySelector("#produtoimginput")
     const produtoNome = document.querySelector("#produtonome")
     const produtoPreco = document.querySelector("#produtopreco")
     const produtoDescricao = document.querySelector("#produtodescricao")
     
-    const produtos = JSON.parse(localStorage.getItem("produtos")) || []
+    /*const produtos = JSON.parse(localStorage.getItem("produtos")) || []*/
 
     const novoProduto = {
         img: produtoImg.value,
@@ -13,11 +15,14 @@ const novoProduto = () => {
         descricao: produtoDescricao.value
     }
 
-    const atualizaProdutos = [...produtos, novoProduto]
+   /* const atualizaProdutos = [...produtos, novoProduto]*/
 
     if(novoProduto.img && novoProduto.nome && 
         novoProduto.preco && novoProduto.descricao) {
-        localStorage.setItem('produtos', JSON.stringify(atualizaProdutos))
+        /**localStorage.setItem('produtos', JSON.stringify(atualizaProdutos)) */
+
+        httpMethods.criaProduto(novoProduto)
+
     } else {
         console.log("preencha todos os campos")
     }

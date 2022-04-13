@@ -26,7 +26,6 @@ module.exports = {
         './src/assets/js/home/banners.js',
         './src/assets/js/home/carrouselAnimation.js',
         './src/assets/js/home/ratingStars.js',
-        './src/assets/js/home/createCard.js'
       ],
       
       include: [
@@ -37,10 +36,9 @@ module.exports = {
         './src/assets/js/login/login.js'
       ],
 
-      addProdutos: [
-        './src/assets/js/add_produtos/novoProduto.js',
+      insertFileDescription: [
         './src/assets/js/add_produtos/fileDescription.js'
-      ]
+      ],
     },
 
   /**
@@ -48,8 +46,8 @@ module.exports = {
    * It defaults to ./dist/main.js for the main output file and to the dist folder for any other generated file.
    */
   output: {
-      path: path.resolve(__dirname, 'public'),
       filename: 'assets/js/[name].js',
+      path: path.resolve(__dirname, 'public'),
     },
 
     devtool: 'eval-source-map',
@@ -96,6 +94,15 @@ module.exports = {
             }, {
               from: './src/assets/js/smtp.js',
               to: path.resolve(__dirname, 'public/assets/js')
+            }, {
+              from: './src/controller',
+              to: path.resolve(__dirname, 'public/controller')
+            }, {
+              from: './src/services',
+              to: path.resolve(__dirname, 'public/services')
+            }, {
+              from: './src/db.json',
+              to: path.resolve(__dirname, 'public')
             }]
       })
     ],

@@ -1,0 +1,11 @@
+{
+    "produtos": [
+        {
+        "nome": "Caneca",
+        "preco": "3,99",
+        "parcelas": "4",
+        "descricao": "Caneca de cha",
+        "id": 1
+        }
+    ]
+}
