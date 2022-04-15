@@ -100,6 +100,12 @@ module.exports = {
             }, {
               from: './src/services',
               to: path.resolve(__dirname, 'public/services')
+            }, {
+              from: './src/assets/upload',
+              to: path.resolve(__dirname, 'public/assets/upload')
+            }, {
+              from: './src/server.js',
+              to: path.resolve(__dirname, 'public')
             }]
       })
     ],

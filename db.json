@@ -2,10 +2,27 @@
   "produtos": [
     {
       "img": "C:\\fakepath\\1.png",
-      "nome": "Caneca Star Wars",
-      "preco": "139.99",
-      "descricao": "Caneca Star Wars Branca",
+      "nome": "Caneca",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
       "id": 1
+    },
+    {
+      "img": "C:\\fakepath\\ED41BE9D-C04F-47EA-AAF0-1ECF2E6DFD3E.jpg",
+      "nome": "Sushi",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 2
+    },
+    {
+      "img": "C:\\fakepath\\image-removebg-preview (13).png",
+      "nome": "Logo",
+      "preco": "1234",
+      "parcelas": "1231",
+      "descricao": "123",
+      "id": 3
     }
   ]
 }

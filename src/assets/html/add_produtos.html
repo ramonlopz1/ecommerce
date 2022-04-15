@@ -71,13 +71,34 @@
     </footer>
     
     <script src="../js/include.js"></script>
-    <script src="../js/insertFileDescription.js"></script>
+    
 
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>
 
     <script type="module" src="../../controller/novoProduto.js"></script>
     <script type="module" src="../../services/service-httpmethods.js"></script>
-    
+
+    <script>
+        function ajaxUpload(config) {
+            const xhr = new XMLHttpRequest()
+
+            xhr.open("post", config.url, true)
+            xhr.send(config.formData)
+        }
+
+        document.querySelector('#produtoimginput').onchange = e => {
+            const formData = new FormData()
+
+            const inputFile = e.target
+            
+            formData.append(inputFile.name, inputFile.files[0])
+
+            ajaxUpload({
+                url: "../../upload",
+                formData: formData,
+            })
+        }
+    </script>
 </body>
 </html>

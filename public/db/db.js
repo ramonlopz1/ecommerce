@@ -1,1 +1,0 @@
-const sequence={_id:1,get id(){return this._id++}},produtos={};function salvarProduto(o){return o.id||(o.id=sequence.id),produtos[o.id]=o,o}function getProduto(o){return produtos[o]||{}}function getProdutos(){return Object.values(produtos)}module.exports={salvarProduto,getProduto,getProdutos};

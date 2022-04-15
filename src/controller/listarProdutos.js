@@ -1,4 +1,8 @@
 import { httpMethods } from "../services/service-httpmethods.js"
+const sequence = {
+    _id: 0,
+    get id() { return this._id++ }
+}
 
 const listarEcriarProdutos = () => {
     httpMethods.listaProdutos()
@@ -9,16 +13,16 @@ const listarEcriarProdutos = () => {
                 let preco = parseFloat(produto.preco)
                 preco = preco.toFixed(2).replace(".", ",")
 
-                let img = (produto.img).toString()
-                img = img.replaceAll("\\", "/")
-                    .replace("C:/", "")
-                    .replace("fakepath", "assets/img/main_produtos/produtos_section1")
+                let imgName = (produto.img).toString()
+                imgName = imgName.replaceAll("\\", "")
+                    .replace("C:", "")
+                    .replace("fakepath", "")
            
                 // Cria div com informações do produto via Template String
                 const container = document.createElement("div")
                 container.classList.add("container")
                 const cardProduto = `
-                                <img src="${img}" alt="produto" class="container__produto__img">
+                                <img src="assets/upload/${sequence.id}_${imgName}" alt="produto" class="container__produto__img">
                                  <div class="container__produto__info">
                                     <span class="produto__nome">${produto.nome}</span>
                                     <div class="produto__rating">
