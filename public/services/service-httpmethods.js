@@ -1,1 +1,0 @@
-const getProdutos=()=>fetch("http://localhost:3000/produtos").then((t=>t.json())),postProdutos=t=>fetch("http://localhost:3000/produtos",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(t)}).then((t=>t.body));export const httpMethods={getProdutos,postProdutos};

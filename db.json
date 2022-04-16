@@ -2,27 +2,19 @@
   "produtos": [
     {
       "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "Icone",
-      "preco": "1090",
-      "parcelas": "5",
-      "descricao": "asdasd",
+      "nome": "calça",
+      "preco": "123",
+      "parcelas": "321",
+      "descricao": "123",
       "id": 1
     },
     {
       "img": "C:\\fakepath\\AdobeStock_230614051.jpeg",
-      "nome": "tattoio",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "nome": "321",
+      "preco": "321",
+      "parcelas": "321",
+      "descricao": "321",
       "id": 2
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "Farma",
-      "preco": "12",
-      "parcelas": "12",
-      "descricao": "12",
-      "id": 3
     }
   ],
   "usuarios": []

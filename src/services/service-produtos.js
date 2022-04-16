@@ -15,7 +15,16 @@ const postProdutos = (dados) => {
     })
 }
 
+const uploadProdutos = (dados) => {
+    return fetch(dados.url, {
+        method: 'POST',
+        body: dados.formData,
+        
+    });
+}
+
 export const serviceProdutos = {
     getProdutos,
-    postProdutos
+    postProdutos,
+    uploadProdutos
 }
