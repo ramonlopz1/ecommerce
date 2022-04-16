@@ -1,0 +1,1 @@
+const getProdutos=()=>fetch("http://localhost:3000/produtos").then((o=>o.json())),postProdutos=o=>fetch("http://localhost:3000/produtos",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(o)}).then((o=>o.body));export const serviceProdutos={getProdutos,postProdutos};

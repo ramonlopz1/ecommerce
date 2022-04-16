@@ -1,4 +1,4 @@
-import { httpMethods } from "../services/service-httpmethods.js"
+import { serviceProdutos } from "../services/service-produtos.js"
 
 const novoProduto = () => {
     const produtoImg = document.querySelector("#produtoimginput")
@@ -17,14 +17,15 @@ const novoProduto = () => {
         descricao: produtoDescricao.value
     }
 
-    const atualizaProdutosLocalStorage = [...produtos, novoProduto]
+    const addNovoProduto = [...produtos, novoProduto]
 
     if (novoProduto.img && novoProduto.nome &&
         novoProduto.preco && novoProduto.descricao) {
 
-        localStorage.setItem('produtos', JSON.stringify(atualizaProdutosLocalStorage))
+        localStorage.setItem('produtos', JSON.stringify(addNovoProduto))
 
-        httpMethods.criaProduto(novoProduto)
+        // Faz um post via fetch api, enviando
+        serviceProdutos.postProdutos(novoProduto)
 
     } else {
         console.log("preencha todos os campos")

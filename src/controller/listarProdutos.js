@@ -1,18 +1,20 @@
-import { httpMethods } from "../services/service-httpmethods.js"
+import { serviceProdutos } from "../services/service-produtos.js"
+
 const sequence = {
     _id: 0,
     get id() { return this._id++ }
 }
 
 const listarEcriarProdutos = () => {
-    httpMethods.listaProdutos()
+    serviceProdutos.getProdutos()
         .then(produtos => {
             produtos.forEach(produto => {
                 
-                // Formata o preço e o url da imagem
+                // Formata o preço
                 let preco = parseFloat(produto.preco)
                 preco = preco.toFixed(2).replace(".", ",")
 
+                // Retorna apenas o nome da imagem, sem o caminho.
                 let imgName = (produto.img).toString()
                 imgName = imgName.replaceAll("\\", "")
                     .replace("C:", "")
