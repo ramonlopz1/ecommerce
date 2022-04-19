@@ -1,19 +1,15 @@
 import { serviceProdutos } from "../services/service-produtos.js"
-import { getInputValues } from "./getInputValues.js"
+import { getValuesFromInput } from "./produto-controller-getInputValues.js"
 
 const novoProduto = () => {
-    const novoProduto = getInputValues()
-
     const produtos = JSON.parse(localStorage.getItem("produtos")) || []
-
+    const novoProduto = getValuesFromInput()
     const addNovoProduto = [...produtos, novoProduto]
 
-    if (novoProduto.img && novoProduto.nome &&
-        novoProduto.preco && novoProduto.descricao) {
-
+    if (novoProduto) {
         localStorage.setItem('produtos', JSON.stringify(addNovoProduto))
 
-        // Faz um post via fetch api, enviando
+        // Faz um post via fetch api, enviando json para db.json
         serviceProdutos.postProdutos(novoProduto)
 
     } else {
@@ -23,9 +19,12 @@ const novoProduto = () => {
     document.forms[0].reset()
 }
 
-const btnAdd = document.querySelector("#btns__cadastrar")
-
-btnAdd.addEventListener("click", (event) => {
+document.querySelector("#btns__cadastrar").addEventListener("click", (event) => {
     event.preventDefault()
     novoProduto()
+})
+
+document.querySelector("#btns__cancelar").addEventListener("click", (event) => {
+    event.preventDefault()
+    window.location.href = "../html/painel.html"
 })

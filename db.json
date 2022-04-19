@@ -1,29 +1,93 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\AdobeStock_230614051.jpeg",
-      "nome": "Tatoo",
+      "img": "C:\\fakepath\\image-removebg-preview (13).png",
+      "nome": "123",
       "preco": "123",
       "parcelas": "123",
-      "descricao": "5123",
+      "descricao": "123",
       "id": 1
     },
     {
-      "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "Logo farmacia",
-      "preco": "9",
-      "parcelas": "9",
-      "descricao": "9",
+      "img": "",
+      "nome": "abnccccc",
+      "preco": "999",
+      "parcelas": "999",
+      "descricao": "999",
       "id": 2
     },
     {
       "img": "",
-      "nome": "LOGO CSS AZUL",
-      "preco": "10",
-      "parcelas": "15",
-      "descricao": "1ABC",
+      "nome": "jajaja",
+      "preco": "3",
+      "parcelas": "33",
+      "descricao": "33",
       "id": 3
     }
   ],
-  "usuarios": []
+  "usuarios": [
+    {
+      "email": "",
+      "user": "",
+      "pass": "",
+      "repeatPass": "",
+      "id": 1
+    },
+    {
+      "email": "",
+      "user": "",
+      "pass": "",
+      "repeatPass": "",
+      "id": 2
+    },
+    {
+      "email": "",
+      "user": "a",
+      "pass": "",
+      "repeatPass": "",
+      "id": 3
+    },
+    {
+      "email": "123",
+      "user": "123",
+      "pass": "123",
+      "repeatPass": "123",
+      "id": 4
+    },
+    {
+      "email": "123",
+      "user": "321",
+      "pass": "123",
+      "repeatPass": "111",
+      "id": 5
+    },
+    {
+      "email": "",
+      "user": "",
+      "pass": "",
+      "repeatPass": "",
+      "id": 6
+    },
+    {
+      "email": "1",
+      "user": "1",
+      "pass": "1",
+      "repeatPass": "1",
+      "id": 7
+    },
+    {
+      "email": "",
+      "user": "",
+      "pass": "",
+      "repeatPass": "",
+      "id": 8
+    },
+    {
+      "email": "1",
+      "user": "1",
+      "pass": "1",
+      "repeatPass": "1",
+      "id": 9
+    }
+  ]
 }

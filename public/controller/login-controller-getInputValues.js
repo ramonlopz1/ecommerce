@@ -1,0 +1,1 @@
+const inputEmail=document.querySelector("#login__form__email"),inputUser=document.querySelector("#input__user"),inputPass=document.querySelector("#login__form__pass"),inputRepeatPass=document.querySelector("#login__form__repeatpass");export const getValuesFromInput=()=>({email:inputEmail.value,user:inputUser.value,pass:inputPass.value,repeatPass:inputRepeatPass.value});
