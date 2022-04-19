@@ -1,0 +1,1 @@
+export const getInputValues=()=>{const e=document.querySelector("#produtoimginput"),o=document.querySelector("#produtonome"),r=document.querySelector("#produtopreco"),u=document.querySelector("#produtoparcelas"),t=document.querySelector("#produtodescricao");return{img:e.value,nome:o.value,preco:r.value,parcelas:u.value,descricao:t.value}};

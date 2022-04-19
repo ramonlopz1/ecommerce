@@ -18,6 +18,16 @@ const getProduto = (id) => {
         .then(resp => resp.json())
 }
 
+const putProdutos = (dados, id) => { 
+    return fetch(`http://localhost:3000/produtos/${id}`, {
+        method: 'PUT', 
+        headers: { 'Content-Type' : 'application/json' },
+        body: JSON.stringify(dados)
+    }).then( resp => {
+        return resp.json()
+    })
+}
+
 const uploadProdutos = (dados) => {
     return fetch(dados.url, {
         method: 'POST',
@@ -30,5 +40,6 @@ export const serviceProdutos = {
     getProdutos,
     postProdutos,
     getProduto,
+    putProdutos,
     uploadProdutos
 }

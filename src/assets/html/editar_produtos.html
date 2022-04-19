@@ -15,6 +15,13 @@
         <section id="produtos_main__section">
             <form action="" id="produtos_main__form">
                 <h1>Editar produtos</h1>
+                <div id="form__input__produtopesquisa">
+                    <input type="text" name="produtopesquisainput" id="produtopesquisainput" placeholder="Digite o ID do produto">
+                    <input type="submit" value="Pesquisar" id="btns__pesquisar">
+                    <span id="produtopesquisa__erro">
+                        <!--Mensagem de erro via JS-->
+                    </span>
+                </div>
                 <div id="form__input__produtoimg">
                     <label id="produtoimglabel" for="produtoimginput">
                         <i class="fa-solid fa-file-image"></i>
@@ -71,7 +78,7 @@
     </footer>
     
     <script src="../js/include.js"></script>
-    
+    <script type="module" src="../../controller/editarProduto.js"></script>
 
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>

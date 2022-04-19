@@ -1,21 +1,10 @@
 import { serviceProdutos } from "../services/service-produtos.js"
+import { getInputValues } from "./getInputValues.js"
 
 const novoProduto = () => {
-    const produtoImg = document.querySelector("#produtoimginput")
-    const produtoNome = document.querySelector("#produtonome")
-    const produtoPreco = document.querySelector("#produtopreco")
-    const produtoParcelas = document.querySelector("#produtoparcelas")
-    const produtoDescricao = document.querySelector("#produtodescricao")
+    const novoProduto = getInputValues()
 
     const produtos = JSON.parse(localStorage.getItem("produtos")) || []
-
-    const novoProduto = {
-        img: produtoImg.value,
-        nome: produtoNome.value,
-        preco: produtoPreco.value,
-        parcelas: produtoParcelas.value,
-        descricao: produtoDescricao.value
-    }
 
     const addNovoProduto = [...produtos, novoProduto]
 

@@ -21,13 +21,40 @@
             flex-direction: column;
             justify-content: center;
 
-            height: 750px;
+            height: 800px;
             width: 650px;
 
             border-radius: 0px 7px 7px 0px;
 
             h1 {
                 color: $myVeryLightBlue;
+            }
+
+            #form__input__produtopesquisa {
+                #produtopesquisainput {
+                    width: 285px;
+                    height: 40px;
+
+                    margin: 15px 0px;
+
+                    background-color: $myVeryLightGray;
+                    border: none;
+                    outline: none;
+                    text-indent: 7px;
+                }
+                
+                #btns__pesquisar {
+                    height: 40px;
+
+                    border: none;
+                    background-color: $myBlue;
+                    color: white;
+                    outline: none;
+
+                    &:hover {
+                        background-color: $myVeryLightBlue;
+                    }
+                }
             }
 
             #form__input__produtoimg {

@@ -1,36 +1,28 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "123",
+      "img": "C:\\fakepath\\AdobeStock_230614051.jpeg",
+      "nome": "Tatoo",
       "preco": "123",
       "parcelas": "123",
-      "descricao": "123",
+      "descricao": "5123",
       "id": 1
     },
     {
       "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "123",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "nome": "Logo farmacia",
+      "preco": "9",
+      "parcelas": "9",
+      "descricao": "9",
       "id": 2
     },
     {
-      "img": "C:\\fakepath\\AdobeStock_230614051.jpeg",
-      "nome": "123",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "",
+      "nome": "LOGO CSS AZUL",
+      "preco": "10",
+      "parcelas": "15",
+      "descricao": "1ABC",
       "id": 3
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "123",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 4
     }
   ],
   "usuarios": []
