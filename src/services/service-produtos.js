@@ -13,6 +13,11 @@ const postProdutos = (dados) => {
     })
 }
 
+const getProduto = (id) => {
+    return fetch(`http://localhost:3000/produtos/${id}`)
+        .then(resp => resp.json())
+}
+
 const uploadProdutos = (dados) => {
     return fetch(dados.url, {
         method: 'POST',
@@ -24,5 +29,6 @@ const uploadProdutos = (dados) => {
 export const serviceProdutos = {
     getProdutos,
     postProdutos,
+    getProduto,
     uploadProdutos
 }

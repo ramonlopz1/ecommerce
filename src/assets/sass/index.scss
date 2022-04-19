@@ -14,8 +14,14 @@
 /*Produtos*/
 @import 'produtos/produtos_main.scss';
 
+/*Painel*/
+@import 'painel/painel_main.scss';
+
 /*Add Produtos*/
 @import 'add_produtos/add_produtos_main.scss';
+
+/*Editar Produtos*/
+@import 'editar_produtos/editar_produtos_main.scss';
 
 /*Include: Header and Footer*/
 @import 'includedsHTMLStyle/include_header.scss';

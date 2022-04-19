@@ -1,0 +1,54 @@
+@import '../variaveis.scss';
+
+#painel_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+
+    #main__paineis {
+        height: 500px;
+        width: 1200px;
+
+        border: 1px solid $myVeryLightBlue;
+
+        #main__painel__top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+
+            .painel__link {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+
+                margin: 0px 40px;
+
+                height: 100px;
+                width: 200px;
+
+                background-color: $myVeryLightBlue;
+                color: white;
+
+                i {
+                    font-size: 35px;
+                }
+
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        #main__painel__middle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+        }
+    }
+}
