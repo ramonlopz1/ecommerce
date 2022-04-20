@@ -21,25 +21,25 @@
                     <label for="login__form__email">
                         <i class="fa-solid fa-at"></i>
                     </label>
-                    <input type="email" name="email" id="login__form__email" data-formemail autocomplete="off" placeholder="Insira seu e-mail">
+                    <input type="email" name="email" id="login__form__email" data-formemail autocomplete="off" placeholder="Insira seu e-mail" required>
                 </div>
                 <div id="form__input__user">
                     <label for="input__user">
                         <i class="fa-solid fa-user"></i>
                     </label>
-                    <input type="text" name="user" id="input__user" data-form-user placeholder="Insira seu usuário">
+                    <input type="text" name="user" id="input__user" data-form-user placeholder="Insira seu usuário" required>
                 </div>
                 <div id="form__input__pass">
                     <label for="login__form__pass">
                         <i class="fa-solid fa-key"></i>
                     </label>
-                    <input type="password" name="pass" id="login__form__pass" data-form-password autocomplete="off" placeholder="Insira sua senha">
+                    <input type="password" name="pass" id="login__form__pass" data-form-password autocomplete="off" placeholder="Insira sua senha" required>
                 </div>
                 <div id="form__input__repeatpass">
                     <label for="login__form__repeatpass">
                         <i class="fa-solid fa-unlock-keyhole"></i>
                     </label>
-                    <input type="password" name="repeatpass" id="login__form__repeatpass" data-form-repeatpassword autocomplete="off" placeholder="Repita sua senha">
+                    <input type="password" name="repeatpass" id="login__form__repeatpass" data-form-repeatpassword autocomplete="off" placeholder="Repita sua senha" required>
                 </div>
                 <a href="" id="login__form__recoverypassword">Esqueceu a senha?</a>
                 <div id="form__login__btns">
@@ -55,6 +55,8 @@
     <script src="../js/login.js"></script>
 
     <script type="module" src="../../controller/login-controller-novoUsuario.js"></script>
+
+    <script type="module" src="../../controller/login-controller-authentication.js"></script>
 
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>

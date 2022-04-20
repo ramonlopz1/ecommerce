@@ -1,0 +1,1 @@
+import{serviceLogin}from"../services/service-login.js";const btnLogin=document.querySelector("#login__form__submit");btnLogin.addEventListener("click",(e=>{e.preventDefault(),serviceLogin.getUsuario(1).then((e=>{console.log(e)}))}));
