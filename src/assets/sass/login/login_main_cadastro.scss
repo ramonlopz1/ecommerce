@@ -1,0 +1,98 @@
+@import '../variaveis';
+
+
+
+#form__cadastro {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 650px;
+    width: 450px;
+
+    border-radius: 0px 7px 7px 0px;
+    
+
+    #form__cadastro__title {
+        color: $myVeryLightBlue;
+    }
+    #form__input__email,
+    #form__cadastro__input__user, 
+    #form__input__pass,
+    #form__input__repeatpass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 40px;
+            width: 50px;
+
+            background-color: $myBlue;
+            color: white;
+        }
+
+        
+        input:not([type=submit]) {
+            height: 40px;
+            width: 230px;
+            margin: 15px 0px;
+
+            text-indent: 7px;
+            
+            background-color: $myVeryLightGray;
+            border: none;
+            outline: none;
+
+        }
+    }
+
+    #form__input__email,
+    #form__input__repeatpass {
+        display: flex;
+    }
+
+    #cadastro__form__recoverypassword {
+        color: black;
+    }
+
+    #form__cadastro__btns {
+        #cadastro__form__cadastrar {
+            height: 40px;
+            width: 100px;
+            margin: 20px 0px;
+
+            background-color: $myDarkBlue;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            outline: none;
+
+            &:hover {
+                background-color: $myBlue;
+            }
+        }
+
+        #cadastro__form__cancelar {
+            height: 40px;
+            width: 100px;
+            margin: 20px 0px;
+
+            background-color: $myBlue;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            outline: none;
+
+            &:hover {
+                background-color: $myDarkBlue;
+                color: white;
+            }
+        }
+    }
+}

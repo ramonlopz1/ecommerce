@@ -46,6 +46,27 @@
       "pass": "999",
       "repeatPass": "999",
       "id": 3
+    },
+    {
+      "email": "jose123@hotmail.com",
+      "user": "josezinho",
+      "pass": "000",
+      "repeatPass": "000",
+      "id": 4
+    },
+    {
+      "email": "jose123@hotmail.com",
+      "user": "josezinho",
+      "pass": "000",
+      "repeatPass": "000",
+      "id": 5
+    },
+    {
+      "email": "maicon@live.com",
+      "user": "maicao",
+      "pass": "999",
+      "repeatPass": "999",
+      "id": 6
     }
   ]
 }

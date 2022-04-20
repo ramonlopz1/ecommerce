@@ -11,7 +11,7 @@ const novoUsuario = () => {
     } else {
         console.log("Verifique se voce preencheu todos os campos ou sua senha")
     }
-    document.forms[0].reset()
+    document.forms[1].reset()
 }
 
 
@@ -22,7 +22,7 @@ const novoUsuario = () => {
 })
  */
 
-document.querySelector("#login__form__register").addEventListener("click", (event) => {
+document.querySelector("#cadastro__form__cadastrar").addEventListener("click", (event) => {
     event.preventDefault()
     novoUsuario()
 })

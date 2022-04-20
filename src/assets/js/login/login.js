@@ -1,16 +1,17 @@
-
-
-const btnCadastrar = document.querySelector("#login__form__register")
-
 const mostrarInputsCadastro = () => {
-    const inputEmail = document.querySelector("#form__input__email")
-    const inputRepeatPass = document.querySelector("#form__input__repeatpass")
+    const formLogin = document.querySelector("#form__login")
+    const formCadastro = document.querySelector("#form__cadastro")
 
-    inputEmail.style.display = "flex"
-    inputRepeatPass.style.display = "flex"
+    formLogin.style.display = "none"
+    formCadastro.style.display = "flex"
 }
 
-btnCadastrar.addEventListener('click', event => {
+document.querySelector("#login__form__cadastrar").addEventListener('click', (event) => {
     event.preventDefault()
     mostrarInputsCadastro()
+})
+
+document.querySelector("#cadastro__form__cancelar").addEventListener('click', (event) => {
+    event.preventDefault()
+    window.location.href = "../html/login.html"
 })

@@ -1,7 +1,7 @@
-const inputEmail = document.querySelector("#login__form__email")
-const inputUser = document.querySelector("#input__user")
-const inputPass = document.querySelector("#login__form__pass")
-const inputRepeatPass = document.querySelector("#login__form__repeatpass")
+const inputEmail = document.querySelector("#cadastro__form__email")
+const inputUser = document.querySelector("#cadastro__input__user")
+const inputPass = document.querySelector("#cadastro__form__pass")
+const inputRepeatPass = document.querySelector("#cadastro__form__repeatpass")
 
 export const getValuesFromInput = () => {
     const inputValues = {
