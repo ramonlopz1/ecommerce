@@ -8,6 +8,11 @@ const postUsuario = (dados) => {
     })
 }
 
+const getAllUsuarios = (id) => {
+    return fetch(`http://localhost:3000/usuarios`)
+        .then(resp => resp.json())
+}
+
 const getUsuario = (id) => {
     return fetch(`http://localhost:3000/usuarios/${id}`)
         .then(resp => resp.json())
@@ -25,6 +30,7 @@ const putUsuario = (dados, id) => {
 
 export const serviceLogin = {
     postUsuario,
+    getAllUsuarios,
     getUsuario,
     putUsuario,
 }

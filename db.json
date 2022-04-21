@@ -9,11 +9,11 @@
       "id": 1
     },
     {
-      "img": "",
-      "nome": "abnccccc",
-      "preco": "999",
-      "parcelas": "999",
-      "descricao": "999",
+      "img": "C:\\fakepath\\image-removebg-preview (12).png",
+      "nome": "Roupa Azul",
+      "preco": "123",
+      "parcelas": "0",
+      "descricao": "9990",
       "id": 2
     },
     {
@@ -23,6 +23,14 @@
       "parcelas": "33",
       "descricao": "33",
       "id": 3
+    },
+    {
+      "img": "C:\\fakepath\\image-removebg-preview (13).png",
+      "nome": "Creme",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 4
     }
   ],
   "usuarios": [
@@ -67,6 +75,13 @@
       "pass": "999",
       "repeatPass": "999",
       "id": 6
+    },
+    {
+      "email": "donkeykong@nintendo.com",
+      "user": "nes",
+      "pass": "000",
+      "repeatPass": "000",
+      "id": 7
     }
   ]
 }
