@@ -1,17 +1,5 @@
 import { serviceLogin } from '../services/service-login.js'
 
-
-// colocar evento no botan entrar
-const checkSession = () => {
-    const localSt = sessionStorage.getItem("usuarioLogado")
-
-    if (localSt === "true") {
-        window.location.href = '../html/painel.html'
-    }
-}
-
-checkSession()
-
 const checkCredenciaisInputEBancoDeDados = () => {
     return serviceLogin.getAllUsuarios().then(usuarios => {
         usuarios.forEach(usuario => {

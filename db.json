@@ -1,36 +1,20 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "123",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "",
+      "nome": "Logo Amarela Localização",
+      "preco": "9.99",
+      "parcelas": "2",
+      "descricao": "Logo Photoshop",
       "id": 1
     },
     {
       "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "Roupa Azul",
-      "preco": "123",
-      "parcelas": "0",
-      "descricao": "9990",
+      "nome": "Logo Farmácia",
+      "preco": "19.99",
+      "parcelas": "3",
+      "descricao": "Logo para farmácia",
       "id": 2
-    },
-    {
-      "img": "",
-      "nome": "jajaja",
-      "preco": "3",
-      "parcelas": "33",
-      "descricao": "33",
-      "id": 3
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "Creme",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 4
     }
   ],
   "usuarios": [
@@ -40,48 +24,6 @@
       "pass": "123",
       "repeatPass": "123",
       "id": 1
-    },
-    {
-      "email": "rmnprojetos@outlook.com",
-      "user": "rmnlpz1",
-      "pass": "999",
-      "repeatPass": "999",
-      "id": 2
-    },
-    {
-      "email": "psykic123@hotmail.com",
-      "user": "psyyy",
-      "pass": "999",
-      "repeatPass": "999",
-      "id": 3
-    },
-    {
-      "email": "jose123@hotmail.com",
-      "user": "josezinho",
-      "pass": "000",
-      "repeatPass": "000",
-      "id": 4
-    },
-    {
-      "email": "jose123@hotmail.com",
-      "user": "josezinho",
-      "pass": "000",
-      "repeatPass": "000",
-      "id": 5
-    },
-    {
-      "email": "maicon@live.com",
-      "user": "maicao",
-      "pass": "999",
-      "repeatPass": "999",
-      "id": 6
-    },
-    {
-      "email": "donkeykong@nintendo.com",
-      "user": "nes",
-      "pass": "000",
-      "repeatPass": "000",
-      "id": 7
     }
   ]
 }
