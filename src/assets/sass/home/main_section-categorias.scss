@@ -23,14 +23,14 @@
             height: 40px;
             width: 40px;
 
-            background: $myBlue;
+            background: white;
             border-radius: 100px;
             border: none;
             cursor: pointer;
 
 
             i {
-                color: white;
+                color: $myRed;
                 font-size: 25px;
 
                 &:hover {
@@ -66,7 +66,7 @@
                     width: 80px;
                     
                     border-radius: 100px;
-                    border: 2px solid $myBlue;
+                    border: 2px solid $myRed;
                     color: white;
                     font-size: 1.9rem;
                     text-align: center;
