@@ -1,0 +1,78 @@
+@import "../variaveis.scss";
+
+#lista_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    #section__lista {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        width: 90%;
+        padding: 20px;
+
+        box-sizing: border-box;
+        border: 1px solid $myBlue;
+
+        .section__lista__cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+            height: 100px;
+            width: 90%;
+
+            margin: 10px;
+
+            box-shadow: 1px 1px 5px black;
+
+                .lista__cards__infos {
+                    display: flex;   
+                    align-items: left;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+
+                    .cards__infos__nome {
+                        font-size: 18px;
+                        color: $myLightGray;
+                        
+                    }
+
+                    .cards__infos__preco {
+                        font-weight: bolder;
+                    }
+
+                    .cards__infos__parcelas {
+                        color: $myLightGray;
+                        font-size: 13px;
+                    }
+                }
+
+                .lista__cards__qtd {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .cards__qtd__titulo {
+                        font-weight: bold;
+                    }
+                }
+
+                .lista__cards__btns {
+                    button {
+                        border: none;
+                        background-color: none;
+
+                        i {
+                            font-size: 22px;
+                        }
+                    }
+                }
+        }
+    }
+}

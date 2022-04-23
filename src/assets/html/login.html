@@ -27,7 +27,15 @@
                     <label for="login__form__pass">
                         <i class="fa-solid fa-key"></i>
                     </label>
-                    <input type="password" name="pass" id="login__form__pass" data-form-password autocomplete="off" placeholder="Insira sua senha" required>
+                    <input type="password" 
+                    pattern="\d{1,5}" 
+                    title="A senha deve conter entre 6 a 12 caracteres, pelo menos uma letra maiúscula, um número e não deve conter símbolos." 
+                    name="pass" 
+                    id="login__form__pass" 
+                    data-form-password 
+                    autocomplete="off" 
+                    placeholder="Insira sua senha" 
+                    required>
                 </div>
                 <a href="" id="login__form__recoverypassword">Esqueceu a senha?</a>
                 <div id="form__login__btns">
@@ -54,7 +62,13 @@
                     <label for="cadastro__form__pass">
                         <i class="fa-solid fa-key"></i>
                     </label>
-                    <input type="password" name="pass" id="cadastro__form__pass" data-form-password autocomplete="off" placeholder="Insira sua senha" required>
+                    <input type="password" pattern="\d{1,5}" 
+                        title="A senha deve conter entre 6 a 12 caracteres, pelo menos uma letra maiúscula, um número e não deve conter símbolos." 
+                        name="pass" id="cadastro__form__pass" 
+                        data-form-password 
+                        autocomplete="off" 
+                        placeholder="Insira sua senha" 
+                        required>
                 </div>
                 <div id="form__input__repeatpass">
                     <label for="cadastro__form__repeatpass">
