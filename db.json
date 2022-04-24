@@ -1,57 +1,29 @@
 {
   "produtos": [
     {
-      "img": "",
-      "nome": "Logo Amarela Localização",
-      "preco": "9.99",
-      "parcelas": "2",
-      "descricao": "Logo Photoshop",
+      "img": "C:\\fakepath\\image-removebg-preview (14).png",
+      "nome": "calça",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
       "id": 1
     },
     {
-      "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "Logo Farmácia",
-      "preco": "19.99",
-      "parcelas": "3",
-      "descricao": "Logo para farmácia",
+      "img": "",
+      "nome": "banana",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
       "id": 2
+    },
+    {
+      "img": "C:\\fakepath\\image-removebg-preview (15).png",
+      "nome": "123",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 3
     }
   ],
-  "usuarios": [
-    {
-      "email": "davidramon123@hotmail.com",
-      "user": "ramonlopz1",
-      "pass": "123",
-      "repeatPass": "123",
-      "id": 1
-    },
-    {
-      "email": "rmnprojetos@outlook.com",
-      "user": "davidramon123@hotmail.com",
-      "pass": "1",
-      "repeatPass": "1",
-      "id": 2
-    },
-    {
-      "email": "davidramon123@hotmail.com",
-      "user": "usser",
-      "pass": "1",
-      "repeatPass": "1",
-      "id": 3
-    },
-    {
-      "email": "rmnprojetos@outlook.com",
-      "user": "1",
-      "pass": "123",
-      "repeatPass": "123",
-      "id": 4
-    },
-    {
-      "email": "davidramon123@hotmail.com",
-      "user": "1",
-      "pass": "1",
-      "repeatPass": "1",
-      "id": 5
-    }
-  ]
+  "usuarios": []
 }

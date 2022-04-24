@@ -3,6 +3,7 @@
 #lista_main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 
@@ -16,7 +17,6 @@
         padding: 20px;
 
         box-sizing: border-box;
-        border: 1px solid $myBlue;
 
         .section__lista__cards {
             display: flex;
@@ -29,7 +29,8 @@
 
             margin: 10px;
 
-            box-shadow: 1px 1px 5px black;
+            box-shadow: 1px 1px 3px #00000024;
+
 
                 .lista__cards__infos {
                     display: flex;   
@@ -37,6 +38,7 @@
                     justify-content: space-evenly;
                     flex-direction: column;
 
+                    width: 25%;
                     .cards__infos__nome {
                         font-size: 18px;
                         color: $myLightGray;
@@ -58,12 +60,16 @@
                     flex-direction: column;
                     align-items: center;
                     
+                    width: 25%;
+
                     .cards__qtd__titulo {
                         font-weight: bold;
                     }
                 }
 
                 .lista__cards__btns {
+                    width: 25%;
+                    
                     button {
                         border: none;
                         background-color: none;

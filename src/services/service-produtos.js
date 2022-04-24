@@ -28,6 +28,12 @@ const putProdutos = (dados, id) => {
     })
 }
 
+const deleteProduto = (id) => {
+    return fetch(`http://localhost:3000/produtos/${id}`, {
+        method: 'DELETE', 
+    })
+}
+
 const uploadProdutos = (dados) => {
     return fetch(dados.url, {
         method: 'POST',
@@ -41,5 +47,6 @@ export const serviceProdutos = {
     postProdutos,
     getProduto,
     putProdutos,
+    deleteProduto,
     uploadProdutos
 }

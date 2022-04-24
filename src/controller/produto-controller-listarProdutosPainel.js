@@ -1,9 +1,5 @@
 import { serviceProdutos } from "../services/service-produtos.js"
-
-const sequence = {
-    _id: 0,
-    get id() { return this._id++ }
-}
+import { listarEcriarProdutos } from "./produto-controller-listarProdutos.js"
 
 const criarTemplateString = (produtoDadosFormatados) => {
     const container = document.createElement("div")
@@ -32,35 +28,4 @@ const criarTemplateString = (produtoDadosFormatados) => {
     section.appendChild(container)
 }
 
-export const listarEcriarProdutos = () => {
-    serviceProdutos.getProdutos()
-        .then(produtos => {
-            produtos.forEach(produto => {
-                
-                const produtoDadosFormatados = formatarDadosRecebidos(produto)
-                criarTemplateString(produtoDadosFormatados)
-                
-            })
-    })
-        
-}
-
-export const formatarDadosRecebidos = (produto) => {
-    
-    let formatPreco = parseFloat(produto.preco)
-    formatPreco = formatPreco.toFixed(2).replace(".", ",")
-    produto.formatPreco = formatPreco
-    
-    let formatImgPath = (produto.img).toString()
-    formatImgPath = formatImgPath.replaceAll("\\", "")
-        .replace("C:", "")
-        .replace("fakepath", "")
-
-    produto.formatImgPath = formatImgPath
-        
-
-    return produto
-}
-
 listarEcriarProdutos()
-
