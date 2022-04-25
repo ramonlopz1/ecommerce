@@ -1,66 +1,91 @@
-import { serviceProdutos } from "../services/service-produtos.js"
+import { serviceProdutos } from "../services/service-produtos.js";
 
 const sequence = {
-    _id: 0,
-    get id() { return this._id++ }
-}
+  _id: 0,
+  get id() {
+    return this._id++;
+  },
+};
 
-const criarTemplateString = (produtoDadosFormatados) => {
-    const container = document.createElement("div")
-    container.classList.add("container")
+// Função principal que executará todos os procedimentos
+export const listarEcriarProdutos = (destino) => {
+  serviceProdutos.getProdutos().then((produtos) => {
+    produtos.forEach((produto) => {
+      const produtoDadosFormatados = formatarDadosRecebidos(produto);
 
-    const templateString = `
-                                <img src="assets/upload/${sequence.id}_${produtoDadosFormatados.formatImgPath}" alt="produto" class="container__produto__img">
-                                 <div class="container__produto__info">
-                                    <span class="produto__nome">${produtoDadosFormatados.nome}</span>
-                                    <div class="produto__rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                     </div>
-                                     <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
-                                     <span class="produto__parcelas">5x de R$ 37,94</span>
-                                     <a href="" class="produto__botao">Ver produto</a>
-                                 </div>`
+      const templateFormatado = templateString(produtoDadosFormatados, destino);
 
-    const section = document.querySelector(".categorias__containers")
+      criarTemplateString(templateFormatado, destino);
+    });
+  });
+};
 
+const formatarDadosRecebidos = (produto) => {
+  let formatPreco = parseFloat(produto.preco);
+  formatPreco = formatPreco.toFixed(2).replace(".", ",");
+  produto.formatPreco = formatPreco;
 
-    container.innerHTML = templateString
-    section.appendChild(container)
-}
+  let formatImgPath = produto.img.toString();
+  formatImgPath = formatImgPath
+    .replaceAll("\\", "")
+    .replace("C:", "")
+    .replace("fakepath", "");
 
-export const listarEcriarProdutos = () => {
-    serviceProdutos.getProdutos()
-        .then(produtos => {
-            produtos.forEach(produto => {
+  produto.formatImgPath = formatImgPath;
+
+  return produto;
+};
+
+const templateString = (produtoDadosFormatados, destino) => {
+  if (destino === ".categorias__containers") {
+    return `<img src="assets/upload/${sequence.id}_${produtoDadosFormatados.formatImgPath}" alt="produto" class="container__produto__img">
+      <div class="container__produto__info">
+          <span class="produto__nome">${produtoDadosFormatados.nome}</span>
+          <div class="produto__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
+          <span class="produto__parcelas">5x de R$ 37,94</span>
+          <a href="" class="produto__botao">Ver produto</a>
+      </div>`;
+  } else {
+    return `<div class="lista__cards__img">
+                <img src="../upload/${sequence.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
+            </div>
+            <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
+                <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
+                <span class="cards__infos__preco">${produtoDadosFormatados.formatPreco}</span>
+                <span class="cards__infos__parcelas">6 x 1,99</span>
                 
-                const produtoDadosFormatados = formatarDadosRecebidos(produto)
-                criarTemplateString(produtoDadosFormatados)
-                
-            })
-    })
-        
-}
+            </div>
+            <div class="lista__cards__qtd">
+            <span class="cards__qtd__titulo">Quantidade:</span>
+            <span class="cards__infos__quantidade">39</span>
+            </div>
+            <div class="lista__cards__btns">
+                <button class="cards__btns__ver">
+                <i class="fa-regular fa-eye"></i>
+                </button>
+                <button class="cards__btns__editar">
+                <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button class="cards__btns__deletar">
+                <i class="fa-regular fa-trash-can"></i>
+                </button>
+            </div>`;
+  }
+};
 
-export const formatarDadosRecebidos = (produto) => {
-    
-    let formatPreco = parseFloat(produto.preco)
-    formatPreco = formatPreco.toFixed(2).replace(".", ",")
-    produto.formatPreco = formatPreco
-    
-    let formatImgPath = (produto.img).toString()
-    formatImgPath = formatImgPath.replaceAll("\\", "")
-        .replace("C:", "")
-        .replace("fakepath", "")
+const criarTemplateString = (templateString, destino) => {
+  const container = document.createElement("div");
+    container.classList.add("container");
+    container.classList.add("section__lista__cards");
+    container.innerHTML = templateString;
 
-    produto.formatImgPath = formatImgPath
-        
-
-    return produto
-}
-
-listarEcriarProdutos()
-
+  const section = document.querySelector(destino);
+    section.appendChild(container);
+};

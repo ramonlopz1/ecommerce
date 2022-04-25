@@ -25,5 +25,13 @@
       "id": 3
     }
   ],
-  "usuarios": []
+  "usuarios": [
+    {
+      "email": "davidramon123@hotmail.com",
+      "user": "1",
+      "pass": "123",
+      "repeatPass": "123",
+      "id": 1
+    }
+  ]
 }

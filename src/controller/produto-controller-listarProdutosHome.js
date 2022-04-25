@@ -1,5 +1,3 @@
 import { listarEcriarProdutos } from "./produto-controller-listarProdutos.js"
 
-
-
-listarEcriarProdutos("#section__lista")
+listarEcriarProdutos(".categorias__containers")
