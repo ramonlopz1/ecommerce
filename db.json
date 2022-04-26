@@ -1,28 +1,22 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\image-removebg-preview (14).png",
-      "nome": "calça",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "C:\\fakepath\\image-removebg-preview (15).png",
+      "nome": "1",
+      "categoria": "",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
       "id": 1
     },
     {
-      "img": "",
-      "nome": "banana",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "C:\\fakepath\\AdobeStock_408102462.jpeg",
+      "nome": "1",
+      "categoria": "",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
       "id": 2
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (15).png",
-      "nome": "123",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 3
     }
   ],
   "usuarios": [

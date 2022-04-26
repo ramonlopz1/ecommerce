@@ -1,11 +1,5 @@
 import { serviceProdutos } from "../services/service-produtos.js";
 
-const sequence = {
-  _id: 0,
-  get id() {
-    return this._id++;
-  },
-};
 
 // Função principal que executará todos os procedimentos
 export const listarEcriarProdutos = (destino) => {
@@ -38,7 +32,7 @@ const formatarDadosRecebidos = (produto) => {
 
 const templateString = (produtoDadosFormatados, destino) => {
   if (destino === ".categorias__containers") {
-    return `<img src="assets/upload/${sequence.id}_${produtoDadosFormatados.formatImgPath}" alt="produto" class="container__produto__img">
+    return `<img src="assets/upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="produto" class="container__produto__img">
       <div class="container__produto__info">
           <span class="produto__nome">${produtoDadosFormatados.nome}</span>
           <div class="produto__rating">

@@ -31,6 +31,13 @@
 
             box-shadow: 1px 1px 3px #00000024;
 
+                .lista__cards__img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 100px;
+                }
 
                 .lista__cards__infos {
                     display: flex;   
@@ -38,7 +45,8 @@
                     justify-content: space-evenly;
                     flex-direction: column;
 
-                    width: 25%;
+                    width: 100px;
+
                     .cards__infos__nome {
                         font-size: 18px;
                         color: $myLightGray;
@@ -60,7 +68,7 @@
                     flex-direction: column;
                     align-items: center;
                     
-                    width: 25%;
+                    width: 100px;
 
                     .cards__qtd__titulo {
                         font-weight: bold;
@@ -68,7 +76,7 @@
                 }
 
                 .lista__cards__btns {
-                    width: 25%;
+                    width: 160px;
                     
                     button {
                         border: none;

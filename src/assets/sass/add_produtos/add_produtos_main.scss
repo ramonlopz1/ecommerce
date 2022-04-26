@@ -87,6 +87,7 @@
             }
 
             #form__input__produtonome,
+            #form__input__produtocategoria,
             #form__input__produtopreco,
             #form__input__produtoparcelas,
             #form__input__produtodescricao {
@@ -106,7 +107,7 @@
                     color: white;
                 }
 
-                input:not([type=submit]), textarea {
+                input:not([type=submit]), select, textarea {
                     height: 40px;
                     width: 330px;
                     margin: 15px 0px;

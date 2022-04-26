@@ -1,7 +1,7 @@
 const checkSessionAndEnableButtons = () => {
-    const localSt = sessionStorage.getItem("usuarioLogado")
+    const logado = sessionStorage.getItem("usuarioLogado")
     
-    if (localSt === "true") {
+    if (logado === "true") {
         const btnsAcesso = document.querySelectorAll('.top__lista__link')
         btnsAcesso.forEach(btn => {
             btn.style.display = 'none'

@@ -22,6 +22,7 @@ const novoProduto = () => {
 document.querySelector("#btns__cadastrar").addEventListener("click", (event) => {
     event.preventDefault()
     novoProduto()
+    window.location.reload()
 })
 
 document.querySelector("#btns__cancelar").addEventListener("click", (event) => {

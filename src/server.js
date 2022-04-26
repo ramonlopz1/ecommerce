@@ -2,15 +2,28 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const app = express()
 const multer = require('multer') // interpreta formulario com arquivo upload
+const fs = require('fs')
+
 
 app.use(express.static('../public')) // qualquer requisição servirá todos os arquivos estáticos da pasta atual
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json()) // transforma JSON em Objeto
 
-sequence = {
-    _id: 0,
-    get id() { return this._id++ }
+const imgID = () => {
+    let dados = fs.readFileSync('../db.json')
+    let parseDados = JSON.parse(dados)
+    let produtos = Array.from(parseDados.produtos)
+    let ultimoID = 0
+
+    if (produtos[0]) {
+        ultimoID = (produtos[produtos.length - 1].id)++
+    } else {
+        ultimoID = 1
+    }
+
+    return ultimoID
 }
+
 
 const storage = multer.diskStorage({ // 
     destination: function (req, file, callback) {
@@ -19,7 +32,7 @@ const storage = multer.diskStorage({ //
 
     filename: function(req, file, callback) { // define o nome do arquivo
         // callback(null, )
-        callback(null, `${sequence.id}_${file.originalname}`)
+        callback(null, `${imgID()}_${file.originalname}`)
     }
 })
 
