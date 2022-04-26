@@ -32,6 +32,10 @@ module.exports = {
         './src/assets/js/include.js'
       ],
 
+      menuMobile: [
+        './src/assets/js/home/menuMobile.js',
+      ],
+
       login: [
         './src/assets/js/login/login.js'
       ],

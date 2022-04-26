@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header id="home_heander">
+    <header id="home_header">
         <nav id="header_navigation__top">
             <div id="header_logo">
                 <img src="assets/img/main_header/logo.png" alt="brand-logo" height="45px" />
@@ -34,9 +34,19 @@
                 <li>
                     <a class="top__lista__link painel" data-header-painel href="assets/html/painel.html">Painel</a>
                 </li>
+
+                <li>
+                    <a class="top__lista__link btnmobile" href="assets/html/login.html">
+                        <span>Acessar</span>
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
         <nav id="header_navigation__bottom">
+            <button id="bottom__mobile__menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul id="navigation__bottom__menu">
                 <li>
                     <a href="index.html">Início</a>
@@ -221,6 +231,7 @@
     <!--JQUERY CDN-->
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/menuMobile.js"></script>
 
     <!--FONT AWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>

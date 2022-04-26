@@ -19,7 +19,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             height: 40px;
             width: 40px;
 
@@ -33,9 +33,7 @@
                 color: $myRed;
                 font-size: 25px;
 
-                &:hover {
-                    
-                }
+                &:hover {}
             }
         }
 
@@ -52,19 +50,19 @@
                 align-items: center;
                 justify-content: space-between;
                 flex-wrap: nowrap;
-                
+
                 transition: .6s;
                 gap: 40px;
-                
+
                 .circle {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-    
+
                     height: 80px;
                     width: 80px;
-                    
+
                     border-radius: 100px;
                     border: 2px solid $myRed;
                     color: white;
@@ -80,27 +78,41 @@
 }
 
 @media screen and (max-width: 1330px) {
-    #section-skills article aside {
-        max-width: 800px;
+    #home_main {
+        #main_section__categorias #main_categorias__article #categorias__article__circles {
+            max-width: 800px;
+        }
     }
 }
 
 @media screen and (max-width: 930px) {
-    #section-skills article aside {
-        max-width: 635px;
-
+    #home_main {
+        #main_section__categorias #main_categorias__article #categorias__article__circles {
+            max-width: 635px;
+        }
     }
 }
 
 @media screen and (max-width: 775px) {
-    #section-skills article aside {
-        max-width: 315px;
+    #home_main {
+        #main_section__categorias #main_categorias__article #categorias__article__circles {
+            max-width: 315px;
+        }
     }
 }
 
 @media screen and (max-width: 775px) {
-    #section-skills article aside {
-        max-width: 215px;
+    #home_main {
+        #main_section__categorias #main_categorias__article #categorias__article__circles {
+            max-width: 415px;
+        }
+    }
+}
 
+@media screen and (max-width: 575px) {
+    #home_main {
+        #main_section__categorias #main_categorias__article #categorias__article__circles {
+            max-width: 215px;
+        }
     }
 }
