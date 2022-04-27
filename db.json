@@ -17,6 +17,42 @@
       "parcelas": "1",
       "descricao": "1",
       "id": 2
+    },
+    {
+      "img": "C:\\fakepath\\image-removebg-preview (16).png",
+      "nome": "123",
+      "categoria": "",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 3
+    },
+    {
+      "img": "C:\\fakepath\\WhatsApp Image 2022-03-25 at 16.19.04 (1).jpeg",
+      "nome": "11",
+      "categoria": "",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 4
+    },
+    {
+      "img": "C:\\fakepath\\image-removebg-preview (4).png",
+      "nome": "1",
+      "categoria": "",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 5
+    },
+    {
+      "img": "C:\\fakepath\\image-removebg-preview (16).png",
+      "nome": "1",
+      "categoria": "",
+      "preco": "1",
+      "parcelas": "11",
+      "descricao": "1",
+      "id": 6
     }
   ],
   "usuarios": [

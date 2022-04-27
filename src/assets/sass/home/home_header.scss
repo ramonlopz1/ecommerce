@@ -71,7 +71,7 @@
         font-size: 25px;
 
         i {
-          margin-left: 10px
+          margin-left: 10px;
         }
       }
     }
@@ -84,7 +84,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.303);
 
     #bottom__mobile__menu {
-        display: none;
+      display: none;
     }
 
     ul {
@@ -111,6 +111,28 @@
     #navigation__bottom__redesocial {
       gap: 20px;
       font-size: 25px;
+
+      a {
+        .fa-whatsapp {
+          color: #25d366;
+        }
+
+        .fa-facebook {
+          color: #4267b2;
+        }
+
+        .fa-instagram {
+          background: -webkit-linear-gradient(#c13584, #833ab4, #ffdc80);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          &:hover {
+            background: -webkit-linear-gradient(#722350, #5c1b88, #c9ab61);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
     }
   }
 }
@@ -118,11 +140,11 @@
 @media screen and (max-width: 1200px) {
   #home_header {
     #header_navigation__top {
-        justify-content: space-around;
+      justify-content: space-around;
 
-        #navigation__top__input {
-            width: 400px;
-        }
+      #navigation__top__input {
+        width: 400px;
+      }
 
       #navigation__top__lista {
         width: 150px;
@@ -140,35 +162,48 @@
     }
 
     #header_navigation__bottom {
-        align-items: center;
-        justify-content: space-evenly;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      height: 70px;
+
+      transition: 0.1s;
+
+      #bottom__mobile__menu {
+        display: flex;
+
+        background: none;
+        outline: none;
+        border: none;
+
+        i {
+          color: white;
+          font-size: 30px;
+        }
+      }
+
+      #navigation__bottom__menu,
+      #navigation__bottom__redesocial {
+        transition: 0.2s;
+        display: none;
+      }
+
+      #navigation__bottom__menu {
         flex-direction: column;
+      }
+    }
+  }
+}
 
-        height: 70px;
-
-        transition: .1s;
-
-        #bottom__mobile__menu {
-            display: flex;
-
-            background: none;
-            outline: none;
-            border: none;
-
-            i {
-                color: white;
-                font-size: 30px;
-            }
+@media screen and (max-width: 800px) {
+  #home_header {
+    #header_navigation__top {
+      #navigation__top__lista {
+        .top__lista__link.btnmobile {
+          font-size: 18px;
         }
-
-        #navigation__bottom__menu, #navigation__bottom__redesocial {
-            transition: .2s;
-            display: none;
-        }
-
-        #navigation__bottom__menu {
-            flex-direction: column;
-        }
+      }
     }
   }
 }

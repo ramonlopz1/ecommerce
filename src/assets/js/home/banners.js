@@ -7,14 +7,14 @@
     radio[contador].checked = true
 
     const divBanner = document.querySelector('#main_banners')
-    divBanner.style.backgroundImage = `url(../assets/img/main_banners/${contador}.jpg)`
+    divBanner.style.backgroundImage = `url(../assets/img/main_banners/${contador}.jpeg)`
 
     //
 
     // Change radios with click and index position    
     radio.forEach((each, indice) => {
         each.onclick = () => {
-            divBanner.style.backgroundImage = `url(../assets/img/main_banners/${indice}.jpg)`
+            divBanner.style.backgroundImage = `url(../assets/img/main_banners/${indice}.jpeg)`
         }
     })
     //
@@ -26,7 +26,7 @@
 
         radio[contador].checked = true
 
-        divBanner.style.backgroundImage = `url(../assets/img/main_banners/${contador}.jpg)`
+        divBanner.style.backgroundImage = `url(../assets/img/main_banners/${contador}.jpeg)`
     }, 4000)
 })()
 

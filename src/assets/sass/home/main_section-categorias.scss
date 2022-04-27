@@ -5,7 +5,7 @@
 
     height: 170px;
 
-    background-color: $myDarkBlue;
+    background: linear-gradient(180deg, #006cff70, #1265ff);
 
     #main_categorias__article {
         display: flex;
@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 805px) {
     #home_main {
         #main_section__categorias #main_categorias__article #categorias__article__circles {
             max-width: 315px;
