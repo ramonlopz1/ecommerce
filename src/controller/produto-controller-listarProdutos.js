@@ -1,6 +1,5 @@
 import { serviceProdutos } from "../services/service-produtos.js";
 
-
 // Função principal que executará todos os procedimentos
 export const listarEcriarProdutos = (destino) => {
   serviceProdutos.getProdutos().then((produtos) => {
@@ -9,7 +8,11 @@ export const listarEcriarProdutos = (destino) => {
 
       const templateFormatado = templateString(produtoDadosFormatados, destino);
 
-      criarTemplateString(templateFormatado, destino);
+      criarTemplateString(
+        templateFormatado,
+        destino,
+        produtoDadosFormatados.categoria
+      );
     });
   });
 };
@@ -74,12 +77,12 @@ const templateString = (produtoDadosFormatados, destino) => {
   }
 };
 
-const criarTemplateString = (templateString, destino) => {
+const criarTemplateString = (templateString, destino, categoria) => {
   const container = document.createElement("div");
-    container.classList.add("container");
-    container.classList.add("section__lista__cards");
-    container.innerHTML = templateString;
+  container.classList.add("container");
+  container.classList.add("section__lista__cards");
+  container.innerHTML = templateString;
 
-  const section = document.querySelector(destino);
-    section.appendChild(container);
+  const section = document.querySelector(destino + "." + categoria);
+  section.appendChild(container);
 };

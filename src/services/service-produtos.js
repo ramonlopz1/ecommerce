@@ -1,10 +1,10 @@
 const getProdutos = () => {
-    return fetch("http://localhost:3000/produtos")
+    return fetch("https://ramonlopz1.github.io/ecommerce/db.json/produtos")
         .then(resp => resp.json())
 }
 
 const postProdutos = (dados) => { 
-    return fetch(`http://localhost:3000/produtos`, {
+    return fetch(`https://ramonlopz1.github.io/ecommerce/db.json/produtos`, {
         method: 'POST', 
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(dados)
@@ -14,12 +14,12 @@ const postProdutos = (dados) => {
 }
 
 const getProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}`)
+    return fetch(`https://ramonlopz1.github.io/ecommerce/db.json/produtos/${id}`)
         .then(resp => resp.json())
 }
 
 const putProdutos = (dados, id) => { 
-    return fetch(`http://localhost:3000/produtos/${id}`, {
+    return fetch(`https://ramonlopz1.github.io/ecommerce/db.json/produtos/${id}`, {
         method: 'PUT', 
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(dados)
@@ -29,7 +29,7 @@ const putProdutos = (dados, id) => {
 }
 
 const deleteProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}`, {
+    return fetch(`https://ramonlopz1.github.io/ecommerce/db.json/produtos/${id}`, {
         method: 'DELETE', 
     })
 }

@@ -22,7 +22,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50%;
+            height: 205px;
 
             ul {
                 display: flex;
@@ -45,7 +45,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start;
-            height: 80%;
+            height: 330px;
 
             #form_input__nome, #form_textarea__mensagem {
                 background-color: white;
@@ -101,6 +101,21 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
-    
+@media screen and (max-width: 970px) {
+    #footer_home {
+        height: auto;
+
+        #footer_middle {
+            height: 750px;
+            justify-content: space-evenly;
+            align-items: center;
+
+            flex-direction: column;
+        }
+
+        #footer_bottom {
+            flex-direction: column;
+            height: 150px;
+        }
+    }
 }
