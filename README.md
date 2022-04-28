@@ -19,6 +19,7 @@ Linguagens:
 HTML5, SASS, JS, NODEJS
 
 NPM:
+- FIREBASE
 - WEBPACK
 - EXPRESS
 - FETCHAPI
@@ -31,6 +32,6 @@ NPM:
 _________________________________________
 
 Preview:
-https://ramonlopz1.github.io/ecommerce/public/
+https://ecommerce-rmndev.web.app/index.html
 
 _________________________________________
