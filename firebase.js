@@ -1,11 +1,9 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase'
+import 'firebase/storage'
 
 
 
-
-const firebaseConfig = {
+export const app = firebase.initializeApp( {
   apiKey: "AIzaSyAi8JnpeZxIuO2TiaDp0hnu7-4oqGBUagM",
   authDomain: "ecommerce-rmndev.firebaseapp.com",
   projectId: "ecommerce-rmndev",
@@ -14,9 +12,4 @@ const firebaseConfig = {
   appId: "1:423510615060:web:59e082da6cce859ac13301",
   measurementId: "G-MGB43L12T3",
   
-};
-
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
+});

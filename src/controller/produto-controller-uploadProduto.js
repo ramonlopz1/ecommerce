@@ -1,4 +1,3 @@
-console.log("Oi")
 import { app } from "../../firebase.js"
 import { serviceProdutos } from "../services/service-produtos.js"
 
