@@ -17,6 +17,8 @@ export const listarEcriarProdutos = (destino) => {
   });
 };
 
+
+
 const formatarDadosRecebidos = (produto) => {
   let formatPreco = parseFloat(produto.preco);
   formatPreco = formatPreco.toFixed(2).replace(".", ",");
@@ -48,10 +50,10 @@ const templateString = (produtoDadosFormatados, destino) => {
           <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
           <span class="produto__parcelas">5x de R$ 37,94</span>
           <a href="" class="produto__botao">Ver produto</a>
-      </div>`;
+      </div>`
   } else {
     return `<div class="lista__cards__img">
-                <img src="../upload/${sequence.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
+                <img src="../upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
             </div>
             <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
                 <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
@@ -73,7 +75,7 @@ const templateString = (produtoDadosFormatados, destino) => {
                 <button class="cards__btns__deletar">
                 <i class="fa-regular fa-trash-can"></i>
                 </button>
-            </div>`;
+            </div>`
   }
 };
 
@@ -84,5 +86,6 @@ const criarTemplateString = (templateString, destino, categoria) => {
   container.innerHTML = templateString;
 
   const section = document.querySelector(destino + "." + categoria);
+  
   section.appendChild(container);
 };

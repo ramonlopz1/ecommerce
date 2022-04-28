@@ -125,6 +125,33 @@
       "parcelas": "5",
       "descricao": "Produto ABC",
       "id": 14
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
+      "nome": "kkkkkk",
+      "categoria": "diversos",
+      "preco": "99",
+      "parcelas": "7",
+      "descricao": "juhuhuhuh",
+      "id": 15
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_Zjn4dT993-g.png",
+      "nome": "123",
+      "categoria": "diversos",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 16
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
+      "nome": "aaaaaaeaeaea",
+      "categoria": "diversos",
+      "preco": "99",
+      "parcelas": "99",
+      "descricao": "3",
+      "id": 17
     }
   ],
   "usuarios": [
