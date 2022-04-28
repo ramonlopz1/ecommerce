@@ -21,7 +21,7 @@ const imgID = () => {
     return produtoID;
   }
 };
-console.log(imgID());
+
 
 const storage = multer.diskStorage({
   //

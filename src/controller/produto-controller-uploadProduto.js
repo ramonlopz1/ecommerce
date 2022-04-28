@@ -1,17 +1,17 @@
+import { app } from "../../firebase.js"
 import { serviceProdutos } from "../services/service-produtos.js"
 
 const uploadProduto = () => {
     document.querySelector('#produtoimginput').onchange = e => {
-        const formData = new FormData()
     
-        const inputFile = e.target
+        const file = e.target.files[0]
+        const storageRef = app.storage().ref()
+        const fileRef = storageRef.child(file.name)
         
-        formData.append(inputFile.name, inputFile.files[0])
-    
-        serviceProdutos.uploadProdutos({
-            url: "/upload",
-            formData: formData,
+        fileRef.put(file).then(() => {
+            console.log("upload file", file.name)
         })
+       
     }
 }
 

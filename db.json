@@ -152,6 +152,33 @@
       "parcelas": "99",
       "descricao": "3",
       "id": 17
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
+      "nome": "Picachu",
+      "categoria": "diversos",
+      "preco": "123",
+      "parcelas": "321",
+      "descricao": "Picachu",
+      "id": 18
+    },
+    {
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "123",
+      "categoria": "diversos",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 19
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
+      "nome": "123",
+      "categoria": "",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 20
     }
   ],
   "usuarios": [
