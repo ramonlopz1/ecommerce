@@ -1,0 +1,142 @@
+.include_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-color: #3C5473;
+}
+
+.include_footer #footer_middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 400px;
+  width: 100%;
+}
+
+.include_footer #footer_middle #footer_infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+}
+
+.include_footer #footer_middle #footer_infos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  list-style: none;
+}
+
+.include_footer #footer_middle #footer_infos ul a {
+  color: black;
+}
+
+.include_footer #footer_middle form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 80%;
+}
+
+.include_footer #footer_middle form #form_input__nome, .include_footer #footer_middle form #form_textarea__mensagem {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7px;
+}
+
+.include_footer #footer_middle form #form_input__nome input[name=nome], .include_footer #footer_middle form #form_input__nome textarea, .include_footer #footer_middle form #form_textarea__mensagem input[name=nome], .include_footer #footer_middle form #form_textarea__mensagem textarea {
+  border: none;
+  outline: none;
+  width: 370px;
+}
+
+.include_footer #footer_middle form #form_input__nome label {
+  color: #727272;
+}
+
+.include_footer #footer_middle form #form_textarea__mensagem label {
+  color: #727272;
+}
+
+.include_footer #footer_middle form #form_textarea__mensagem #textarea_mensagem {
+  height: 150px;
+  resize: none;
+}
+
+.include_footer #footer_middle form #form_button {
+  height: 40px;
+  border: none;
+  font-size: 15px;
+}
+
+.include_footer #footer_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #0D0D0D;
+  color: white;
+}
+/*# sourceMappingURL=include_footer.css.map */

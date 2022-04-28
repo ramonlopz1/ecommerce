@@ -179,6 +179,15 @@
       "parcelas": "123",
       "descricao": "123",
       "id": 20
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
+      "nome": "l",
+      "categoria": "diversos",
+      "preco": "8",
+      "parcelas": "9",
+      "descricao": "9",
+      "id": 21
     }
   ],
   "usuarios": [

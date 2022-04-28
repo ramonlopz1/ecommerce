@@ -1,4 +1,4 @@
-import { app } from "../../firebase.js"
+import { app } from "../../firebase"
 import { serviceProdutos } from "../services/service-produtos.js"
 
 const uploadProduto = () => {

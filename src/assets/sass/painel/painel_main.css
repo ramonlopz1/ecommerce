@@ -1,0 +1,78 @@
+#painel_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+}
+
+#painel_main #main__paineis {
+  height: 500px;
+  width: 1200px;
+  border: 1px solid #8C031C;
+}
+
+#painel_main #main__paineis #main__painel__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+}
+
+#painel_main #main__paineis #main__painel__top .painel__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 40px;
+  height: 100px;
+  width: 200px;
+  background-color: #8C031C;
+  color: white;
+}
+
+#painel_main #main__paineis #main__painel__top .painel__link i {
+  font-size: 35px;
+}
+
+#painel_main #main__paineis #main__painel__top .painel__link span {
+  font-size: 25px;
+}
+
+#painel_main #main__paineis #main__painel__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+}
+/*# sourceMappingURL=painel_main.css.map */

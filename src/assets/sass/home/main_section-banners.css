@@ -1,0 +1,40 @@
+@charset "UTF-8";
+#main_banners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main_banners div {
+  margin-bottom: 30px;
+}
+
+#main_banners div input[type=radio] {
+  /*remove estilos padrões do radio*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid #c50024;
+  cursor: pointer;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+#main_banners div input[type=radio]:checked {
+  border: 6px solid #c50024;
+}
+/*# sourceMappingURL=main_section-banners.css.map */
