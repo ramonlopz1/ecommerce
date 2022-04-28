@@ -17,10 +17,6 @@ const checkCredenciaisInputEBancoDeDados = () => {
     })
 }
 
-const autenticarCredenciais = () => {
-    
-}
-
 
 const btnLogin = document.querySelector("#login__form__submit")
 btnLogin.addEventListener("click", (event) => {

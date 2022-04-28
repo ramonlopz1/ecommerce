@@ -18,6 +18,9 @@
         height: 400px;
         width: 100%;
 
+        background-color: $cor0;
+        border-top: 5px solid $cor3;
+
         #footer_infos {
             display: flex;
             justify-content: center;
@@ -35,7 +38,7 @@
                 list-style: none;
 
                 a {
-                    color: black;
+                    color: $cor1;
                 }
             }
         }
@@ -96,8 +99,8 @@
         height: 100px;
         width: 100%;
 
-        background-color: $myBlue;
-        color: white;
+        background-color: $cor1;
+        color: black;
     }
 }
 
@@ -111,6 +114,15 @@
             align-items: center;
 
             flex-direction: column;
+
+            #footer_infos {
+                justify-content: left;
+                width: 374px;
+
+                ul {
+                    padding: 0;
+                }
+             }
         }
 
         #footer_bottom {

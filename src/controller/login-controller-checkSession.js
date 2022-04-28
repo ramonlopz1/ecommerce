@@ -9,6 +9,14 @@ const checkSessionAndEnableButtons = () => {
     
         const btnPainel = document.querySelector('[data-header-painel]')
         btnPainel.style.display = 'flex'
+
+
+        const btnAcessar = document.querySelector('[data-btnMobile]')
+        btnAcessar.addEventListener("click", (event) => {
+            event.preventDefault()
+            window.location.href = 'assets/html/painel.html'
+        })
+        
     }
 }
 

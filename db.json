@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
+      "img": "C:\\fakepath\\1.jpg",
       "nome": "1",
       "categoria": "starwars",
       "preco": "1",
@@ -10,85 +10,40 @@
       "id": 1
     },
     {
-      "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "123",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 2
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "1",
-      "categoria": "diversos",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 3
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "a",
-      "categoria": "starwars",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "b",
-      "id": 4
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview.png",
-      "nome": "1",
-      "categoria": "starwars",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 5
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (5).png",
-      "nome": "1",
-      "categoria": "consoles",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 6
-    },
-    {
-      "img": "C:\\fakepath\\image-removebg-preview (4).png",
+      "img": "C:\\fakepath\\1.jpg",
       "nome": "2",
-      "categoria": "consoles",
+      "categoria": "starwars",
       "preco": "2",
       "parcelas": "2",
       "descricao": "2",
-      "id": 7
+      "id": 2
     },
     {
-      "img": "C:\\fakepath\\image-removebg-preview (12).png",
-      "nome": "1",
-      "categoria": "consoles",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 8
+      "img": "C:\\fakepath\\1.png",
+      "nome": "3",
+      "categoria": "starwars",
+      "preco": "3",
+      "parcelas": "3",
+      "descricao": "3",
+      "id": 3
     },
     {
-      "img": "C:\\fakepath\\image-removebg-preview (16).png",
-      "nome": "2",
+      "img": "C:\\fakepath\\987fbd6eca4b1f957dde70de1248ccce.jpg",
+      "nome": "3",
       "categoria": "consoles",
       "preco": "3",
       "parcelas": "3",
       "descricao": "3",
-      "id": 9
+      "id": 4
     },
     {
-      "img": "C:\\fakepath\\image-removebg-preview (13).png",
-      "nome": "1",
+      "img": "C:\\fakepath\\1.png",
+      "nome": "3",
       "categoria": "starwars",
-      "preco": "1",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 10
+      "preco": "2",
+      "parcelas": "2",
+      "descricao": "2",
+      "id": 5
     }
   ],
   "usuarios": [

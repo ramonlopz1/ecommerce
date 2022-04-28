@@ -84,13 +84,13 @@
 
             margin-top: 15px;
 
-            background-color: $myRed;
+            background-color: $cor1;
             border-radius: 8px;
             color: white;
             font-size: 15px;
 
             &:hover {
-              background-color: $myBlue;
+              background-color: $cor0;
             }
           }
         }
@@ -123,6 +123,24 @@
         justify-content: space-evenly;
 
         height: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main_produtos {
+    .produtos__categorias {
+      height: 740px;
+
+      .categorias__containers {
+        margin: 0px;
+
+        .container.section__lista__cards {
+          height: 305px;
+          width: 195;
+          margin: 5px;
+        }
       }
     }
   }

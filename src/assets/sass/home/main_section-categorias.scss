@@ -5,8 +5,8 @@
 
     height: 170px;
 
-    background: linear-gradient(180deg, $myVeryLightBlue, $myLightBlue);
-    border-bottom: 5px solid $myBlue;
+    background-color: $cor1;
+    border-bottom: 5px solid $cor0;
 
     #main_categorias__article {
         display: flex;
@@ -31,7 +31,7 @@
 
 
             i {
-                color: $myRed;
+                color: $cor1;
                 font-size: 25px;
             }
         }
@@ -63,7 +63,7 @@
                     width: 80px;
 
                     border-radius: 100px;
-                    border: 2px solid $myBlue;
+                    border: 2px solid $cor0;
                     color: white;
                     font-size: 1.9rem;
                     text-align: center;

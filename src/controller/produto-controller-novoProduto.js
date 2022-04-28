@@ -6,6 +6,7 @@ const novoProduto = () => {
     const novoProduto = getValuesFromInput()
     const addNovoProduto = [...produtos, novoProduto]
 
+    console.log(novoProduto.categoria)
     if (novoProduto) {
         localStorage.setItem('produtos', JSON.stringify(addNovoProduto))
 
@@ -22,7 +23,6 @@ const novoProduto = () => {
 document.querySelector("#btns__cadastrar").addEventListener("click", (event) => {
     event.preventDefault()
     novoProduto()
-    window.location.reload()
 })
 
 document.querySelector("#btns__cancelar").addEventListener("click", (event) => {

@@ -26,12 +26,12 @@
             margin-right: 5px;
 
             border-radius: 50%;
-            border: 2px solid $myRed;
+            border: 2px solid $cor1;
             cursor: pointer;
             transition: 0.2s all linear;
                 
             &:checked {
-                border: 6px solid $myRed;
+                border: 6px solid $cor1;
             }
                 
         }

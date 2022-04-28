@@ -27,7 +27,7 @@
             border-radius: 0px 7px 7px 0px;
 
             h1 {
-                color: $myVeryLightBlue;
+                color: $cor3;
             }
 
             #form__input__produtopesquisa {
@@ -47,12 +47,12 @@
                     height: 40px;
 
                     border: none;
-                    background-color: $myBlue;
+                    background-color: $cor0;
                     color: white;
                     outline: none;
 
                     &:hover {
-                        background-color: $myVeryLightBlue;
+                        background-color: $cor3;
                     }
                 }
             }
@@ -70,7 +70,7 @@
                     flex-direction: column;
                     justify-content: space-evenly;
 
-                    background-color: $myBlue;
+                    background-color: $cor0;
                     box-sizing: border-box;
                     cursor: pointer;
 
@@ -79,7 +79,7 @@
                     width: 380px;
 
                     &:hover {
-                        background-color: $myVeryLightBlue;
+                        background-color: $cor3;
                     }
                     
                     i {
@@ -129,7 +129,7 @@
                     height: 40px;
                     width: 50px;
 
-                    background-color: $myBlue;
+                    background-color: $cor0;
                     color: white;
                 }
 
@@ -172,7 +172,7 @@
                     outline: none;
     
                     &:hover {
-                        background-color: $myBlue;
+                        background-color: $cor0;
                     }
                 }
 
@@ -181,7 +181,7 @@
                     width: 100px;
                     margin: 20px 0px;
     
-                    background-color: $myBlue;
+                    background-color: $cor0;
                     border: none;
                     border-radius: 6px;
                     color: white;

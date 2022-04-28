@@ -21,7 +21,7 @@ export const getValuesFromInput = () => {
 export const getValuesFromDB = (produto) => {
     inputImg.filename = produto.img
     inputNome.value = produto.nome
-    inoputCategoria = produto.categoria
+    inputCategoria.value = produto.categoria
     inputPreco.value = produto.preco
     inputParcelas.value = produto.parcelas
     inputDescricao.value = produto.descricao

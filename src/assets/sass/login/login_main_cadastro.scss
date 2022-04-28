@@ -15,7 +15,7 @@
     
 
     #form__cadastro__title {
-        color: $myVeryLightBlue;
+        color: $cor3;
     }
     #form__input__email,
     #form__cadastro__input__user, 
@@ -33,7 +33,7 @@
             height: 40px;
             width: 50px;
 
-            background-color: $myBlue;
+            background-color: $cor0;
             color: white;
         }
 
@@ -74,7 +74,7 @@
             outline: none;
 
             &:hover {
-                background-color: $myBlue;
+                background-color: $cor0;
             }
         }
 
@@ -83,7 +83,7 @@
             width: 100px;
             margin: 20px 0px;
 
-            background-color: $myBlue;
+            background-color: $cor0;
             border: none;
             border-radius: 6px;
             color: white;
