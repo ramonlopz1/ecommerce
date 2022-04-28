@@ -18,75 +18,84 @@
 
         box-sizing: border-box;
 
-        .section__lista__cards {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
 
+        .produtos__categorias {
+            width: 100%;
 
-            height: 100px;
-            width: 90%;
-
-            margin: 10px;
-
-            box-shadow: 1px 1px 3px #00000024;
-
-                .lista__cards__img {
+            .categorias__containers {
+                
+                .section__lista__cards {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-
-                    width: 100px;
-                }
-
-                .lista__cards__infos {
-                    display: flex;   
-                    align-items: left;
                     justify-content: space-evenly;
-                    flex-direction: column;
-
-                    width: 100px;
-
-                    .cards__infos__nome {
-                        font-size: 18px;
-                        color: $myLightGray;
-                        
-                    }
-
-                    .cards__infos__preco {
-                        font-weight: bolder;
-                    }
-
-                    .cards__infos__parcelas {
-                        color: $myLightGray;
-                        font-size: 13px;
-                    }
-                }
-
-                .lista__cards__qtd {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    
-                    width: 100px;
-
-                    .cards__qtd__titulo {
-                        font-weight: bold;
-                    }
-                }
-
-                .lista__cards__btns {
-                    width: 160px;
-                    
-                    button {
-                        border: none;
-                        background-color: none;
-
-                        i {
-                            font-size: 22px;
+        
+        
+                    height: 100px;
+                    width: 90%;
+        
+                    margin: 10px;
+        
+                    box-shadow: 1px 1px 3px #00000024;
+        
+                        .lista__cards__img {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+        
+                            width: 100px;
                         }
-                    }
+        
+                        .lista__cards__infos {
+                            display: flex;   
+                            align-items: left;
+                            justify-content: space-evenly;
+                            flex-direction: column;
+        
+                            width: 100px;
+        
+                            .cards__infos__nome {
+                                font-size: 18px;
+                                color: $myLightGray;
+                                
+                            }
+        
+                            .cards__infos__preco {
+                                font-weight: bolder;
+                            }
+        
+                            .cards__infos__parcelas {
+                                color: $myLightGray;
+                                font-size: 13px;
+                            }
+                        }
+        
+                        .lista__cards__qtd {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            
+                            width: 100px;
+        
+                            .cards__qtd__titulo {
+                                font-weight: bold;
+                            }
+                        }
+        
+                        .lista__cards__btns {
+                            width: 160px;
+                            
+                            button {
+                                border: none;
+                                background-color: none;
+        
+                                i {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
                 }
+            }
         }
+        
     }
 }

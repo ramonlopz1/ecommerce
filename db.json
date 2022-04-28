@@ -1,49 +1,130 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\1.jpg",
-      "nome": "1",
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "Produto ABC",
       "categoria": "starwars",
-      "preco": "1",
+      "preco": "1.99",
       "parcelas": "1",
-      "descricao": "1",
+      "descricao": "ABC",
       "id": 1
     },
     {
-      "img": "C:\\fakepath\\1.jpg",
-      "nome": "2",
+      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
+      "nome": "Produto ABC",
       "categoria": "starwars",
-      "preco": "2",
-      "parcelas": "2",
-      "descricao": "2",
+      "preco": "45.99",
+      "parcelas": "1",
+      "descricao": "Produto ABC",
       "id": 2
     },
     {
-      "img": "C:\\fakepath\\1.png",
-      "nome": "3",
+      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
+      "nome": "Produto ABC",
       "categoria": "starwars",
       "preco": "3",
-      "parcelas": "3",
-      "descricao": "3",
+      "parcelas": "1",
+      "descricao": "Produto ABC",
       "id": 3
     },
     {
-      "img": "C:\\fakepath\\987fbd6eca4b1f957dde70de1248ccce.jpg",
-      "nome": "3",
-      "categoria": "consoles",
-      "preco": "3",
-      "parcelas": "3",
-      "descricao": "3",
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "Produto ABC",
+      "categoria": "starwars",
+      "preco": "32.39",
+      "parcelas": "1",
+      "descricao": "Produto ABC",
       "id": 4
     },
     {
-      "img": "C:\\fakepath\\1.png",
-      "nome": "3",
+      "img": "C:\\fakepath\\unsplash_KeGToDVN0l4.png",
+      "nome": "Produto ABC",
       "categoria": "starwars",
-      "preco": "2",
-      "parcelas": "2",
-      "descricao": "2",
+      "preco": "109.99",
+      "parcelas": "1",
+      "descricao": "Produto ABC",
       "id": 5
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
+      "nome": "Produto ABC",
+      "categoria": "starwars",
+      "preco": "323",
+      "parcelas": "22",
+      "descricao": "1",
+      "id": 6
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "1233",
+      "parcelas": "12",
+      "descricao": "1",
+      "id": 7
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_bUgaIaZysH0.png",
+      "nome": "Produto ABC",
+      "categoria": "starwars",
+      "preco": "999",
+      "parcelas": "12",
+      "descricao": "Produto ABC",
+      "id": 8
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_Zjn4dT993-g.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "3333",
+      "parcelas": "12",
+      "descricao": "Produto ABC",
+      "id": 9
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_ZV7lnfyQLmA.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "Produto ABC",
+      "id": 10
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_k-xYhI3-gJM.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "99",
+      "parcelas": "5",
+      "descricao": "Produto ABC",
+      "id": 11
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "59.99",
+      "parcelas": "2",
+      "descricao": "Produto ABC",
+      "id": 12
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_caNzzoxls8Q.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "4999.99",
+      "parcelas": "12",
+      "descricao": "Produto ABC",
+      "id": 13
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "55.99",
+      "parcelas": "5",
+      "descricao": "Produto ABC",
+      "id": 14
     }
   ],
   "usuarios": [
