@@ -188,6 +188,33 @@
       "parcelas": "9",
       "descricao": "9",
       "id": 21
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "",
+      "categoria": "",
+      "preco": "",
+      "parcelas": "",
+      "descricao": "",
+      "id": 22
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "123",
+      "categoria": "diversos",
+      "preco": "11",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 23
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "calça",
+      "categoria": "diversos",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 24
     }
   ],
   "usuarios": [
