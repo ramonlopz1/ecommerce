@@ -35,6 +35,87 @@
       "parcelas": "1",
       "descricao": "1",
       "id": 4
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "1",
+      "categoria": "starwars",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 5
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "1",
+      "categoria": "diversos",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 6
+    },
+    {
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "calça",
+      "categoria": "starwars",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 7
+    },
+    {
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "calça",
+      "categoria": "consoles",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 8
+    },
+    {
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "1",
+      "categoria": "diversos",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 9
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "1",
+      "categoria": "diversos",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 10
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "1",
+      "categoria": "diversos",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 11
+    },
+    {
+      "img": "",
+      "nome": "",
+      "categoria": "",
+      "preco": "",
+      "parcelas": "",
+      "descricao": "",
+      "id": 12
+    },
+    {
+      "img": "",
+      "nome": "",
+      "categoria": "",
+      "preco": "",
+      "parcelas": "",
+      "descricao": "",
+      "id": 13
     }
   ],
   "usuarios": [
