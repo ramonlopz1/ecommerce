@@ -15,10 +15,5 @@ const uploadProduto = () => {
     }
 }
 
-const btnCadastrar = document.querySelector("#btns__cadastrar")
 
-btnCadastrar.addEventListener("click", (event) => {
-    event.preventDefault()
-
-    uploadProduto()
-})
+uploadProduto()

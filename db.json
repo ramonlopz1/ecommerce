@@ -215,6 +215,15 @@
       "parcelas": "1",
       "descricao": "1",
       "id": 24
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "1",
+      "categoria": "starwars",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 25
     }
   ],
   "usuarios": [
