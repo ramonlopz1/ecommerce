@@ -1,10 +1,10 @@
 const getProdutos = () => {
-    return fetch("https://ecommerce-rmndev-default-rtdb.firebaseio.com/")
+    return fetch("http://localhost:3000//")
         .then(resp => resp.json())
 }
 
 const postProdutos = (dados) => { 
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/`, {
+    return fetch(`http://localhost:3000//`, {
         method: 'POST', 
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(dados)
@@ -12,12 +12,12 @@ const postProdutos = (dados) => {
 }
 
 const getProduto = (id) => {
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/${id}`)
+    return fetch(`http://localhost:3000//${id}`)
         .then(resp => resp.json())
 }
 
 const putProdutos = (dados, id) => { 
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/${id}`, {
+    return fetch(`http://localhost:3000//${id}`, {
         method: 'PUT', 
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(dados)
@@ -27,7 +27,7 @@ const putProdutos = (dados, id) => {
 }
 
 const deleteProduto = (id) => {
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/${id}`, {
+    return fetch(`http://localhost:3000//${id}`, {
         method: 'DELETE', 
     })
 }

@@ -1,5 +1,5 @@
 const postUsuario = (dados) => { 
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/usuarios`, {
+    return fetch(`http://localhost:3000//usuarios`, {
         method: 'POST', 
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(dados)
@@ -9,17 +9,17 @@ const postUsuario = (dados) => {
 }
 
 const getAllUsuarios = (id) => {
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/usuarios`)
+    return fetch(`http://localhost:3000//usuarios`)
         .then(resp => resp.json())
 }
 
 const getUsuario = (id) => {
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/usuarios/${id}`)
+    return fetch(`http://localhost:3000//usuarios/${id}`)
         .then(resp => resp.json())
 }
 
 const putUsuario = (dados, id) => { 
-    return fetch(`https://ecommerce-rmndev-default-rtdb.firebaseio.com/usuarios/${id}`, {
+    return fetch(`http://localhost:3000//usuarios/${id}`, {
         method: 'PUT', 
         headers: { 'Content-Type' : 'application/json' },
         body: JSON.stringify(dados)
