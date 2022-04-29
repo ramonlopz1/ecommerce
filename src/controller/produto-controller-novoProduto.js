@@ -6,7 +6,6 @@ const novoProduto = () => {
     const novoProduto = getValuesFromInput()
     const addNovoProduto = [...produtos, novoProduto]
 
-    console.log(novoProduto.categoria)
     if (novoProduto) {
         localStorage.setItem('produtos', JSON.stringify(addNovoProduto))
 
