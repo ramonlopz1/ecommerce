@@ -125,6 +125,24 @@
       "parcelas": "123",
       "descricao": "123",
       "id": 14
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 15
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_bUgaIaZysH0.png",
+      "nome": "Produto ABC",
+      "categoria": "consoles",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 16
     }
   ],
   "usuarios": [
