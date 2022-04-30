@@ -1,54 +1,96 @@
-@import '../variaveis.scss';
+@import "../variaveis.scss";
 
 #painel_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  #main__paineis {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 
-    height: 700px;
+    height: 200px;
+    width: 1200px;
 
-    #main__paineis {
-        height: 500px;
-        width: 1200px;
+    border: 1px solid $cor3;
 
-        border: 1px solid $cor3;
+    #main__painel__top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
 
-        #main__painel__top {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 50%;
+      .painel__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
 
-            .painel__link {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                flex-direction: column;
+        margin: 0px 40px;
 
-                margin: 0px 40px;
+        height: 100px;
+        width: 200px;
 
-                height: 100px;
-                width: 200px;
+        background-color: $cor3;
+        color: white;
 
-                background-color: $cor3;
-                color: white;
-
-                i {
-                    font-size: 35px;
-                }
-
-                span {
-                    font-size: 25px;
-                }
-            }
+        &:hover {
+          background-color: rgb(0, 0, 0);
         }
 
-        #main__painel__middle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 50%;
+        i {
+          font-size: 35px;
         }
+
+        span {
+          font-size: 25px;
+        }
+      }
     }
+
+    #main__painel__middle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #painel_main {
+    padding: 50px 0px;
+    #main__paineis {
+      height: 500px;
+      width: 600px;
+
+      border: 1px solid $cor3;
+      #main__painel__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  @media screen and (max-width: 1200px) {
+    #painel_main {
+      #main__paineis {
+        justify-content: space-evenly;
+        height: 700px;
+        width: 370px;
+  
+        border: 1px solid $cor3;
+        #main__painel__top {
+          height: inherit;
+        }
+      }
+    }
+  }
 }

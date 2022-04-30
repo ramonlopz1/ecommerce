@@ -9,12 +9,12 @@ const mudarParaMenuMobile = (menuAberto) => {
     "#navigation__bottom__redesocial"
   );
 
-    const icon = document.querySelector("#icone__hambur")
+  const icon = document.querySelector("#icone__hambur");
 
   if (!menuAberto) {
     navBottom.style.height = "440px";
-    icon.classList.remove("fa-solid", "fa-bars")
-    icon.classList.add("fa-solid", "fa-xmark")
+    icon.classList.remove("fa-solid", "fa-bars");
+    icon.classList.add("fa-solid", "fa-xmark");
 
     setTimeout(() => {
       menu.style.display = "flex";
@@ -24,13 +24,14 @@ const mudarParaMenuMobile = (menuAberto) => {
     navBottom.style.height = "70px";
     menu.style.display = "none";
     redesSociais.style.display = "none";
-    
-    icon.classList.remove("fa-solid", "fa-xmark")
-    icon.classList.add("fa-solid", "fa-bars")
+
+    icon.classList.remove("fa-solid", "fa-xmark");
+    icon.classList.add("fa-solid", "fa-bars");
   }
 };
 
 let aberto = false;
+
 btnMobile.addEventListener("click", () => {
   if (!aberto) {
     mudarParaMenuMobile(false);
