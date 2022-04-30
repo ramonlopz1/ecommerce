@@ -83,7 +83,7 @@
 
     border-top: 1px solid rgba(255, 255, 255, 0.303);
 
-    #bottom__mobile__menu {
+    #button__mobile__menu {
       display: none;
     }
 
@@ -168,9 +168,9 @@
 
       height: 70px;
 
-      transition: 0.1s;
+      transition: 0.2s;
 
-      #bottom__mobile__menu {
+      #button__mobile__menu {
         display: flex;
 
         background: none;
@@ -204,9 +204,28 @@
       }
 
       #navigation__top__lista {
+        width: 50px;
+        
         [data-btnMobile] {
           font-size: 18px;
+          
         }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  #home_header {
+    #header_navigation__top {
+      #navigation__top__input {
+        width: 215px;
+      }
+
+      #navigation__top__lista {
+        width: 20px;
+
       }
     }
   }

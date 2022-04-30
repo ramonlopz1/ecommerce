@@ -131,3 +131,27 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    #footer_home {
+
+        #footer_middle {
+
+            #footer_infos {
+                width: 300px;
+            }
+
+            form {
+                #form_input__nome,
+                #form_textarea__mensagem {
+                    width: 300px;
+
+                    #input_nome,
+                    #textarea_mensagem {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
