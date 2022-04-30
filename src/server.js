@@ -3,8 +3,10 @@ const express = require("express");
 const app = express();
 const multer = require("multer"); // interpreta formulario com arquivo upload
 const fs = require("fs");
+const cors = require('cors')
 
 app.use(express.static("../public")); // qualquer requisição servirá todos os arquivos estáticos da pasta atual
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // transforma JSON em Objeto
 

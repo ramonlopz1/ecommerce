@@ -1,5 +1,5 @@
 const getProdutos = () => {
-    return fetch("http://localhost:3000/produtos")
+    return fetch("https://ecommerce-3e832-default-rtdb.firebaseio.com/produtos")
         .then(resp => resp.json())
 }
 
