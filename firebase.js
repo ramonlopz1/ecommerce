@@ -24,5 +24,3 @@ const analytics = getAnalytics(app);
 export const database = getDatabase();
 
 
-
-console.log(database)

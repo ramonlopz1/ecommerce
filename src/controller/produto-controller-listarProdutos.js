@@ -1,23 +1,42 @@
 import { serviceProdutos } from "../services/service-produtos.js";
 
 // Função principal que executará todos os procedimentos
-export const listarEcriarProdutos = (destino) => {
+export const listarEcriarProdutos = (destino, id) => {
   serviceProdutos.getProdutos().then((produtos) => {
-    produtos.forEach((produto) => {
-      const produtoDadosFormatados = formatarDadosRecebidos(produto);
+    if (!id) {
+      produtos.forEach((produto) => {
+        const produtoDadosFormatados = formatarDadosRecebidos(produto);
 
-      const templateFormatado = templateString(produtoDadosFormatados, destino);
+        const templateFormatado = templateString(
+          produtoDadosFormatados,
+          destino
+        );
 
-      criarTemplateString(
-        templateFormatado,
-        destino,
-        produtoDadosFormatados.categoria
-      );
-    });
+        criarTemplateString(
+          templateFormatado,
+          destino,
+          produtoDadosFormatados.categoria
+        );
+      });
+    } else {
+      produtos.forEach(produto => {
+        if(produto.id == id) {
+          console.log (produto)
+          const produtoDadosFormatados = formatarDadosRecebidos(produto);
+    
+          const templateFormatado = templateString(produtoDadosFormatados, destino);
+    
+          criarTemplateString(
+            templateFormatado,
+            destino,
+            produtoDadosFormatados.categoria
+          );
+        }
+      })
+      
+    }
   });
 };
-
-
 
 const formatarDadosRecebidos = (produto) => {
   let formatPreco = parseFloat(produto.preco);
@@ -50,8 +69,8 @@ const templateString = (produtoDadosFormatados, destino) => {
           <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
           <span class="produto__parcelas">5x de R$ 37,94</span>
           <a href="" class="produto__botao">Ver produto</a>
-      </div>`
-  } else {
+      </div>`;
+  } else if (destino === ".categorias__containerspainel") {
     return `<div class="lista__cards__img">
                 <img src="../upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
             </div>
@@ -75,7 +94,22 @@ const templateString = (produtoDadosFormatados, destino) => {
                 <button class="cards__btns__deletar">
                 <i class="fa-regular fa-trash-can"></i>
                 </button>
-            </div>`
+            </div>`;
+  } else if (destino === ".painel__excluir__produto") {
+    return `<div class="lista__cards__img">
+                <img src="../upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
+            </div>
+            <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
+                <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
+                <span class="cards__infos__preco">${produtoDadosFormatados.formatPreco}</span>
+                <span class="cards__infos__parcelas">6 x 1,99</span>
+                
+            </div>
+            <div class="lista__cards__qtd">
+            <span class="cards__qtd__titulo">Quantidade:</span>
+            <span class="cards__infos__quantidade">39</span>
+            </div>
+           `;
   }
 };
 
@@ -86,6 +120,14 @@ const criarTemplateString = (templateString, destino, categoria) => {
   container.innerHTML = templateString;
 
   const section = document.querySelector(destino + "." + categoria);
-  
-  section.appendChild(container);
+
+  if (section) {
+    section.appendChild(container);
+  } else {
+    const section = document.querySelector(destino);
+    container.classList.remove("section__lista__cards");
+    container.classList.add("painel__excluir__produto");
+    section.innerHTML = "";
+    section.appendChild(container);
+  }
 };

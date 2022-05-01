@@ -2,88 +2,25 @@
   "produtos": [
     {
       "img": "C:\\fakepath\\Produto.png",
-      "nome": "Produto ABC",
+      "nome": "Mamao",
       "categoria": "starwars",
-      "preco": "99.89",
-      "parcelas": "4",
-      "descricao": "5",
+      "preco": "999",
+      "parcelas": "9",
+      "descricao": "jhyuigyuigig",
       "id": 1
     },
     {
-      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
-      "nome": "Produto ABC",
+      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
+      "nome": "wsdadas",
       "categoria": "starwars",
-      "preco": "3233",
-      "parcelas": "12",
-      "descricao": "123",
-      "id": 2
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
-      "nome": "Produto ABC",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 3
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
-      "nome": "123",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 4
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 5
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 6
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_k-xYhI3-gJM.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 7
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 8
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_Zjn4dT993-g.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
       "preco": "123",
       "parcelas": "123",
       "descricao": "123",
       "id": 9
     },
     {
-      "img": "C:\\fakepath\\unsplash_sYVY_ZKwaxU.png",
-      "nome": "Produto ABC",
+      "img": "C:\\fakepath\\unsplash_fMP-oCze3AY.png",
+      "nome": "123",
       "categoria": "diversos",
       "preco": "123",
       "parcelas": "123",
@@ -91,58 +28,31 @@
       "id": 10
     },
     {
-      "img": "C:\\fakepath\\unsplash_MxVkWPiJALs.png",
-      "nome": "Produto ABC",
-      "categoria": "diversos",
+      "img": "C:\\fakepath\\unsplash_KeGToDVN0l4.png",
+      "nome": "123",
+      "categoria": "starwars",
       "preco": "123",
       "parcelas": "123",
       "descricao": "123",
       "id": 11
     },
     {
-      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
-      "nome": "Produto ABC",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
+      "nome": "ujihuih",
+      "categoria": "diversos",
+      "preco": "90890",
+      "parcelas": "78",
+      "descricao": "iouhuioh",
       "id": 12
     },
     {
-      "img": "C:\\fakepath\\unsplash_KeGToDVN0l4.png",
-      "nome": "Produto ABC",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 13
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_fMP-oCze3AY.png",
-      "nome": "Produto ABC",
+      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
+      "nome": "kkkkkk",
       "categoria": "diversos",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 14
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 15
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_bUgaIaZysH0.png",
-      "nome": "Produto ABC",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 16
+      "preco": "99",
+      "parcelas": "9",
+      "descricao": "jojop",
+      "id": 13
     }
   ],
   "usuarios": [
