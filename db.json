@@ -2,11 +2,11 @@
   "produtos": [
     {
       "img": "C:\\fakepath\\Produto.png",
-      "nome": "Mamao",
+      "nome": "3333333331",
       "categoria": "starwars",
-      "preco": "999",
-      "parcelas": "9",
-      "descricao": "jhyuigyuigig",
+      "preco": "33331",
+      "parcelas": "933331",
+      "descricao": "jhyuigyuigig1",
       "id": 1
     },
     {
@@ -53,6 +53,51 @@
       "parcelas": "9",
       "descricao": "jojop",
       "id": 13
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "ABCD",
+      "categoria": "consoles",
+      "preco": "123",
+      "parcelas": "1",
+      "descricao": "321",
+      "id": 14
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
+      "nome": "123",
+      "categoria": "consoles",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 15
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
+      "nome": "Ceeed",
+      "categoria": "consoles",
+      "preco": "111",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 16
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_Zjn4dT993-g.png",
+      "nome": "000000",
+      "categoria": "starwars",
+      "preco": "000000",
+      "parcelas": "000000",
+      "descricao": "000000",
+      "id": 17
+    },
+    {
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "1",
+      "categoria": "diversos",
+      "preco": "1",
+      "parcelas": "1",
+      "descricao": "1",
+      "id": 18
     }
   ],
   "usuarios": [

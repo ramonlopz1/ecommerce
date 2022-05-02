@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ptbr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Editar</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header class="include_header">
 
@@ -16,7 +18,8 @@
             <form action="" id="produtos_main__form">
                 <h1>Editar produtos</h1>
                 <div id="form__input__produtopesquisa">
-                    <input type="text" name="produtopesquisainput" id="produtopesquisainput" placeholder="Digite o ID do produto">
+                    <input type="text" name="produtopesquisainput" id="produtopesquisainput"
+                        placeholder="Digite o ID do produto">
                     <input type="submit" value="Pesquisar" id="btns__pesquisar">
                     <span id="produtopesquisa__erro">
                         <!--Mensagem de erro via JS-->
@@ -27,7 +30,8 @@
                         <i class="fa-solid fa-file-image"></i>
                         <span>Clique aqui para adicionar, ou arraste e solte uma imagem para o produto</span>
                     </label>
-                    <input type="file" name="produtoimginput" id="produtoimginput" accept="image/png, image/gif, image/jpeg">
+                    <input type="file" name="produtoimginput" id="produtoimginput"
+                        accept="image/png, image/gif, image/jpeg">
                 </div>
 
                 <div id="form__produtonome">
@@ -58,7 +62,8 @@
                         <span for="produtopreco">
                             <i class="fa-solid fa-cash-register"></i>
                         </span>
-                        <input type="number" name="produtopreco" id="produtopreco" placeholder="Preço do produto" required>
+                        <input type="number" name="produtopreco" id="produtopreco" placeholder="Preço do produto"
+                            required>
                     </div>
                 </div>
 
@@ -67,17 +72,19 @@
                         <span for="produtoparcelas">
                             <i class="fa-solid fa-asterisk"></i>
                         </span>
-                        <input type="number" name="produtoparcelas" id="produtoparcelas" placeholder="Parcelas" required>
+                        <input type="number" name="produtoparcelas" id="produtoparcelas" placeholder="Parcelas"
+                            required>
                     </div>
                 </div>
 
                 <div id="form__produtodescricao">
-                  <div id="form__input__produtodescricao">
-                    <span for="produtodescricao">
-                        <i class="fa-solid fa-align-left"></i>
-                    </span>
-                    <textarea name="produtodescricao" id="produtodescricao" cols="30" rows="10" placeholder="Descrição do produto" maxlength="100" required></textarea>
-                  </div>
+                    <div id="form__input__produtodescricao">
+                        <span for="produtodescricao">
+                            <i class="fa-solid fa-align-left"></i>
+                        </span>
+                        <textarea name="produtodescricao" id="produtodescricao" cols="30" rows="10"
+                            placeholder="Descrição do produto" maxlength="100" required></textarea>
+                    </div>
                 </div>
 
                 <div id="form__btns">
@@ -90,7 +97,7 @@
     <footer class="include_footer">
 
     </footer>
-    
+
     <script src="../js/include.js"></script>
     <script type="module" src="../../controller/produto-controller-editarProduto.js"></script>
 
@@ -98,4 +105,5 @@
     <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
