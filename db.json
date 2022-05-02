@@ -107,6 +107,15 @@
       "parcelas": "66666",
       "descricao": "66666",
       "id": 19
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
+      "nome": "Kylo Ren",
+      "categoria": "starwars",
+      "preco": "123",
+      "parcelas": "123",
+      "descricao": "123",
+      "id": 20
     }
   ],
   "usuarios": [
