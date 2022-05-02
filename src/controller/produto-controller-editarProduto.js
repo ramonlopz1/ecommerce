@@ -9,21 +9,25 @@ const ID = document.querySelector("#produtopesquisainput");
 
 document
   .querySelector("#btns__pesquisar")
-  .addEventListener("click", (event) => {
+  .addEventListener("click", async (event) => {
     event.preventDefault();
-    serviceProdutos.getProduto(ID.value).then((produto) => {
-      getValuesFromDB(produto);
-    });
+
+    const produto = await serviceProdutos.getProduto(ID.value);
+
+    getValuesFromDB(produto);
   });
 
-document.querySelector("#btns__concluir").addEventListener("click", (event) => {
-  event.preventDefault();
+document
+  .querySelector("#btns__concluir")
+  .addEventListener("click", async (event) => {
+    event.preventDefault();
 
-  const produtoEditado = getValuesFromInput();
-  serviceProdutos.putProdutos(produtoEditado, ID.value);
+    const produtoEditado = getValuesFromInput();
 
-  document.forms[0].reset();
-});
+    await serviceProdutos.putProdutos(produtoEditado, ID.value);
+
+    document.forms[0].reset();
+  });
 
 document.querySelector("#btns__cancelar").addEventListener("click", (event) => {
   event.preventDefault();

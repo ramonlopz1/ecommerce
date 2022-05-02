@@ -98,6 +98,15 @@
       "parcelas": "1",
       "descricao": "1",
       "id": 18
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
+      "nome": "666666",
+      "categoria": "diversos",
+      "preco": "66666",
+      "parcelas": "66666",
+      "descricao": "66666",
+      "id": 19
     }
   ],
   "usuarios": [
@@ -107,6 +116,20 @@
       "pass": "123",
       "repeatPass": "123",
       "id": 1
+    },
+    {
+      "email": "rmnprojetos@outlook.com",
+      "user": "111",
+      "pass": "111",
+      "repeatPass": "111",
+      "id": 2
+    },
+    {
+      "email": "jj@jj.com",
+      "user": "123",
+      "pass": "123",
+      "repeatPass": "123",
+      "id": 3
     }
   ]
 }

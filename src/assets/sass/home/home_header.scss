@@ -17,6 +17,7 @@
       flex-wrap: nowrap;
 
       width: 40%;
+      margin: 0px 15px;
 
       input {
         padding: none;
@@ -69,10 +70,6 @@
         display: none;
         color: white;
         font-size: 25px;
-
-        i {
-          margin-left: 10px;
-        }
       }
     }
   }
@@ -140,7 +137,14 @@
 @media screen and (max-width: 1200px) {
   #home_header {
     #header_navigation__top {
-      justify-content: space-around;
+      justify-content: center;
+
+      #header_logo {
+        img {
+          height: auto;
+          width: 60px;
+        }
+      }
 
       #navigation__top__input {
         width: 400px;

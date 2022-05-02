@@ -1,8 +1,9 @@
 import { serviceProdutos } from "../services/service-produtos.js";
 
 // Função principal que executará todos os procedimentos
-export const listarEcriarProdutos = (destino, id) => {
-  serviceProdutos.getProdutos().then((produtos) => {
+export const listarEcriarProdutos = async (destino, id) => {
+  const produtos = await serviceProdutos.getProdutos()
+
     if (!id) {
       produtos.forEach((produto) => {
         const produtoDadosFormatados = formatarDadosRecebidos(produto);
@@ -35,7 +36,6 @@ export const listarEcriarProdutos = (destino, id) => {
       })
       
     }
-  });
 };
 
 const formatarDadosRecebidos = (produto) => {

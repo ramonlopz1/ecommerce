@@ -1,7 +1,7 @@
-import { serviceProdutos } from "../services/service-produtos.js";
+const produto = document.querySelector(".container__produto__info")
+const btnView = document.querySelector("#header_logo")
 
-import { listarEcriarProdutos } from "./produto-controller-listarProdutos.js";
-
-const visualizarProduto = () => {
-    
-}
+btnView.addEventListener('click' , (e) => {
+    e.preventDefault()
+    console.log(produto)
+})

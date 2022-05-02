@@ -1,1 +1,1 @@
-import{serviceProdutos}from"../services/service-produtos.js";import{listarEcriarProdutos}from"./produto-controller-listarProdutos.js";const visualizarProduto=()=>{};
+const produto=document.querySelector(".container__produto__info"),btnView=document.querySelector("#header_logo");btnView.addEventListener("click",(e=>{e.preventDefault(),console.log(produto)}));
