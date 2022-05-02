@@ -9,8 +9,9 @@ const postUsuario = (dados) => {
 }
 
 const getAllUsuarios = (id) => {
-    return fetch(`http://localhost:3000/usuarios`)
+    return fetch(`https://ramonlopz1.github.io/ecommerce/db.json`)
         .then(resp => resp.json())
+        .then(dados => dados.usuarios)
 }
 
 const getUsuario = (id) => {

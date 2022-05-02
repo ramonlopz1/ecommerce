@@ -3,13 +3,12 @@ const express = require("express");
 const app = express();
 const multer = require("multer"); // interpreta formulario com arquivo upload
 const fs = require("fs");
-const cors = require('cors')
 
 app.use(express.static("../public")); // qualquer requisição servirá todos os arquivos estáticos da pasta atual
-app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // transforma JSON em Objeto
 
+// seleciona o último ID do json e incrementa para gerar o novo id
 const imgID = () => {
   let dados = fs.readFileSync("../db.json");
   let parseDados = JSON.parse(dados);
@@ -24,7 +23,6 @@ const imgID = () => {
   }
 };
 
-
 const storage = multer.diskStorage({
   //
   destination: function (req, file, callback) {
@@ -33,7 +31,6 @@ const storage = multer.diskStorage({
 
   filename: function (req, file, callback) {
     // define o nome do arquivo
-    // callback(null, )
     callback(null, `${imgID()}_${file.originalname}`);
   },
 });

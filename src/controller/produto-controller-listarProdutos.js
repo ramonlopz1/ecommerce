@@ -57,7 +57,7 @@ const formatarDadosRecebidos = (produto) => {
 const templateString = (produtoDadosFormatados, destino) => {
   if (destino === ".categorias__containers") {
     return `<img src="assets/upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="produto" class="container__produto__img">
-      <div class="container__produto__info">
+      <div class="container__produto__info" data-produto-id="${produtoDadosFormatados.id}">
           <span class="produto__nome">${produtoDadosFormatados.nome}</span>
           <div class="produto__rating">
               <i class="fa-solid fa-star"></i>
@@ -68,7 +68,7 @@ const templateString = (produtoDadosFormatados, destino) => {
           </div>
           <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
           <span class="produto__parcelas">5x de R$ 37,94</span>
-          <a href="" class="produto__botao">Ver produto</a>
+          <a href="./assets/html/produto.html" class="produto__botao">Ver produto</a>
       </div>`;
   } else if (destino === ".categorias__containerspainel") {
     return `<div class="lista__cards__img">

@@ -160,39 +160,6 @@
         }
       }
     }
-
-    #header_navigation__bottom {
-      align-items: center;
-      justify-content: space-evenly;
-      flex-direction: column;
-
-      height: 70px;
-
-      transition: 0.2s;
-
-      #button__mobile__menu {
-        display: flex;
-
-        background: none;
-        outline: none;
-        border: none;
-
-        i {
-          color: white;
-          font-size: 30px;
-        }
-      }
-
-      #navigation__bottom__menu,
-      #navigation__bottom__redesocial {
-        transition: 0.2s;
-        display: none;
-      }
-
-      #navigation__bottom__menu {
-        flex-direction: column;
-      }
-    }
   }
 }
 

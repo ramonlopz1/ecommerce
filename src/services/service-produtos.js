@@ -1,6 +1,7 @@
 const getProdutos = () => {
-    return fetch("http://localhost:3000/produtos")
+    return fetch("https://ramonlopz1.github.io/ecommerce/db.json")
         .then(resp => resp.json())
+        .then(dados => dados.produtos)
 }
 
 const postProdutos = (dados) => { 
