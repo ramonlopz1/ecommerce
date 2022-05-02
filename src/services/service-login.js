@@ -1,32 +1,30 @@
-const postUsuario = (dados) => { 
-    return fetch(`http://localhost:3000/usuarios`, {
-        method: 'POST', 
-        headers: { 'Content-Type' : 'application/json' },
+const postUsuario = async (dados) => { 
+    const resp = await fetch(`http://localhost:3000/usuarios`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
-    }).then( resp => {
-        return resp.body
     })
+    return resp.body
 }
 
-const getAllUsuarios = (id) => {
-    return fetch(`https://ramonlopz1.github.io/ecommerce/db.json`)
-        .then(resp => resp.json())
-        .then(dados => dados.usuarios)
+const getAllUsuarios = async (id) => {
+    const resp = await fetch(`https://ramonlopz1.github.io/ecommerce/db.json`)
+    const dados = await resp.json()
+    return dados.usuarios
 }
 
-const getUsuario = (id) => {
-    return fetch(`http://localhost:3000/usuarios/${id}`)
-        .then(resp => resp.json())
+const getUsuario = async (id) => {
+    const resp = await fetch(`http://localhost:3000/usuarios/${id}`)
+    return await resp.json()
 }
 
-const putUsuario = (dados, id) => { 
-    return fetch(`http://localhost:3000/usuarios/${id}`, {
-        method: 'PUT', 
-        headers: { 'Content-Type' : 'application/json' },
+const putUsuario = async (dados, id) => { 
+    const resp = await fetch(`http://localhost:3000/usuarios/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
-    }).then( resp => {
-        return resp.json()
     })
+    return await resp.json()
 }
 
 export const serviceLogin = {

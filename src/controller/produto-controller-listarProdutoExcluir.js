@@ -2,6 +2,8 @@ import { serviceProdutos } from "../services/service-produtos.js";
 
 import { listarEcriarProdutos } from "./produto-controller-listarProdutos.js";
 
+const divProduto = document.querySelector("#form__div__produto");
+
 document
   .querySelector("#btns__pesquisar_excluir")
   .addEventListener("click", (e) => {
@@ -9,7 +11,6 @@ document
     filtrarProduto();
   });
 
-const divProduto = document.querySelector("#form__div__produto");
 
 const filtrarProduto = async () => {
   const ID = document.querySelector("#produtopesquisainput").value;

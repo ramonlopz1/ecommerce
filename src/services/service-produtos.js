@@ -1,7 +1,7 @@
-const getProdutos = () => {
-    return fetch("https://ramonlopz1.github.io/ecommerce/db.json")
-        .then(resp => resp.json())
-        .then(dados => dados.produtos)
+const getProdutos = async () => {
+    const resp = await fetch("https://ramonlopz1.github.io/ecommerce/db.json")
+    const dados = await resp.json()
+    return dados.produtos
 }
 
 const postProdutos = (dados) => { 
@@ -12,19 +12,18 @@ const postProdutos = (dados) => {
     })
 }
 
-const getProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}`)
-        .then(resp => resp.json())
+const getProduto = async (id) => {
+    const resp = await fetch(`http://localhost:3000/produtos/${id}`)
+    return await resp.json()
 }
 
-const putProdutos = (dados, id) => { 
-    return fetch(`http://localhost:3000/produtos/${id}`, {
-        method: 'PUT', 
-        headers: { 'Content-Type' : 'application/json' },
+const putProdutos = async (dados, id) => { 
+    const resp = await fetch(`http://localhost:3000/produtos/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dados)
-    }).then( resp => {
-        return resp.json()
     })
+    return await resp.json()
 }
 
 const deleteProduto = (id) => {
