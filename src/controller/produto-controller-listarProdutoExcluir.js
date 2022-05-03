@@ -11,7 +11,6 @@ document
     filtrarProduto();
   });
 
-
 const filtrarProduto = async () => {
   const ID = document.querySelector("#produtopesquisainput").value;
 

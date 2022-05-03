@@ -104,7 +104,7 @@
     }
 
     #navigation__bottom__menu {
-      width: 50%;
+      
       gap: 30px;
     }
 
@@ -140,7 +140,7 @@
 @media screen and (max-width: 1200px) {
   .include_header {
     #header_navigation__top {
-      justify-content: space-around;
+      justify-content: center;
 
       #navigation__top__input {
         width: 400px;
@@ -158,6 +158,23 @@
           align-items: center;
           justify-content: center;
         }
+      }
+    }
+
+    #header_navigation__bottom {
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      height: 100px;
+
+      #navigation__bottom__menu {
+        width: 50%;
+        margin: 0px;
+      }
+
+      #navigation__bottom__redesocial {
+        margin: 0px;
       }
     }
   }

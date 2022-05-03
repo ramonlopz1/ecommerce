@@ -2,10 +2,24 @@ import { serviceProdutos } from "../services/service-produtos.js";
 
 // Função principal que executará todos os procedimentos
 export const listarEcriarProdutos = async (destino, id) => {
-  const produtos = await serviceProdutos.getProdutos()
+  const produtos = await serviceProdutos.getProdutos();
 
-    if (!id) {
-      produtos.forEach((produto) => {
+  if (!id) {
+    produtos.forEach((produto) => {
+      const produtoDadosFormatados = formatarDadosRecebidos(produto);
+
+      const templateFormatado = templateString(produtoDadosFormatados, destino);
+
+      criarTemplateString(
+        templateFormatado,
+        destino,
+        produtoDadosFormatados.categoria
+      );
+    });
+  } else {
+    produtos.forEach((produto) => {
+      if (produto.id == id) {
+        console.log(produto);
         const produtoDadosFormatados = formatarDadosRecebidos(produto);
 
         const templateFormatado = templateString(
@@ -18,30 +32,23 @@ export const listarEcriarProdutos = async (destino, id) => {
           destino,
           produtoDadosFormatados.categoria
         );
-      });
-    } else {
-      produtos.forEach(produto => {
-        if(produto.id == id) {
-          console.log (produto)
-          const produtoDadosFormatados = formatarDadosRecebidos(produto);
-    
-          const templateFormatado = templateString(produtoDadosFormatados, destino);
-    
-          criarTemplateString(
-            templateFormatado,
-            destino,
-            produtoDadosFormatados.categoria
-          );
-        }
-      })
-      
-    }
+      }
+    });
+  }
 };
 
 const formatarDadosRecebidos = (produto) => {
   let formatPreco = parseFloat(produto.preco);
   formatPreco = formatPreco.toFixed(2).replace(".", ",");
   produto.formatPreco = formatPreco;
+
+  let precoParcelado = parseFloat(produto.preco / produto.parcelas);
+
+  let formatPrecoParcelado = precoParcelado.toFixed(2).replace(".", ",");
+
+  produto.formatParcelas = `${
+    produto.parcelas
+  } x R$ ${formatPrecoParcelado}`;
 
   let formatImgPath = produto.img.toString();
   formatImgPath = formatImgPath
@@ -67,7 +74,7 @@ const templateString = (produtoDadosFormatados, destino) => {
               <i class="fa-solid fa-star"></i>
           </div>
           <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
-          <span class="produto__parcelas">5x de R$ 37,94</span>
+          <span class="produto__parcelas">${produtoDadosFormatados.formatParcelas}</span>
           <a href="./assets/html/produto.html" class="produto__botao">Ver produto</a>
       </div>`;
   } else if (destino === ".categorias__containerspainel") {
@@ -77,7 +84,7 @@ const templateString = (produtoDadosFormatados, destino) => {
             <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
                 <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
                 <span class="cards__infos__preco">${produtoDadosFormatados.formatPreco}</span>
-                <span class="cards__infos__parcelas">6 x 1,99</span>
+                <span class="cards__infos__parcelas">${produtoDadosFormatados.formatParcelas}</span>
                 
             </div>
             <div class="lista__cards__qtd">
@@ -102,7 +109,7 @@ const templateString = (produtoDadosFormatados, destino) => {
             <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
                 <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
                 <span class="cards__infos__preco">${produtoDadosFormatados.formatPreco}</span>
-                <span class="cards__infos__parcelas">6 x 1,99</span>
+                <span class="cards__infos__parcelas">${produtoDadosFormatados.formatParcelas}</span>
                 
             </div>
             <div class="lista__cards__qtd">
