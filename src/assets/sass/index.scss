@@ -12,27 +12,27 @@
 @import 'login/login_main_cadastro.scss';
 
 
-/*Produto*/
-@import 'produto/produto_main.scss';
+/*Visualizar Produto*/
+@import 'visualizar-produto/visualizar__produto.scss';
 
 /*Painel*/
 @import 'painel/painel_main.scss';
 
 /*Add Produtos*/
-@import 'add_produtos/add_produtos_main.scss';
+@import 'painel/painel-add-produtos/add_produtos_main.scss';
 
 /*Editar Produtos*/
-@import 'editar_produtos/editar_produtos_main.scss';
+@import 'painel/painel-editar-produtos/editar_produtos_main.scss';
 
 /*Listar Produtos*/
-@import 'listar_produtos/listar_produtos_main.scss';
+@import 'painel/painel-listar-produtos/listar_produtos_main.scss';
 
 /*Excluir Produtos*/
-@import 'excluir_produtos/excluir_produtos_main.scss';
+@import 'painel/painel-excluir-produtos/excluir_produtos_main.scss';
 
 /*Include: Header and Footer*/
-@import 'includedsHTMLStyle/include_header.scss';
-@import 'includedsHTMLStyle/include_footer.scss';
+@import 'include-header-footer/include_header.scss';
+@import 'include-header-footer/include_footer.scss';
 
 
 

@@ -14,7 +14,7 @@
   <header id="home_header">
     <nav id="header_navigation__top">
       <div id="header_logo">
-        <img src="assets/img/main_header/logo.png" alt="brand-logo" height="75px" />
+        <img src="assets/img/logo/logo.png" alt="brand-logo" height="75px" />
       </div>
 
       <div id="navigation__top__input">
@@ -26,17 +26,17 @@
 
       <ul id="navigation__top__lista">
         <li>
-          <a class="top__lista__link" data-header-login href="assets/html/login.html">Entrar</a>
+          <a class="top__lista__link" data-header-login href="assets/html/login/login.html">Entrar</a>
         </li>
         <li>
-          <a class="top__lista__link" data-header-cadastrar href="">Cadastrar</a>
+          <a class="top__lista__link" data-header-cadastrar href="assets/html/login/login.html">Cadastrar</a>
         </li>
         <li>
-          <a class="top__lista__link painel" data-header-painel href="assets/html/painel.html">Painel</a>
+          <a class="top__lista__link painel" data-header-painel href="assets/html/painel/painel.html">Painel</a>
         </li>
 
         <li>
-          <a class="link__btnacessar" data-btnMobile href="assets/html/login.html">
+          <a class="link__btnacessar" data-btnMobile href="assets/html/login/login.html">
             <i class="fa-solid fa-arrow-right-to-bracket"></i>
           </a>
         </li>
@@ -179,7 +179,7 @@
   <footer id="footer_home">
     <div id="footer_middle">
       <div id="footer_logo">
-        <img src="assets/img/main_header/logo.png" alt="brand-logo" height="140px" />
+        <img src="assets/img/logo/logo.png" alt="brand-logo" height="140px" />
       </div>
       <div id="footer_infos">
         <ul>
@@ -221,17 +221,19 @@
     </div>
   </footer>
   <!--CONTROLLERS-->
-  <script type="module" src="controller/login-controller-checarUsuarioLogado.js"></script>
+  
+  
+  <script type="module" src="controller/renderizarProduto/home/home-controller-listar-produtos.js"></script>
+  
+  <script src="./assets/js//dom-manipulacoes/home/animacao-exibir-botoes-login-cadastro-painel.js"></script>
+  
+  <script src="./assets/js/dom-manipulacoes/home/animacao-banners.js"></script>
 
+  <script src="./assets/js/dom-manipulacoes/home/animacao-carrossel.js"></script>
 
-  <script type="module" src="controller/produto-controller-listarProdutosHome.js"></script>
+  <script src="./assets/js/dom-manipulacoes/home/animacao-menu-mobile.js"></script>
 
-  <!--JQUERY CDN-->
-
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/menuMobile.js"></script>
-
-  <script type="module" src="controller/produto-controller-visualizarProduto.js"></script>
+  <script src="./assets/js/dom-manipulacoes/home/animacao-rating-stars.js"></script>
 
   <!--FONT AWESOME ICONS-->
   <script src="https://kit.fontawesome.com/4df89de1f1.js" crossorigin="anonymous"></script>

@@ -3,17 +3,16 @@ document.querySelector(".contact-form").addEventListener("submit", submitForm);
   function submitForm(e) {
     e.preventDefault();
   
-    //   Get input Values
-    let name = document.querySelector(".name").value;
-    let email = document.querySelector(".email").value;
-    let assunto = document.querySelector(".assunto").value;
-    let message = document.querySelector(".message").value;
+    // Recebe valores dos inputs
+    let name = document.querySelector("#input_nome").value;
+    let email = document.querySelector("#input_email").value;
+    let message = document.querySelector("#textarea_mensagem").value;
   
     document.querySelector(".contact-form").reset();
     sendEmail(name, email, assunto, message);
   }
   
-  // Send Email Info
+  // Envia email pela API
   function sendEmail(name, email, assunto, message) {
     Email.send({
       Host: "smtp.gmail.com",

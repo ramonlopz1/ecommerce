@@ -1,0 +1,1 @@
+export const formatarDados=e=>{let a=parseFloat(e.preco).toFixed(2).replace(".",","),r=(e.preco/e.parcelas).toFixed(2).replace(".",","),o=e.img.replaceAll("\\","").replace("C:","").replace("fakepath","");return e.precoFormatado=a,e.precoParcela=`${e.parcelas} x R$ ${r}`,e.nomeDaImagem=o,e};

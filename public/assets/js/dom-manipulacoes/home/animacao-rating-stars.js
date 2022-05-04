@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelectorAll("#produto__rating i");e.forEach(((o,r)=>{o.addEventListener("click",(()=>{e.style.backgroundColor="blue"}))}))})();
