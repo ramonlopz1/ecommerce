@@ -1,34 +1,17 @@
 import { serviceLogin } from "../services/service-login.js";
-import { getValuesFromInput } from "./login-controller-getInputValues.js";
+import { dadosNovoUsuarioInputs } from "./login-cadastro-controller-dadosNovoUsuarioInputs.js";
 
 const novoUsuario = async () => {
-  const dadosUsuario = getValuesFromInput();
+  const dadosUsuario = dadosNovoUsuarioInputs();
 
-  const checkAllInputs =
-    dadosUsuario.email &&
-    dadosUsuario.pass &&
-    dadosUsuario.repeatPass &&
-    dadosUsuario.user;
-  const checkPass = dadosUsuario.pass === dadosUsuario.repeatPass;
-
-  if (checkAllInputs && checkPass) {
-    try {
-      await serviceLogin.postUsuario(dadosUsuario);
-    } catch (e) {
-      console.log("Algo de errado aconteceu na aplicação: " + e);
-    }
-  } else {
-    console.log("Verifique se voce preencheu todos os campos ou sua senha");
+  try {
+    await serviceLogin.postUsuario(dadosUsuario);
+  } catch (e) {
+    console.log("Algo de errado aconteceu na aplicação: " + e);
   }
+
   document.forms[1].reset();
 };
-
-/**
- * document.querySelector("#login__form__submit").addEventListener("click", (event) => {
-    event.preventDefault()
-    window.location.href = "../html/login.html"
-})
- */
 
 document
   .querySelector("#cadastro__form__cadastrar")

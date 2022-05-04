@@ -8,9 +8,9 @@ const postUsuario = async (dados) => {
 }
 
 const getAllUsuarios = async (id) => {
-    const resp = await fetch(`https://ramonlopz1.github.io/ecommerce/db.json`)
+    const resp = await fetch(`http://localhost:3000/usuarios`)
     const dados = await resp.json()
-    return dados.usuarios
+    return dados
 }
 
 const getUsuario = async (id) => {

@@ -1,10 +1,6 @@
 import { serviceProdutos } from "../services/service-produtos.js";
-import {
-  getValuesFromInput,
-  getValuesFromDB,
-} from "./produto-controller-getInputValues.js";
+import { valoresInputs } from "./produto-cadastro-controller-dadosNovoProdutoInputs.js";
 
-const spanErro = document.querySelector("#produtopesquisa__erro");
 const ID = document.querySelector("#produtopesquisainput");
 
 document
@@ -14,7 +10,9 @@ document
 
     const produto = await serviceProdutos.getProduto(ID.value);
 
-    getValuesFromDB(produto);
+    const dadosInputs = valoresInputs();
+
+    dadosInputs.preencherInputsComDadosDoProduto(produto);
   });
 
 document
@@ -22,7 +20,9 @@ document
   .addEventListener("click", async (event) => {
     event.preventDefault();
 
-    const produtoEditado = getValuesFromInput();
+    const dadosInputs = valoresInputs();
+
+    const produtoEditado = dadosInputs.receberDadosModificados;
 
     await serviceProdutos.putProdutos(produtoEditado, ID.value);
 

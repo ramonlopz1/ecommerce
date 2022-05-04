@@ -80,7 +80,8 @@
           .lista__cards__btns {
             width: 160px;
 
-            button {
+            button, a {
+              color: black;
               border: none;
               background-color: none;
 

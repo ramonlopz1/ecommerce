@@ -1,4 +1,3 @@
-import { listarEcriarProdutos } from "./produto-controller-listarProdutos.js"
+import { renderizarProdutos } from "./produto-controller-listarProdutos.js"
 
-
-listarEcriarProdutos(".categorias__containers")
+renderizarProdutos(".categorias__containers")

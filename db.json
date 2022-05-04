@@ -1,166 +1,40 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\Produto.png",
-      "nome": "STAR WARS",
-      "categoria": "starwars",
-      "preco": "99",
-      "parcelas": "99",
-      "descricao": "99",
-      "id": 1
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
-      "nome": "STAR WARS",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "C:\\fakepath\\unsplash_caNzzoxls8Q.png",
+      "nome": "22",
+      "categoria": "consoles",
+      "preco": "3333",
+      "parcelas": "12",
+      "descricao": "21321",
       "id": 2
     },
     {
-      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
-      "nome": "STAR WARS",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
+      "nome": "asdas",
+      "categoria": "diversos",
+      "preco": "1233232",
+      "parcelas": "213",
+      "descricao": "32",
       "id": 3
     },
     {
-      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
-      "nome": "STAR WARS",
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "abcde",
       "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
+      "preco": "22222",
+      "parcelas": "12",
+      "descricao": "121212",
       "id": 4
     },
     {
-      "img": "C:\\fakepath\\unsplash_KeGToDVN0l4.png",
-      "nome": "STAR WARS",
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "DV",
       "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 5
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
-      "nome": "STAR WARS",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 6
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 7
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_bUgaIaZysH0.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 8
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_caNzzoxls8Q.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 9
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 10
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_k-xYhI3-gJM.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 11
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 12
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_Zjn4dT993-g.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 13
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_ZV7lnfyQLmA.png",
-      "nome": "CONSOLE",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 14
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_fMP-oCze3AY.png",
-      "nome": "DIVERSOS",
-      "categoria": "diversos",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 15
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_MxVkWPiJALs.png",
-      "nome": "DIVERSOS",
-      "categoria": "diversos",
-      "preco": "321",
-      "parcelas": "321",
-      "descricao": "321",
-      "id": 16
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
-      "nome": "PIKACHU",
-      "categoria": "diversos",
-      "preco": "1111",
-      "parcelas": "1",
-      "descricao": "11",
-      "id": 17
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_sYVY_ZKwaxU.png",
-      "nome": "SONIC",
-      "categoria": "diversos",
       "preco": "333",
-      "parcelas": "3",
-      "descricao": "333",
-      "id": 18
+      "parcelas": "12",
+      "descricao": "1",
+      "id": 5
     }
   ],
   "usuarios": [
@@ -170,20 +44,6 @@
       "pass": "123",
       "repeatPass": "123",
       "id": 1
-    },
-    {
-      "email": "rmnprojetos@outlook.com",
-      "user": "111",
-      "pass": "111",
-      "repeatPass": "111",
-      "id": 2
-    },
-    {
-      "email": "jj@jj.com",
-      "user": "123",
-      "pass": "123",
-      "repeatPass": "123",
-      "id": 3
     }
   ]
 }

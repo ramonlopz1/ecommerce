@@ -1,1 +1,1 @@
-import{listarEcriarProdutos}from"./produto-controller-listarProdutos.js";listarEcriarProdutos(".categorias__containerspainel");
+import{renderizarProdutos}from"./produto-controller-listarProdutos.js";renderizarProdutos(".categorias__containerspainel");

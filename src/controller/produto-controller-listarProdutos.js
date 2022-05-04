@@ -1,71 +1,76 @@
 import { serviceProdutos } from "../services/service-produtos.js";
 
-// Função principal que executará todos os procedimentos
-export const listarEcriarProdutos = async (destino, id) => {
+/**
+ * Função principal que executará todos os procedimentos.
+ * Ela lista todos o produtos e retorna um html template string de acordo com o destino escolhido,
+ * como ela será utilizada em 3 páginas, retornará uma template string para cada página,
+ * caso o ID seja passado, ela lista apenas o produto que contém o ID recebido
+ */
+
+export const renderizarProdutos = async (destino, id) => {
   const produtos = await serviceProdutos.getProdutos();
 
   if (!id) {
     produtos.forEach((produto) => {
-      const produtoDadosFormatados = formatarDadosRecebidos(produto);
+      const dadosFormatados = formatarDados(produto);
 
-      const templateFormatado = templateString(produtoDadosFormatados, destino);
+      const criarTemplateString = construirElementoHTML(
+        dadosFormatados,
+        destino
+      );
 
-      criarTemplateString(
-        templateFormatado,
+      classificaEInsereElementoNaDOM(
+        criarTemplateString,
         destino,
-        produtoDadosFormatados.categoria
+        dadosFormatados.categoria
       );
     });
   } else {
-    produtos.forEach((produto) => {
-      if (produto.id == id) {
-        console.log(produto);
-        const produtoDadosFormatados = formatarDadosRecebidos(produto);
 
-        const templateFormatado = templateString(
-          produtoDadosFormatados,
-          destino
-        );
+    const produto = produtos[id-1]
+    
 
-        criarTemplateString(
-          templateFormatado,
-          destino,
-          produtoDadosFormatados.categoria
-        );
-      }
-    });
+    if (produto) {
+      const dadosFormatados = formatarDados(produto);
+
+      const criarTemplateString = construirElementoHTML(
+        dadosFormatados,
+        destino
+      );
+
+      classificaEInsereElementoNaDOM(
+        criarTemplateString,
+        destino,
+        dadosFormatados.categoria
+      );
+    }
   }
 };
 
-const formatarDadosRecebidos = (produto) => {
-  let formatPreco = parseFloat(produto.preco);
-  formatPreco = formatPreco.toFixed(2).replace(".", ",");
-  produto.formatPreco = formatPreco;
+const formatarDados = (produto) => {
+  let precoFormatado = parseInt(produto.preco).toFixed(2).replace(".", ",");
 
-  let precoParcelado = parseFloat(produto.preco / produto.parcelas);
+  let precoParcela = (produto.preco / produto.parcelas)
+    .toFixed(2)
+    .replace(".", ",");
 
-  let formatPrecoParcelado = precoParcelado.toFixed(2).replace(".", ",");
-
-  produto.formatParcelas = `${
-    produto.parcelas
-  } x R$ ${formatPrecoParcelado}`;
-
-  let formatImgPath = produto.img.toString();
-  formatImgPath = formatImgPath
+  let nomeDaImagem = produto.img
     .replaceAll("\\", "")
     .replace("C:", "")
     .replace("fakepath", "");
 
-  produto.formatImgPath = formatImgPath;
+  produto.precoFormatado = precoFormatado;
+  produto.precoParcela = `${produto.parcelas} x R$ ${precoParcela}`;
+  produto.nomeDaImagem = nomeDaImagem;
 
   return produto;
 };
 
-const templateString = (produtoDadosFormatados, destino) => {
+const construirElementoHTML = (dados, destino) => {
   if (destino === ".categorias__containers") {
-    return `<img src="assets/upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="produto" class="container__produto__img">
-      <div class="container__produto__info" data-produto-id="${produtoDadosFormatados.id}">
-          <span class="produto__nome">${produtoDadosFormatados.nome}</span>
+    return `<img src="assets/upload/${dados.id}_${dados.nomeDaImagem}" alt="produto" class="container__produto__img">
+      <div class="container__produto__info" data-produto-id="${dados.id}">
+          <span class="produto__nome">${dados.nome}</span>
           <div class="produto__rating">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -73,18 +78,18 @@ const templateString = (produtoDadosFormatados, destino) => {
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
           </div>
-          <span class="produto__preco">R$ ${produtoDadosFormatados.formatPreco}</span>
-          <span class="produto__parcelas">${produtoDadosFormatados.formatParcelas}</span>
+          <span class="produto__preco">R$ ${dados.preco}</span>
+          <span class="produto__parcelas">${dados.precoParcela}</span>
           <a href="./assets/html/produto.html" class="produto__botao">Ver produto</a>
       </div>`;
   } else if (destino === ".categorias__containerspainel") {
     return `<div class="lista__cards__img">
-                <img src="../upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
+                <img src="../upload/${dados.id}_${dados.nomeDaImagem}" alt="imagem do produto" height="70px">
             </div>
-            <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
-                <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
-                <span class="cards__infos__preco">${produtoDadosFormatados.formatPreco}</span>
-                <span class="cards__infos__parcelas">${produtoDadosFormatados.formatParcelas}</span>
+            <div class="lista__cards__infos" data-produto-id="${dados.id}">
+                <span class="cards__infos__nome">${dados.nome}</span>
+                <span class="cards__infos__preco">${dados.preco}</span>
+                <span class="cards__infos__parcelas">${dados.precoParcela}</span>
                 
             </div>
             <div class="lista__cards__qtd">
@@ -95,21 +100,21 @@ const templateString = (produtoDadosFormatados, destino) => {
                 <button class="cards__btns__ver">
                 <i class="fa-regular fa-eye"></i>
                 </button>
-                <button class="cards__btns__editar">
-                <i class="fa-regular fa-pen-to-square"></i>
-                </button>
+                <a href="../html/editar_produtos.html?id=${dados.id}" class="cards__btns__editar">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </a>
                 <button class="cards__btns__deletar">
                 <i class="fa-regular fa-trash-can"></i>
                 </button>
             </div>`;
   } else if (destino === ".painel__excluir__produto") {
     return `<div class="lista__cards__img">
-                <img src="../upload/${produtoDadosFormatados.id}_${produtoDadosFormatados.formatImgPath}" alt="imagem do produto" height="70px">
+                <img src="../upload/${dados.id}_${dados.nomeDaImagem}" alt="imagem do produto" height="70px">
             </div>
-            <div class="lista__cards__infos" data-produto-id="${produtoDadosFormatados.id}">
-                <span class="cards__infos__nome">${produtoDadosFormatados.nome}</span>
-                <span class="cards__infos__preco">${produtoDadosFormatados.formatPreco}</span>
-                <span class="cards__infos__parcelas">${produtoDadosFormatados.formatParcelas}</span>
+            <div class="lista__cards__infos" data-produto-id="${dados.id}">
+                <span class="cards__infos__nome">${dados.nome}</span>
+                <span class="cards__infos__preco">${dados.preco}</span>
+                <span class="cards__infos__parcelas">${dados.precoParcela}</span>
                 
             </div>
             <div class="lista__cards__qtd">
@@ -120,11 +125,11 @@ const templateString = (produtoDadosFormatados, destino) => {
   }
 };
 
-const criarTemplateString = (templateString, destino, categoria) => {
+const classificaEInsereElementoNaDOM = (elementoHTML, destino, categoria) => {
   const container = document.createElement("div");
   container.classList.add("container");
   container.classList.add("section__lista__cards");
-  container.innerHTML = templateString;
+  container.innerHTML = elementoHTML;
 
   const section = document.querySelector(destino + "." + categoria);
 

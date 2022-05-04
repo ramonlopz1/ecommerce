@@ -1,5 +1,5 @@
 import { serviceProdutos } from "../services/service-produtos.js";
-import { getValuesFromInput } from "./produto-controller-getInputValues.js";
+import { valoresInputs } from "./produto-cadastro-controller-dadosNovoProdutoInputs.js";
 
 document.querySelector("#btns__cancelar").addEventListener("click", (event) => {
   event.preventDefault();
@@ -14,13 +14,11 @@ document
   });
 
 const novoProduto = async () => {
-  const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
-  const novoProduto = getValuesFromInput();
-  const addNovoProduto = [...produtos, novoProduto];
+  const dadosInput = valoresInputs();
+
+  const novoProduto = dadosInput.receberDadosModificados
 
   if (novoProduto) {
-    localStorage.setItem("produtos", JSON.stringify(addNovoProduto));
-
     // Faz um post via fetch api, enviando json para db.json
     await serviceProdutos.postProdutos(novoProduto);
   } else {

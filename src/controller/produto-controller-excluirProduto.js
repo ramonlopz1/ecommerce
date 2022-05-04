@@ -1,6 +1,6 @@
 import { serviceProdutos } from "../services/service-produtos.js";
 
-import { listarEcriarProdutos } from "./produto-controller-listarProdutos.js";
+import { renderizarProdutos } from "./produto-controller-listarProdutos.js";
 
 const divProduto = document.querySelector("#form__div__produto");
 
@@ -18,7 +18,7 @@ const filtrarProduto = async () => {
     const produto = await serviceProdutos.getProduto(ID);
 
     if (produto.id == ID) {
-      listarEcriarProdutos(".painel__excluir__produto", ID);
+      renderizarProdutos(".painel__excluir__produto", ID);
     } else {
       divProduto.innerHTML = "<h1>ID INCORRETO</h1>";
     }
@@ -27,11 +27,11 @@ const filtrarProduto = async () => {
 
 const btnExcluir = document.querySelector("#btns__excluir");
 
-btnExcluir.onclick = (e) => {
-  e.preventDefault();
+btnExcluir.addEventListener('click', (event) => {
+  event.preventDefault();
   excluirProduto();
   divProduto.innerHTML = "<h1>PRODUTO EXCLUÍDO!</h1>";
-};
+})
 
 const excluirProduto = () => {
   const ID = document.querySelector("#produtopesquisainput").value;
