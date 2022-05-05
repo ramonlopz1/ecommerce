@@ -10,42 +10,6 @@
       "id": 2
     },
     {
-      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
-      "nome": "123",
-      "categoria": "diversos",
-      "preco": "123",
-      "parcelas": "12",
-      "descricao": "1",
-      "id": 3
-    },
-    {
-      "img": "C:\\fakepath\\Produto.png",
-      "nome": "ABCE",
-      "categoria": "starwars",
-      "preco": "11111",
-      "parcelas": "23",
-      "descricao": "a",
-      "id": 4
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
-      "nome": "STARRR",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "123",
-      "descricao": "123",
-      "id": 5
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
-      "nome": "133333",
-      "categoria": "starwars",
-      "preco": "11",
-      "parcelas": "1",
-      "descricao": "1",
-      "id": 6
-    },
-    {
       "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
       "nome": "FFFFFFF",
       "categoria": "starwars",
@@ -62,42 +26,6 @@
       "parcelas": "12",
       "descricao": "1",
       "id": 8
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_fMP-oCze3AY.png",
-      "nome": "abcde",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "12",
-      "descricao": "123",
-      "id": 9
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_k-xYhI3-gJM.png",
-      "nome": "abcde",
-      "categoria": "starwars",
-      "preco": "322",
-      "parcelas": "3",
-      "descricao": "3",
-      "id": 10
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_caNzzoxls8Q.png",
-      "nome": "abcde",
-      "categoria": "starwars",
-      "preco": "32",
-      "parcelas": "2",
-      "descricao": "abc",
-      "id": 11
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
-      "nome": "abcde",
-      "categoria": "starwars",
-      "preco": "222",
-      "parcelas": "5",
-      "descricao": "abc",
-      "id": 12
     }
   ],
   "usuarios": [

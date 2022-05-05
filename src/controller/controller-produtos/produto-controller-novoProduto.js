@@ -2,8 +2,7 @@ import { serviceProdutos } from "../../services/service-produtos.js";
 import { valoresInputs } from "./produto-controller-inputs.js";
 
 
-
-// Cadastra o novo produto
+// Atribui a função novoProduto ao botão cadastrar
 document
   .querySelector("#btns__cadastrar")
   .addEventListener("click", (event) => {

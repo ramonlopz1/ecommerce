@@ -1,5 +1,5 @@
 /**
- * Formata os dados do objeto "produto", para melhor apresentação ao usuário.
+ * Formata os dados do objeto "produto", para uma melhor apresentação ao usuário.
  * 
  */
 

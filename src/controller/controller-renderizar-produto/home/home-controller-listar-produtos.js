@@ -1,6 +1,9 @@
 import { serviceProdutos } from "../../../services/service-produtos.js";
-
 import { formatarDados } from "../produto-controller-formatarDados.js";
+
+/**
+ * Essa função requisita o "objeto produtos", formata seus dados e renderiza todos os produtos na div de destino.
+ */
 
 export const renderizarProdutos = async () => {
   const produtos = await serviceProdutos.getProdutos();
@@ -30,9 +33,7 @@ export const renderizarProdutos = async () => {
     const divDestino = document.querySelector(".categorias__containers" + "." + dadosFormatados.categoria)
 
     divDestino.appendChild(template)
-
   })
-
 };
 
 renderizarProdutos()

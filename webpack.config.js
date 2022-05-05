@@ -15,7 +15,6 @@ module.exports = {
     ]
   },
 
-
   output: {
     filename: 'assets/js/[name].js',
     path: path.resolve(__dirname, 'public'),
@@ -23,28 +22,26 @@ module.exports = {
 
   devtool: 'eval-source-map',
 
-
   module: {
     rules: [{
-      test: /\.s[ac]ss$/, // The test property identifies which file or files should be transformed.
-      use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] // The use property indicates which loader should be used to do the transforming.
+      test: /\.s[ac]ss$/,
+      use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
     }, {
-      test: /\.(png|svg|jpg|gif)$/i, // Process image files
+      test: /\.(png|svg|jpg|gif)$/i,
       use: ['file-loader']
     }, {
-      test: /\.html$/i, // Process HTML files
+      test: /\.html$/i,
       type: "assets/resource"
     }
     ],
   },
 
-
   plugins: [
-    new MiniCssExtractPlugin({ // Extract the SASS file to CSS file
+    new MiniCssExtractPlugin({
       filename: "assets/css/style.css"
     }),
 
-    new CopyPlugin({ // Copy a new HTML file
+    new CopyPlugin({
       patterns: [{
         from: './src/index.html',
         to: path.resolve(__dirname, 'public')
@@ -74,7 +71,6 @@ module.exports = {
     })
   ],
 
-  // Optimization Minimizer
   optimization: {
     minimize: true,
     minimizer: [
