@@ -35,6 +35,42 @@
       "parcelas": "2",
       "descricao": "ab",
       "id": 4
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
+      "nome": "Kylo Ren",
+      "categoria": "starwars",
+      "preco": "99.89",
+      "parcelas": "5",
+      "descricao": "Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ip",
+      "id": 5
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
+      "nome": "Caneca Star Wars",
+      "categoria": "starwars",
+      "preco": "299.89",
+      "parcelas": "5",
+      "descricao": "Lorem ipsum Lorem ipsum",
+      "id": 6
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "Boneco Darth Vader",
+      "categoria": "starwars",
+      "preco": "999.89",
+      "parcelas": "12",
+      "descricao": "Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ip",
+      "id": 7
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_KeGToDVN0l4.png",
+      "nome": "Yoda O Brabo",
+      "categoria": "starwars",
+      "preco": "9999.89",
+      "parcelas": "12",
+      "descricao": "Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ip",
+      "id": 8
     }
   ],
   "usuarios": [
