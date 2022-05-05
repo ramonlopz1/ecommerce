@@ -48,7 +48,7 @@
           text-indent: 7px;
         }
 
-        #btns__pesquisar_excluir {
+        #btns__pesquisar {
           height: 40px;
 
           border: none;
@@ -62,7 +62,7 @@
         }
       }
 
-      .painel__excluir__produto {
+      .container {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -173,7 +173,13 @@
   #excluir_main {
     #excluir_main__section {
       #excluir_main__form {
-        width: 395px;
+        width: 360px;
+
+        #form__input__produtopesquisa {
+          #produtopesquisainput {
+            width: 235px;
+          }
+        }
       }
     }
   }

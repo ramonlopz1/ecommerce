@@ -1,5 +1,6 @@
 export const valoresInputs = () => {
   // Seleciona os inputs
+  const inputID = document.querySelector("#produtopesquisainput")
   const inputImg = document.querySelector("#produtoimginput");
   const inputNome = document.querySelector("#produtonome");
   const inputCategoria = document.querySelector("#produtocategoria");
@@ -9,12 +10,15 @@ export const valoresInputs = () => {
 
   // Se for chamado na função editar produtos, preenche todos os inputs com os dados dos produtos
   const preencherInputsComDadosDoProduto = (produto) => {
+    if(produto.id) {
+    inputID.value = produto.id;
     inputNome.value = produto.nome;
     inputCategoria.value = produto.categoria;
     inputPreco.value = produto.preco;
     inputParcelas.value = produto.parcelas;
     inputDescricao.value = produto.descricao;
     inputImg.filename = produto.img;
+    }
   }
 
   // 

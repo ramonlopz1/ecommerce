@@ -1,10 +1,10 @@
 /**
 * Faz um fetch no header e no footer, e insere eles nos destinos escolhidos.
-* para evitar repetição de código nas outras páginas
+* para evitar repetição de código nas outras páginas.
 */
 
-const includeHeader = document.querySelector(".include_header")
-const includeFooter = document.querySelector(".include_footer")
+const destinoHeader = document.querySelector(".include_header")
+const destinoFooter = document.querySelector(".include_footer")
 
 const include = (htmlTag, htmlFile) => {
     fetch(htmlFile)
@@ -12,5 +12,5 @@ const include = (htmlTag, htmlFile) => {
         .then(elem => htmlTag.innerHTML = elem)
 }
 
-include(includeHeader, "../include-header-footer/include_header.html")
-include(includeFooter, "../include-header-footer/include_footer.html")
+include(destinoHeader, "../include-header-footer/include_header.html")
+include(destinoFooter, "../include-header-footer/include_footer.html")

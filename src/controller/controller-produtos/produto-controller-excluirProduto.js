@@ -1,18 +1,18 @@
 import { serviceProdutos } from "../../services/service-produtos.js";
 
-import { renderizarProduto } from "../renderizarProduto/painel/painel-controller-excluir-produtos.js";
+import { renderizarProduto } from "../controller-renderizar-produto/painel/painel-controller-excluir-produtos.js";
 
 
-// FILTRA O PRODUTO PELO ID
+// Atribui a função filtrarProduto ao botão pesquisar
+
+document.querySelector("#btns__pesquisar").addEventListener("click", (e) => {
+    e.preventDefault();
+    filtrarProduto();
+});
+
 const divProduto = document.querySelector("#form__div__produto");
 
-document
-  .querySelector("#btns__pesquisar_excluir")
-  .addEventListener("click", (e) => {
-    e.preventDefault();
-
-    filtrarProduto();
-  });
+// Filtra produto pelo ID
 
 const filtrarProduto = async () => {
   const ID = document.querySelector("#produtopesquisainput").value;
@@ -31,15 +31,9 @@ const filtrarProduto = async () => {
 };
 
 
+// Atribui a função excluirProduto ao botão Excluir
 
-
-
-
-
-// Após filtrar o produto pelo ID, exclui o mesmo ao clicar no botão "Excluir".
-const btnExcluir = document.querySelector("#btns__excluir");
-
-btnExcluir.addEventListener('click', (event) => {
+document.querySelector("#btns__excluir").addEventListener('click', (event) => {
   event.preventDefault();
   excluirProduto();
   divProduto.innerHTML = "<h1>PRODUTO EXCLUÍDO!</h1>";

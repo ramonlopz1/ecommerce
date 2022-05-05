@@ -1,1 +1,1 @@
-const inputFile=document.querySelector("#produtoimginput"),inserirDescricaoDaImagem=()=>{const e=document.querySelector("#produtoimglabel"),t=document.createElement("span");e.appendChild(t),t.textContent=inputFile.value};inputFile.addEventListener("change",inserirDescricaoDaImagem);
+const inputFile=document.querySelector("#produtoimginput"),label=document.querySelector("#produtoimglabel"),fileInfo=document.createElement("span");label.appendChild(fileInfo);const imgChecked=()=>{fileInfo.textContent=inputFile.value};inputFile.addEventListener("change",imgChecked);

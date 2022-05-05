@@ -1,13 +1,11 @@
-// Insere no span, a descrição da imagem recebida no input.
+
 const inputFile = document.querySelector("#produtoimginput")
+const label = document.querySelector("#produtoimglabel")
+const fileInfo = document.createElement("span")
+label.appendChild(fileInfo)
 
-const inserirDescricaoDaImagem = () => {
-    const label = document.querySelector("#produtoimglabel")
-    const fileInfo = document.createElement("span")
-
-    label.appendChild(fileInfo)
-
+const imgChecked = () => {
     fileInfo.textContent = inputFile.value
 }
 
-inputFile.addEventListener("change", inserirDescricaoDaImagem)
+inputFile.addEventListener("change", imgChecked)

@@ -24,7 +24,7 @@ export const renderizarProdutos = async () => {
         </div>
         <span class="produto__preco">R$ ${dadosFormatados.precoFormatado}</span>
         <span class="produto__parcelas">${dadosFormatados.precoParcela}</span>
-        <a href="./assets/html/visualizar-produto/visualizar-produto.html?id=${dadosFormatados.id}" class="produto__botao">Ver produto</a>
+        <a href="./assets/html/visualizar-produto/visualizar-produto.html?categoria=${dadosFormatados.categoria}&id=${dadosFormatados.id}" class="produto__botao">Ver produto</a>
     </div>`
 
     const divDestino = document.querySelector(".categorias__containers" + "." + dadosFormatados.categoria)

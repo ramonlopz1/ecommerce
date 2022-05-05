@@ -27,11 +27,11 @@ export const renderizarProdutos = async () => {
 </div>
 <div class="lista__cards__btns">
 
-    <a href="../visualizar-produto/visualizar-produto.html?id=${dadosFormatados.id}" class="cards__btns__ver">
+    <a href="../visualizar-produto/visualizar-produto.html?categoria=${dadosFormatados.categoria}&id=${dadosFormatados.id}" class="cards__btns__ver">
       <i class="fa-regular fa-eye"></i>
     </a>
 
-    <a href="../visualizar-produto/visualizar-produto.html?id=${dadosFormatados.id}" class="cards__btns__editar">
+    <a href="./painel-editar-produtos.html?categoria=${dadosFormatados.categoria}&id=${dadosFormatados.id}" class="cards__btns__editar">
       <i class="fa-regular fa-pen-to-square"></i>
     </a>
 

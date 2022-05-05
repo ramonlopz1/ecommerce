@@ -1,10 +1,10 @@
-import { serviceProdutos } from "../../services/service-produtos.js";
+import { serviceProdutos } from "../../../services/service-produtos.js";
 
-import { formatarDados } from "./produto-controller-formatarDados.js";
+import { formatarDados } from "../produto-controller-formatarDados.js";
 
 const visualizarProduto = async () => {
-    const idURL = new URL(window.location)
-    const id = idURL.searchParams.get('id')
+    const objetoURL = new URL(window.location)
+    const id = objetoURL.searchParams.get('id')
 
     const produto = await serviceProdutos.getProduto(id)
 
@@ -15,7 +15,7 @@ const visualizarProduto = async () => {
     const templateHTML = `  <div id="produto__img">
     <img src="../../upload/${dadosFormatados.id}_${dadosFormatados.nomeDaImagem}" alt="imagem do produto" height="250px" width="250px">
 </div>
-<div id="produto__informacoes" data-produto-id="${dadosFormatados.id}>
+<div id="produto__informacoes" data-produto-id="${dadosFormatados.id}">
     <span id="produto__informacoes__nome">${dadosFormatados.nome}</span>
     <span id="produto__informacoes__preco">R$ ${dadosFormatados.precoFormatado}</span>
     <span id="produto__informacoes__parcelas">${dadosFormatados.precoParcela}</span>

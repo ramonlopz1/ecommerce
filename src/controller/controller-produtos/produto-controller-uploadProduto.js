@@ -2,7 +2,7 @@ import { serviceProdutos } from "../../services/service-produtos.js";
 
 /**
  * Recebe a imagem inserida no input, cria FormData e envia para url /upload, 
- * que será recebida no backend pela API do Multer, para fazer o uplaod da imagem.
+ * que será recebida no backend pela API do Multer, para fazer o uplaod da i
  */
 
 const uploadProduto = () => {

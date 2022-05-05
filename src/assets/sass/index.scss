@@ -2,9 +2,9 @@
 @import 'normalize.scss';
 @import 'home/home_header.scss';
 @import 'home/home_main.scss';
-@import 'home/main_section-banners.scss';
-@import 'home/main_section-categorias.scss';
-@import 'home/main_section-produtos.scss';
+@import 'home/main_section_banners.scss';
+@import 'home/main_section_categorias.scss';
+@import 'home/main_section_produtos.scss';
 @import 'home/home_footer.scss';
 
 /*Login*/
@@ -13,7 +13,7 @@
 
 
 /*Visualizar Produto*/
-@import 'visualizar-produto/visualizar__produto.scss';
+@import 'visualizar-produto/visualizar_produto.scss';
 
 /*Painel*/
 @import 'painel/painel_main.scss';

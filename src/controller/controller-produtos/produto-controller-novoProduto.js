@@ -1,11 +1,7 @@
 import { serviceProdutos } from "../../services/service-produtos.js";
 import { valoresInputs } from "./produto-controller-inputs.js";
 
-// Cancela a operação
-document.querySelector("#btns__cancelar").addEventListener("click", (event) => {
-  event.preventDefault();
-  window.location.href = "../html/painel.html";
-});
+
 
 // Cadastra o novo produto
 document

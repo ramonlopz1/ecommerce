@@ -2,15 +2,19 @@ import { serviceProdutos } from "../../../services/service-produtos.js";
 
 import { formatarDados } from "../produto-controller-formatarDados.js";
 
+/**
+ * 
+ * Essa função renderiza o produto através do id recebido no input.
+ *  */
 export const renderizarProduto = async (id) => {
-  const produto = await serviceProdutos.getProduto(id);
+    const produto = await serviceProdutos.getProduto(id);
 
     if (produto) {
-        const dadosFormatados = formatarDados(produto)    
+        const dadosFormatados = formatarDados(produto)
 
         const template = document.createElement("div")
         template.classList.add("container")
-    
+
         template.innerHTML = `<div class="lista__cards__img">
         <img src="../../upload/${dadosFormatados.id}_${dadosFormatados.nomeDaImagem}" alt="imagem do produto" height="70px">
     </div>
@@ -25,11 +29,9 @@ export const renderizarProduto = async (id) => {
     <span class="cards__infos__quantidade">39</span>
     </div>
     `
-    
         const divDestino = document.querySelector(".painel__excluir__produto")
-    
-        divDestino.appendChild(template)
 
+        divDestino.replaceChildren(template)
     }
 };
 

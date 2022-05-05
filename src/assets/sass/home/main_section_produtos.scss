@@ -136,7 +136,7 @@
       .categorias__containers {
         margin: 0px;
 
-        .container.section__lista__cards {
+        .container {
           height: 365px;
           width: 195;
           margin: 5px;
@@ -153,7 +153,7 @@
 
       .categorias__containers {
 
-        .container.section__lista__cards {
+        .container {
           height: 360px;
           width: 180px;
 
@@ -174,11 +174,10 @@
 @media screen and (max-width: 430px) {
   #main_produtos {
     .produtos__categorias {
-      height: 870px;
 
       .categorias__containers {
 
-        .container.section__lista__cards {
+        .container {
           height: 345px;
           width: 175px;
 
