@@ -8,7 +8,7 @@ import { formatarDados } from "../produto-controller-formatarDados.js";
  * da mesma categoria são renderizados.
  */
 
-export const renderizarProdutos = async () => {
+export const renderizarProdutosPorCategoria = async () => {
     // Seleciona param.categoria
     const objetoURL = new URL(window.location)
     const categoriaURL = objetoURL.searchParams.get('categoria')
@@ -49,4 +49,4 @@ export const renderizarProdutos = async () => {
     })
 };
 
-renderizarProdutos()
+renderizarProdutosPorCategoria()

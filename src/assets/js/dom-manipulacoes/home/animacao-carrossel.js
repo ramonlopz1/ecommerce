@@ -1,40 +1,46 @@
 (() => {
-    let circlesDiv = document.querySelector('.article__circles__circle');
-    let btns = document.querySelectorAll('.categorias__article__btns')
-    let translateValue = 0;
+    // Div que limita a visualização dos itens com overflow: hiden
+    const envelopaDivDosCirculos = document.querySelector('#categorias__article__circles')
 
-    /**Se baseia no tamanho da DIV que contém todos os CARDS e o 
-     * tamanho do ASIDE + o valor do TRANSLATE a cada click, ou seja,
-     * enquanto asideWidth + translateValue < AllCardsWidth: 
-     */
-    const carrousel = (btnIndex) => {
-        let asideCircles = document.querySelector('#categorias__article__circles')
-        let asideCirclesWidth = asideCircles.offsetWidth
-        let circlesDivWidth = circlesDiv.offsetWidth
+    // Div que contém os circulos, que está parcialmente oculta, devido o overflow:hiden da sua div pai.
+    const divDosCirculos = document.querySelector('.article__circles__circle');
+    
+    // Valor que a divDosCirculos irá aplicar ao translate
+    let valorDoTranslate = 0;
+    
+    // Largura da div que tem o overflow: hiden
+    let envelopaDivDosCirculosLargura = envelopaDivDosCirculos.offsetWidth
+    
+    // Largura da div completa, que está parcialmente oculta, devido o overflow:hiden da sua div pai.
+    let divDosCirculosLargura = divDosCirculos.offsetWidth
+    
+    // Aplica translate ao clicar no botão da esquerda
+    const btnEsquerda = document.querySelector("[btnEsquerda]")
+    btnEsquerda.addEventListener('click', (event) => {
+        event.preventDefault()
         
-        if (btnIndex == 0 && translateValue <= -130) {
-            transformCondition(btnIndex)
-        } else if (btnIndex == 1 && -asideCirclesWidth + translateValue - 400 > -circlesDivWidth) {
-            transformCondition(btnIndex)
-        } 
-    }
+        // Se estiver dentro do limite permitido, ande uma casa.
 
-    // Define a direção do transform: direita ou esquerda, através do botão clicado (botão 0 ou botão 1)
-    const transformCondition = (btnIndex)  => {
-        if (btnIndex == 0) {
-            translateValue += 130
-            circlesDiv.style.transform = `translateX(${translateValue}px)`
-        } else {
-            translateValue -= 130
-            circlesDiv.style.transform = `translateX(${translateValue}px)`
+        const limiteMinimoTranslate = valorDoTranslate <= -130
+
+        if(limiteMinimoTranslate) {
+            valorDoTranslate += 130
+            divDosCirculos.style.transform = `translateX(${valorDoTranslate}px)`
         }
-    }
-
-    // Define o botão clicado e executa a sua função.
-    btns.forEach((elem, btnIndex) => {
-        elem.addEventListener('click', () => {
-                carrousel(btnIndex)
-        })
     })
+    
+    // Aplica translate ao clicar no botão da direita
+    const btnDireita = document.querySelector("[btnDireita]")
+    btnDireita.addEventListener('click', (event) => {
+        event.preventDefault()
+        
+        // Se estiver dentro do limite permitido, ande uma casa.
 
+        const limiteMaximoDeTranslate = -envelopaDivDosCirculosLargura + valorDoTranslate - 350 > -divDosCirculosLargura
+        
+        if (limiteMaximoDeTranslate) {
+            valorDoTranslate -= 130
+            divDosCirculos.style.transform = `translateX(${valorDoTranslate}px)`
+        }
+    })
 })()

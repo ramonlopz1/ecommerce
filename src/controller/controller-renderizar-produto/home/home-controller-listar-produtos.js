@@ -31,7 +31,7 @@ export const renderizarProdutos = async () => {
     </div>`
 
     const divDestino = document.querySelector(".categorias__containers" + "." + dadosFormatados.categoria)
-
+    
     divDestino.appendChild(template)
   })
 };

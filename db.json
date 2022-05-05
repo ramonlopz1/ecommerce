@@ -1,48 +1,48 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\unsplash_MxVkWPiJALs.png",
-      "nome": "CCCCC",
+      "img": "C:\\fakepath\\Produto.png",
+      "nome": "Stormtrooper",
+      "categoria": "starwars",
+      "preco": "123",
+      "parcelas": "3",
+      "descricao": "abc",
+      "id": 1
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
+      "nome": "Kylo Ren",
+      "categoria": "starwars",
+      "preco": "322",
+      "parcelas": "5",
+      "descricao": "abc",
+      "id": 2
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_fMP-oCze3AY.png",
+      "nome": "Logo",
       "categoria": "diversos",
       "preco": "123",
-      "parcelas": "12",
-      "descricao": "1",
-      "id": 8
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
-      "nome": "Gogru",
-      "categoria": "starwars",
-      "preco": "99.99",
-      "parcelas": "5",
-      "descricao": "Abcde",
-      "id": 9
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
-      "nome": "Controle XBOX",
-      "categoria": "consoles",
-      "preco": "299.89",
-      "parcelas": "6",
-      "descricao": "Abcde",
-      "id": 10
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_sYVY_ZKwaxU.png",
-      "nome": "Sonic",
-      "categoria": "diversos",
-      "preco": "89",
       "parcelas": "2",
-      "descricao": "abv",
-      "id": 11
+      "descricao": "abc",
+      "id": 3
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
+      "nome": "Joystick",
+      "categoria": "consoles",
+      "preco": "1234",
+      "parcelas": "2",
+      "descricao": "ab",
+      "id": 4
     }
   ],
   "usuarios": [
     {
       "email": "davidramon123@hotmail.com",
-      "user": "123",
-      "pass": "123",
-      "repeatPass": "123",
+      "user": "ramonlopz1",
+      "pass": "drlf@182",
+      "repeatPass": "drlf@182",
       "id": 1
     },
     {
