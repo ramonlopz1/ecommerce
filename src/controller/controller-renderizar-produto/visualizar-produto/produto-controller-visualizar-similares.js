@@ -46,9 +46,7 @@ export const renderizarProdutos = async () => {
 
             divDestino.appendChild(template)
         }
-
     })
-
 };
 
 renderizarProdutos()

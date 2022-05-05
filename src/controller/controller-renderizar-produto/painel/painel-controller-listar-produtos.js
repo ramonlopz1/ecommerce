@@ -42,18 +42,17 @@ export const renderizarProdutos = async () => {
     divDestino.appendChild(template)
   })
 
-  // Excluir produtos da lista
-    document.querySelectorAll(".container").forEach((container) => {
-      const containerID = container.querySelector(".lista__cards__infos")
-     const btnDeletar = container.querySelector(".cards__btns__deletar")
-      
+  // Excluir produtos da lista ao clicar no botão da lixeira.
+  document.querySelectorAll(".container").forEach((container) => {
+    const containerID = container.querySelector(".lista__cards__infos")
+    const btnDeletar = container.querySelector(".cards__btns__deletar")
+
     btnDeletar.addEventListener("click", async (event) => {
       event.preventDefault()
       await serviceProdutos.deleteProduto(containerID.id)
       container.remove()
     })
-
-    })
+  })
 };
 
 renderizarProdutos()

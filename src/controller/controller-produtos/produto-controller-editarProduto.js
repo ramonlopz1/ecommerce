@@ -19,7 +19,7 @@ const requisitarProdutoViaID = async () => {
 
   let produto = await serviceProdutos.getProduto(id);
 
-  // Inicializa função que manipula os valores dos inputs.
+  // Inicializa a função que manipula os valores dos inputs.
   const dadosInputs = valoresInputs();
 
   // Preenche valores dos inputs com os dados do produto encontrado via ID.

@@ -7,7 +7,7 @@ const postUsuario = async (dados) => {
     return resp.body
 }
 
-const getAllUsuarios = async (id) => {
+const getAllUsuarios = async () => {
     const resp = await fetch(`http://localhost:3000/usuarios`)
     const dados = await resp.json()
     return dados

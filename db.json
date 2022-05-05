@@ -1,24 +1,6 @@
 {
   "produtos": [
     {
-      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
-      "nome": "123",
-      "categoria": "consoles",
-      "preco": "123",
-      "parcelas": "32",
-      "descricao": "ab",
-      "id": 2
-    },
-    {
-      "img": "C:\\fakepath\\unsplash_1VV1MRafd7A.png",
-      "nome": "FFFFFFF",
-      "categoria": "starwars",
-      "preco": "123",
-      "parcelas": "12",
-      "descricao": "1111",
-      "id": 7
-    },
-    {
       "img": "C:\\fakepath\\unsplash_MxVkWPiJALs.png",
       "nome": "CCCCC",
       "categoria": "diversos",
@@ -26,6 +8,33 @@
       "parcelas": "12",
       "descricao": "1",
       "id": 8
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_R8L1l9RN198.png",
+      "nome": "Gogru",
+      "categoria": "starwars",
+      "preco": "99.99",
+      "parcelas": "5",
+      "descricao": "Abcde",
+      "id": 9
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "Controle XBOX",
+      "categoria": "consoles",
+      "preco": "299.89",
+      "parcelas": "6",
+      "descricao": "Abcde",
+      "id": 10
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_sYVY_ZKwaxU.png",
+      "nome": "Sonic",
+      "categoria": "diversos",
+      "preco": "89",
+      "parcelas": "2",
+      "descricao": "abv",
+      "id": 11
     }
   ],
   "usuarios": [
@@ -35,6 +44,13 @@
       "pass": "123",
       "repeatPass": "123",
       "id": 1
+    },
+    {
+      "email": "davidramon123@hotmail.com",
+      "user": "ramonlopz1",
+      "pass": "drlf@182",
+      "repeatPass": "drlf@182",
+      "id": 2
     }
   ]
 }
