@@ -1,7 +1,7 @@
 const getProdutos = async () => {
-    const resp = await fetch("http://localhost:3000/produtos")
+    const resp = await fetch("https://ramonlopz1.github.io/ecommerce/db.json")
     const dados = await resp.json()
-    return dados
+    return dados.produtos
 }
 
 const postProdutos = (dados) => { 
