@@ -4,8 +4,7 @@ Em andamento.
 _________________________________________
 
 Features:
-Login e cadastro de usuário:
-  (em andamento)
+Login e cadastro de usuário
 
 Cadastro de produtos:
 Persiste os dados em: 
