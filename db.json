@@ -71,6 +71,132 @@
       "parcelas": "12",
       "descricao": "Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ipsum Lorem ipsumLorem ip",
       "id": 8
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_KeGToDVN0l4.png",
+      "nome": "God Yoda",
+      "categoria": "starwars",
+      "preco": "9999.89",
+      "parcelas": "12",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 9
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_6FDXGY9J6y4.png",
+      "nome": "Caneca Stormtrooper",
+      "categoria": "starwars",
+      "preco": "78.89",
+      "parcelas": "5",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 10
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_epRFE_hBNjo.png",
+      "nome": "Darth Vader Boneco",
+      "categoria": "starwars",
+      "preco": "1.99",
+      "parcelas": "12",
+      "descricao": "aabcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 11
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_fMP-oCze3AY.png",
+      "nome": "Logo Laranja",
+      "categoria": "diversos",
+      "preco": "1222",
+      "parcelas": "12",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 12
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_jMT6BrgBuXU.png",
+      "nome": "Radiola Gamer",
+      "categoria": "diversos",
+      "preco": "999.99",
+      "parcelas": "6",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 13
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_MxVkWPiJALs.png",
+      "nome": "Óculos VR",
+      "categoria": "diversos",
+      "preco": "2999.59",
+      "parcelas": "8",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcd",
+      "id": 14
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_sYVY_ZKwaxU.png",
+      "nome": "Soniczada",
+      "categoria": "diversos",
+      "preco": "8799.89",
+      "parcelas": "4",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcd",
+      "id": 15
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_r27umXAelDc.png",
+      "nome": "Pikachuuuuu",
+      "categoria": "diversos",
+      "preco": "1299.89",
+      "parcelas": "2",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 16
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_0POwK6iAiRQ.png",
+      "nome": "Controle XBOX",
+      "categoria": "consoles",
+      "preco": "233",
+      "parcelas": "3",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 17
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_caNzzoxls8Q.png",
+      "nome": "PS5",
+      "categoria": "consoles",
+      "preco": "5999.99",
+      "parcelas": "2",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcd",
+      "id": 18
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_k-xYhI3-gJM.png",
+      "nome": "Game Boy",
+      "categoria": "consoles",
+      "preco": "10999.89",
+      "parcelas": "12",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcd",
+      "id": 19
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_wa5z9o9fgjw.png",
+      "nome": "Nindento Switch",
+      "categoria": "consoles",
+      "preco": "399.59",
+      "parcelas": "6",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcd",
+      "id": 20
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_Zjn4dT993-g.png",
+      "nome": "XBOX",
+      "categoria": "consoles",
+      "preco": "123",
+      "parcelas": "3",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 21
+    },
+    {
+      "img": "C:\\fakepath\\unsplash_ZV7lnfyQLmA.png",
+      "nome": "Nintendo NES",
+      "categoria": "consoles",
+      "preco": "15999.89",
+      "parcelas": "3",
+      "descricao": "abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde ",
+      "id": 22
     }
   ],
   "usuarios": [
