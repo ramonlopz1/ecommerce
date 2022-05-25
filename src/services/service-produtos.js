@@ -14,7 +14,8 @@ const postProdutos = (dados) => {
 
 const getProduto = async (id) => {
     const resp = await fetch(`https://ramonlopz1.github.io/ecommerce/db.json`)
-    const produtos = await resp.json()
+    const dados = await resp.json()
+    const produtos = dados.produtos
     return produtos[id]
 }
 
